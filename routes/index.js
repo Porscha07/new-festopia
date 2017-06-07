@@ -24,4 +24,9 @@ router.get('/sign', function(req, res) {
     res.render('sign', {});
 });
 
+router.get('/register', function(req, res) {
+    res.render('register', {});
+});
+
+
 module.exports = router;
