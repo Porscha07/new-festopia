@@ -5,7 +5,12 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/register.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="scripts/register.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -15,42 +20,72 @@
 <body>
 
 <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <div class="col-sm-12 text-danger text-center">
-                    	<h1> REGISTER </h1>
-                </div>
-                <form action="/registerProcess" method="post">
-                    <div class="col-sm-12">
-                        <input type="text" placeholder="Enter your Name" name="name">
-                    </div>
-                    <div class="col-sm-12">
-                        <input type="email" placeholder="Enter your E-mail" name="email">
-                    </div>
-                    <div class="col-sm-12">
-                        <input type="password" placeholder="Enter your Password" name="password">
-                    </div>
-                 
-
-                    <div class="col-sm-12">
-                        <input type="Age" placeholder="Enter your Age" name="password">
-                    </div>
-
-                    <div class="col-sm-12">
-                        <input type="Zipcode" placeholder="Enter your Zipcode" name="password">
-                    </div>
-
-                    <div class="col-sm-12">
-                        <input type="phoneNumber" placeholder="Enter your Phone Number" name="password">
-                    </div>
-
-                    <div class="col-sm-12">
-                        <button type="submit" class="btn btn-success">REGISTER</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+  <div class="progress-bar">
+  
   </div>
+  
+ <header>  
+  <h1 class="title">Create An Account</h1>
+</header>
+<div class="form-container">  
+      <span class="alerta"> Field is required</span>
+  <form class="formed">
+      
+    <ul>
+        <li data-stage="1" class="form-section selected">
+            <label>What's your name?</label>
+            <input placeholder="Rob Bunch"></input>
+        </li>
+
+        <li data-stage="2" class="form-section">
+            <label>What's your email adress?</label>
+            <input placeholder="something@something.something"></input>
+        </li>
+
+        <li data-stage="3" class="form-section">
+            <label>Create a user name</label>
+            <input placeholder="Username"></input>
+        </li>
+
+        <li data-stage="4" class="form-section">
+            <label>Create a password</label>
+            <input placeholder="*****"></input>
+        </li>
+
+        <li data-stage="5" class="form-section">
+            <label>Enter your age</label>
+            <input placeholder="18"></input>
+        </li>
+
+        <li data-stage="6" class="form-section">
+            <label>Enter your zipcode</label>
+            <input placeholder="90210"></input>
+        </li>
+        <li data-stage="7" class="form-section">
+            <label>Enter your phone number</label>
+            <input placeholder="555-555-5555"></input>
+        </li>
+    </ul>
+  </form>
+</div>
+  <span class="counter"><span>1</span>/7</span>
+  <nav>     
+    <ul>
+      <li data-stage="1" class="selected"></li>
+      <li data-stage="2"></li>
+      <li data-stage="3"></li>
+      <li data-stage="4"></li>
+      <li data-stage="5"></li>
+      <li data-stage="6"></li>
+      <li data-stage="7"></li>
+    </ul>
+  </nav>
+  <button id="nextStage" class="continue-btn"> 
+    Continue
+  </button>
+  
+</div>
+
 
 </body>
 </html>
