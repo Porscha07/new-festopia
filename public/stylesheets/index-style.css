@@ -119,7 +119,7 @@ body {
 /* } */
 
 #user-modal img{
-    display: block;
+    /* display: block; */
     width: 19px; 
     height: 19px;
     /* position: absolute; */
@@ -128,7 +128,7 @@ body {
 }
 
 #search-modal img{
-    display: block;
+    /* display: block; */
     width: 18px; 
     height: 18px;
     /* position: absolute; */
@@ -137,7 +137,7 @@ body {
 }
 
 #question-modal img{
-    display: block; 
+    /* display: block;  */
     width: 18px; 
     height: 18px;
     /* position: absolute; */
@@ -154,9 +154,9 @@ body {
     width:100%;
     height:100%;
     display:none;
-    /* position:fixed; */
-    /* top:0px; */
-    /* left:0px; */
+    position:fixed;
+    top:0px;
+    left:0px;
     
 }
  
@@ -165,11 +165,11 @@ body {
     max-width:700px;
     width:90%;
     padding:40px;
-    position:relative;
-    top:18em;
-    left:45em;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
+    position:fixed;
+    top:100px;
+    left:100px;
+    /* -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%); */
     box-shadow:0px 2px 6px rgba(0,0,0,1);
     background:rgba(84,176,243,0.7);
     border-radius: 3%; 
@@ -214,9 +214,9 @@ body {
     width:100%;
     height:100%;
     display:none;
-    /* position:fixed; */
-    /* top:0px; */
-    /* left:0px; */
+    position:fixed;
+    top:0px;
+    left:0px;
     
 }
  
@@ -225,11 +225,11 @@ body {
     max-width:700px;
     width:90%;
     padding:40px;
-    position:relative;
-    top:18em;
-    left:45em;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
+    position:fixed;
+    top:100px;
+    left:100px;
+    /* -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%); */
     box-shadow:0px 2px 6px rgba(0,0,0,1);
     background:rgba(84,176,243,0.7);
     border-radius: 3%; 
@@ -286,11 +286,11 @@ body {
     max-width:700px;
     width:90%;
     padding:40px;
-    position:relative;
-    top:18em;
-    left:45em;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
+    position:fixed;
+    top:100px;
+    left:100px;
+    /* -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%); */
     box-shadow:0px 2px 6px rgba(0,0,0,1);
     background:rgba(84,176,243,0.7);
     border-radius: 3%; 
@@ -389,7 +389,7 @@ body {
 
 
 .search-item input{
-    width: 62em;
+    width: 100%;
     height: 3em;
     position: relative;
     top: 0em; 
@@ -488,16 +488,16 @@ body {
 
 
 .nav-item2 a{
-    float: right;
-    position: relative;
+    /* float: right; */
+    /* position: relative; */
     text-transform: uppercase;
     color: #54b0f3; 
-    border-right: 2px dotted gray;
+    /* border-right: 2px dotted gray; */
     font-size: 20px;
     font-weight: bold; 
-    padding-right: 1.5em; 
+    /* padding-right: 1.5em;  */
     text-decoration: none;
-    top: -24.5em;
+    /* top: -24.5em; */
 }
 
 
@@ -589,31 +589,24 @@ ol{
 .four{
     background-color: gray;
     /* grid-row: span 2/5; */
-    width: 136%;
+    width: 100%;
     height: 12em;
     /* margin-top: 6em;  */
 
     
 }
 
-.five{
-    background-color: purple;
-    /* grid-row: span 1; */
-    width: 136%;
-    /* margin-top: 19em; */
-
-}
 
 .six{
     background-color: yellow;
     /* grid-row: span 1/2; */
-    width: 136%;
+    width: 100%;
 
     
 }
 
 .seven{
     /* grid-row: span 1; */
-    width: 136%;
+    width: 100%;
         
 }
