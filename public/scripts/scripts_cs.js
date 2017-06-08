@@ -1,9 +1,43 @@
 $(document).ready(function(){
 
 
+    // TEXT GENERATOR FOR THE CAT PAGES //
+    setInterval(blinker, 1000); //Runs every second
+    function blinker() {
+        $('#upright-typing-cursor').fadeOut(500).fadeIn(500);
+    }
+    setInterval(typeItOut, 15000); //Runs every 15 seconds
+    function typeItOut(){
+    $('#typing-header').html('');
+
+    var headerSentence = ('Learn to code. Launch a career. ');
+    // Could change the sentence here with a random like so
+    headerSentence = headerArray[headerCounter];
+
+    setTimeout(
+      function(){
+        for(var i = 0; i < headerSentence.length; i++){
+          (function(index) {
+            setTimeout(function() {
+              document.getElementById('typing-header').innerHTML+=headerSentence[index];
+            }, 50 * i);
+          })(i);
+        }
+      }, 1000);
+    }
+
+
     //ANIMATIONS FOR THE RESULT CARDS//
 
+<<<<<<< Updated upstream
     $(function(){
+=======
+
+     // $(function(){
+
+    $(function(){
+
+>>>>>>> Stashed changes
         
         $('#family').click(function(e){
             $(".cards").toggle("bounce", "slow");
@@ -13,6 +47,20 @@ $(document).ready(function(){
         });
     });
 
+<<<<<<< Updated upstream
+=======
+
+     //      //----- OPEN
+     //    $('[data-modal-open]').on('click', function(e)  {
+     //        var targeted_modal_class = jQuery(this).attr('data-modal-open');
+     //        $('[data-modal="' + targeted_modal_class + '"]').fadeIn(350);
+     //        $('.modal-inner').show(); 
+     //            console.log("it works")
+     
+     //        e.preventDefault();
+     //    });
+
+>>>>>>> Stashed changes
     $(function(){
         
         $('#free').click(function(e){
@@ -23,6 +71,17 @@ $(document).ready(function(){
     
     });
 
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+
+    // $('.modal-inner').hide(); 
+
+>>>>>>> Stashed changes
        	//MODALS FOR LOGIN/CREATE ACCOUNT
     $(function(){
         
