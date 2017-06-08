@@ -3,9 +3,21 @@ $(document).ready(function(){
 
     //ANIMATIONS FOR THE RESULT CARDS//
 
+<<<<<<< Updated upstream
      // $(function(){
+=======
+    $(function(){
+>>>>>>> Stashed changes
         
+        $('#family').click(function(e){
+            $(".cards").toggle("bounce", "slow");
+            $(".cards2").toggle("bounce", "slow");
+                // console.log("it works") 
+            e.preventDefault();
+        });
+    });
 
+<<<<<<< Updated upstream
      //      //----- OPEN
      //    $('[data-modal-open]').on('click', function(e)  {
      //        var targeted_modal_class = jQuery(this).attr('data-modal-open');
@@ -15,11 +27,23 @@ $(document).ready(function(){
      
      //        e.preventDefault();
      //    });
-
-
-
-
+=======
+    $(function(){
         
+        $('#free').click(function(e){
+            $(".cards").toggle("bounce", "slow");
+            $(".cards2").toggle("bounce", "slow");
+            e.preventDefault();
+        });
+    
+    });
+
+
+>>>>>>> Stashed changes
+
+
+
+
 
     // $('.modal-inner').hide(); 
 

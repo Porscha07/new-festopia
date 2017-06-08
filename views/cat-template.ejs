@@ -3,15 +3,27 @@
 <head>
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
    	<!-- <link rel="stylesheet" type ="text/css" href="./stylesheets/cat-temp.css"/> -->
    	<link rel="stylesheet" type="text/css" href="./stylesheets/cat-art.css">
 =======
    	<link rel="stylesheet" type ="text/css" href="./stylesheets/cat-film.css"/>
 >>>>>>> 3d28e95ba5e341f423678f3a90576d35a2e6fdea
+=======
+   	<link rel="stylesheet" type ="text/css" href="./stylesheets/cat-temp.css"/>
+   	<!-- <link rel="stylesheet" media="(max-width: 800px)" href="./stylesheets/cat-temp.css" /> -->
+=======
+   	<link rel="stylesheet" type ="text/css" href="./stylesheets/cat-film.css"/>
+>>>>>>> origin/master
+>>>>>>> 4887902982986a24f4f19a5872a19356f2dbfd26
    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src = "csscripts.js"></script> -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src = "./scripts/scripts_cs.js"></script>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	
 </head>
 
@@ -27,7 +39,13 @@
 						<h1>FESTOPIA <br> MUSIC</h1>
 					</nav>
 				</div>
+				<div id = "typing-header-wrapper">
+					<h3 id = "typing-header" clas = "text-white space-bottom-medium"></h3>
+					<span id = "upright-typing-cursor"></span>
+				</div>
 			</div>
+
+
 		
 			
 
@@ -47,7 +65,7 @@
 			<div class="col-sm-2">
 				<div id="home">
 					<a href="#home">
-						<< Go Home
+						<div><< Go Home</div>
 					</a>
 				</div>
 			</div>
@@ -73,12 +91,16 @@
 
 
 					<li>
-						<button type="button" class="btn btn-primary">Family-Friendly</button>	
+						<div id = "button1">
+							<button type="button" id="family" class="btn btn-primary">Family-Friendly</button>
+						</div>	
 					</li>
 
 
 					<li>
-						<button type="button" class="btn btn-primary">Free</button>
+						<div id="button2">
+							<button type="button" id = "free" class="btn btn-primary">Free</button>
+						</div>
 					</li>
 				</ol> 
 			</div>
@@ -87,7 +109,7 @@
 				
 			<div class= "row">
 				<div class="container-fluid right">
-					<div class= "col-md-3 result cards">
+					<div class= "col-md-3 result cards" style="display: none;" >
 					    <h3 class="header">Shakey Beats Festival</h3>
 					    <div class="card horizontal">
 						      <div class="card-image">
@@ -105,7 +127,7 @@
 					   	</div>
 					</div>
 					
-					<div class= "col-md-3 result cards2">
+					<div class= "col-md-3 result cards2" style="display: none;">
 					    <h3 class="header">Shakey Beats Festival</h3>
 					    <div class="card horizontal">
 						      <div class="card-image2">
