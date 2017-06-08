@@ -4,7 +4,7 @@ var request = require('request');
 // var config = require('../config/config');
 var bcrypt = require('bcrypt-nodejs');
 
-// var mysqpl = require('myspl');
+// var mysql = require('mysql');
 // var connection = mysql.createConnection({
 //     host: config.sql.host,
 //     user: config.sql.user,
@@ -17,9 +17,9 @@ var bcrypt = require('bcrypt-nodejs');
 
 /* GET home page. */
 
-// router.get('/', function(req, res, next) {
-//     res.render('index', { title: 'Express' });
-// });
+router.get('/', function(req, res, next) {
+    res.render('index', { title: 'Express' });
+});
 
 // router.get('/sign', function(req, res) {
 //     res.render('sign', {});
@@ -29,9 +29,9 @@ var bcrypt = require('bcrypt-nodejs');
 //     res.render('register', {});
 // });
 
-router.get('/', function(req, res) {
-    res.render('cat-template', {});
-});
+// router.get('/', function(req, res) {
+//     res.render('cat-template', {});
+// });
 
 
 
