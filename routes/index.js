@@ -16,17 +16,23 @@ var bcrypt = require('bcrypt-nodejs');
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
+
+// router.get('/', function(req, res, next) {
+//     res.render('index', { title: 'Express' });
+// });
+
+// router.get('/sign', function(req, res) {
+//     res.render('sign', {});
+// });
+
+// router.get('/register', function(req, res) {
+//     res.render('register', {});
+// });
+
+router.get('/', function(req, res) {
+    res.render('cat-template', {});
 });
 
-router.get('/sign', function(req, res) {
-    res.render('sign', {});
-});
-
-router.get('/register', function(req, res) {
-    res.render('register', {});
-});
 
 
 module.exports = router;

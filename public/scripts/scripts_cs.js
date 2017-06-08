@@ -1,10 +1,31 @@
 $(document).ready(function(){
 
 
+    //ANIMATIONS FOR THE RESULT CARDS//
+
+     $(function(){
+        
+
+          //----- OPEN
+        $('[data-modal-open]').on('click', function(e)  {
+            var targeted_modal_class = jQuery(this).attr('data-modal-open');
+            $('[data-modal="' + targeted_modal_class + '"]').fadeIn(350);
+            $('.modal-inner').show(); 
+                console.log("it works")
+     
+            e.preventDefault();
+        });
+
+
+
+
+        
+
     // $('.modal-inner').hide(); 
 
        	//MODALS FOR LOGIN/CREATE ACCOUNT
     $(function(){
+
 
        	  //----- OPEN
         $('[data-modal-open]').on('click', function(e)  {
