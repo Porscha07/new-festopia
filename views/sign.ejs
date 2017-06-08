@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="stylesheets/signIn.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="scripts/scripts.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body id="signInPage">
+
+<!-- - HTML FOR SIGN IN FORM STARTS HERE - -->
+<div class="container">
+  <div class="progress-bar">
+  
+  </div>
+  
+ <header>  
+  <h1 class="title">Sign In</h1>
+</header>
+
+<div class="form-container">  
+      <span class="alerta"> Field is Required</span>
+  <form class="formed">
+      
+    <ul>
+      <li data-stage="1" class="form-section selected">
+        <label>What's your User Name?</label>
+        <input placeholder="i.e FestivalFiend73107"></input>
+      </li>
+      <li data-stage="2" class="form-section">
+  <label>What's your Password?</label>
+        <input placeholder="Enter Password Here"></input></li>
+    </ul>
+  </form>
+</div>
+
+  <span class="counter"><span>1</span>/2</span>
+  <nav>     
+    <ul>
+      <li data-stage="1" class="selected"></li>
+      <li data-stage="2"></li>
+    </ul>
+  </nav>
+  <button id="nextStage" class="continue-btn"> 
+    Continue
+  </button>
+  
+</div>
+
+<!-- - HTML FOR SIGN IN FORM ENDS HERE - -->
+
+</body>
+</html>
