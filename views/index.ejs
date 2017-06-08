@@ -6,12 +6,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Assistant|Berkshire+Swash|Ek+Mukta|Merienda" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type ="text/css" href="stylesheets/style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-
- <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-
- 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type ="text/css" href="stylesheets/index-style.css"/>
   <script type="text/javascript" src = "js/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src = "js/scripts.js"></script>
@@ -22,137 +19,149 @@
 <body class="index">
 
 
-<div class="container">
+<div class="container-fluid">
 
        <!--  HEADER START -->
-  
-    <header class="one header">
+  <div class="row">
+    <div class="col-sm-12 one header">
         
-        <div id="social-media">
+        <div class="col-sm-6" id="social-media">
                       
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-snapchat-ghost"></a>
-            <a href="#" class="fa fa-tumblr"></a>
+            <div class="col-sm-1 icons fa fa-facebook">
+              <!-- <a href="#" class="fa fa-facebook"> -->
+            </div>
+            <div class="col-sm-1 col-sm-offset-1 icons fa fa-twitter">
+              <!-- <a href="#" class="fa fa-twitter"></a> -->
+            </div>
+            <div class="col-sm-1 col-sm-offset-1 icons fa fa-instagram">
+              <!-- <a href="#" class="fa fa-instagram"></a> -->
+            </div>
+            <div class="col-sm-1 col-sm-offset-1 icons fa fa-snapchat-ghost">
+              <!-- <a href="#" class="fa fa-snapchat-ghost"></a> -->
+            </div>
+            <div class="col-sm-1 col-sm-offset-1 icons fa fa-tumblr">
+              <!-- <a href="#" class="fa fa-tumblr"></a> -->
+            </div>
 
 
         </div>
 
         
-
+        <div class="col-sm-6">
             <!--   USER MODAL -->
-        <div id = "user-modal">
-            
-            <a class = "btn" data-modal-open = "modal-user" href="#">
+          <div class="col-sm-1 col-sm-offset-7" id="user-modal">
+              
+              <a class="btn" data-modal-open="modal-user" href="#">
 
-            <img id = "user" style="" src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-256.png" alt="">
+              <img id = "user" style="" src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-256.png" alt="">
 
-            </a>
+              </a>
 
-            <div class = "modalopen" data-modal = "modal-user">
-                <div class="modal-inner" style="display: none;">
+              <div class = "modalopen" data-modal = "modal-user">
+                  <div class="modal-inner" style="display: none;">
 
-                    <div id = "login">
-                      <a href="#login"><h3>Log In</h3></a>
-                      <img src="https://openclipart.org/download/247316/abstract-user-flat-2.svg">
+                      <div id = "login">
+                        <a href="#login"><h3>Log In</h3></a>
+                        <img src="https://openclipart.org/download/247316/abstract-user-flat-2.svg">
+                      </div>
+
+                      <div id = "join">
+                        <a href="join"><h3>Join Festopia!</h3></a>
+                        <img src="https://cdn4.iconfinder.com/data/icons/mosaicon-09/512/add_group-256.png">
+                      </div>
+
+                      <a class="modal-close" data-modal-close="modal-user" href="#">x</a>
+                
+                  </div>
+              </div>
+          </div>
+
+           <!--  SEARCH MODAL -->
+          <div class="col-sm-1 col-sm-offset-1" id="search-modal">
+              <a class = "btn" data-modal-open1 = "modal-user1" href="#">
+                  <img id = "search" style = "" src="http://www.scoopofflavours.in/images/mag.png">
+              </a>
+
+              <div class = "modalopen1" data-modal1 = "modal-user1">
+                  <div class="modal-inner1" style="display: none;">
+
+                    <div class = "search-item">
+                        <form>
+                            <input type="text" placeholder="keyword search"/>
+                        </form>
+                            <img src="http://www.freeiconspng.com/uploads/search-icon-png-2.png">
+                    </div>
+                    <a class="modal-close1" data-modal-close1="modal-user1" href="#">x</a>
+                
+                  </div>
+              </div>
+          </div>
+
+           <!--  QUESTION MODAL -->
+          <div class="col-sm-1 col-sm-offset-1" id="question-modal">
+              <a class = "btn" data-modal-open2 = "modal-user2" href="#">
+
+                  <img id = "question" style="" src="https://cdn2.iconfinder.com/data/icons/bold-ui/100/questionmark-256.png" alt="">
+              </a>
+                        
+              <div class = "modalopen2" data-modal2 = "modal-user2">
+                  <div class="modal-inner2" style="display: none;">
+
+                    <div id = "question1" style="font-size: 20px; font-weight: bold;">
+                        <p>Have questions about about Festopia? Feel free to send us a message using the contact form below!</p>
                     </div>
 
-                    <div id = "join">
-                      <a href="join"><h3>Join Festopia!</h3></a>
-                      <img src="https://cdn4.iconfinder.com/data/icons/mosaicon-09/512/add_group-256.png">
-                    </div>
-
-                    <a class="modal-close" data-modal-close="modal-user" href="#">x</a>
-              
-                </div>
-            </div>
-        </div>
-
-         <!--  SEARCH MODAL -->
-        <div id="search-modal">
-            <a class = "btn" data-modal-open1 = "modal-user1" href="#">
-                <img id = "search" style = "" src="http://www.scoopofflavours.in/images/mag.png">
-            </a>
-
-            <div class = "modalopen1" data-modal1 = "modal-user1">
-                <div class="modal-inner1" style="display: none;">
-
-                  <div class = "search-item">
-                      <form>
-                          <input type="text" placeholder="keyword search"/>
-                      </form>
-                          <img src="http://www.freeiconspng.com/uploads/search-icon-png-2.png">
+                    <a class="modal-close2" data-modal-close2="modal-user2" href="#">x</a>
+                
                   </div>
-                  <a class="modal-close1" data-modal-close1="modal-user1" href="#">x</a>
-              
-                </div>
-            </div>
+              </div>
+          </div>
         </div>
-
-         <!--  QUESTION MODAL -->
-        <div id="question-modal">
-            <a class = "btn" data-modal-open2 = "modal-user2" href="#">
-
-                <img id = "question" style="" src="https://cdn2.iconfinder.com/data/icons/bold-ui/100/questionmark-256.png" alt="">
-            </a>
-                      
-            <div class = "modalopen2" data-modal2 = "modal-user2">
-                <div class="modal-inner2" style="display: none;">
-
-                  <div id = "question1" style="font-size: 20px; font-weight: bold;">
-                      <p>Have questions about about Festopia? Feel free to send us a message using the contact form below!</p>
-                  </div>
-
-                  <a class="modal-close2" data-modal-close2="modal-user2" href="#">x</a>
-              
-                </div>
-            </div>
-        </div>
-
-    </header>
+    </div>
+  </div>
 
     <!--  END OF HEADER -->
 
 
    <!--  START PAGE TITLE -->
 
-    <div class="two page-name"> 
+  <div class="row">
+
+    <div class="col-sm-12 two page-name"> 
 
         <h1>Festopia</h1>
         <h3>Your personalized festival finder</h3>
       <!--   <img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/6439641/Shaky-Knees_54_990x660.jpg"> -->
 
-
-
-
     </div>
+  </div>
 
    <!--   START MAIN NAV -->
 
-    <nav class="three main-nav">
+  <div class="row">
+    <div class="col-sm-12 three main-nav">
 
-        <div class = "nav-item" id = "text">
+        <div class="col-sm-2 col-sm-offset-1 nav-item" id="text">
             <a href ="#home">Home</a>
         </div>
 
 
-        <div class = "dropdown" id = catDrop>
+        <div class="col-sm-2 dropdown" id="catDrop">
             <section>Category<section>
             <div class="dropdown-content">
                <ol>
-                  <li class = "cat-items"><a href="#Music">Music</a></li>
-                  <li class = "cat-items"><a href="#Art">Art</a></li>
-                  <li class = "cat-items"><a href="#Film">Film</a></li>
-                  <li class = "cat-items"><a href="#Food/Beverage">Food/Beverage</a></li>
-                  <li class = "cat-items"><a href="#Culture">Culture</a></li>
+                  <li class="cat-items"><a href="#Music">Music</a></li>
+                  <li class="cat-items"><a href="#Art">Art</a></li>
+                  <li class="cat-items"><a href="#Film">Film</a></li>
+                  <li class="cat-items"><a href="#Food/Beverage">Food/Beverage</a></li>
+                  <li class="cat-items"><a href="#Culture">Culture</a></li>
               </ol>
             </div>
         </div>
     
 
        
-        <div class = "dropdown" id = monthDrop>
+        <div class="col-sm-2 dropdown" id="monthDrop">
             <section>Month</section>
             <div class="dropdown-content">
                <ol>
@@ -169,44 +178,36 @@
           </div>
 
       </div>
-
       
-      <div class = "nav-item2" id = "add-fest">
+      <div class="col-sm-1 nav-item2" id="add-fest">
         <a href="#AddFest">Add Festival</a>     
       </div>
 
 
-      <div class = "nav-item2" id = "all-fest">
+      <div class="col-sm-1 nav-item2" id="all-fest">
           <a href="#AllFest">All Festivals</a>
       </div>
 
-      <div class = "nav-item2" id = "tickets">
+      <div class="col-sm-1 nav-item2" id="tickets">
           <a href="#Tickets">Tickets</a>
       </div>
 
-      <div class = "nav-item2" id = "map">
+      <div class="col-sm-1 nav-item2" id="map">
           <a href="#Map">Map</a>
       </div>
 
-
-  
-
-    </nav>
-
-
-
-
-
+    </div>
+  </div>
 
        <!--    START MAIN PAGE -->
 
-    <main class="four main-page">
+    <div class="row four main-page">
 
-        <div class="five carousel"> Carousel</div>
+        <div class="col-sm-12 five carousel"> Carousel</div>
 
-        <div class="six calendar"> calendar </div>
+        <div class="col-sm-12 six calendar"> calendar </div>
 
-    </main>
+    </div>
 
         <!--   START FOOTER -->
 
