@@ -18,7 +18,7 @@ var bcrypt = require('bcrypt-nodejs');
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-   res.render('cat-template', { title: 'Express' });
+   res.render('index', { title: 'Express' });
 });
 
 router.get('/sign', function(req, res) {
