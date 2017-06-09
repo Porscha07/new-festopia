@@ -14,32 +14,7 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-
-
-
-<<<<<<< HEAD
-
-// var mysql = require('mysql');
-// var connection = mysql.createConnection({
-//     host: config.sql.host,
-//     user: config.sql.user,
-//     password: config.sql.password,
-//     database: config.sql.database
-// });
-=======
->>>>>>> c7e816e5a1f84ac44d26997e29d50675a1dd4f4c
-
-// //GET home page. 
-
-
-
-<<<<<<< HEAD
-
 /* GET home page. */
-=======
-/* GET home page. */
-
->>>>>>> c7e816e5a1f84ac44d26997e29d50675a1dd4f4c
 router.get('/', function(req, res, next) {
    res.render('index', { title: 'Express' });
 
@@ -56,27 +31,6 @@ router.get('/register', function(req, res) {
     res.render('register', {});
 });
 
-<<<<<<< HEAD
-router.get('sign', function(req, res) {
-    res.render('sign', {});
-});
-
-router.get('/sign', function(req, res) {
-    res.render('sign', {});
-});
-
-router.get('/register', function(req, res) {
-    res.render('register', {});
-});
-
-router.get('/cat-template', function(req, res) {
-    res.render('cat-template', {});
-});
-
-router.get('/food-beverage', function(req, res) {
-    res.render('food-beverage', {});
-});
-=======
 //getting film results and displaying them in template
 router.get('/film', function(req, res){
 	var message = req.query.msg;
@@ -164,11 +118,6 @@ router.post('/search', function(req, res){
 		}
 	});
 });
-
-
-
-
->>>>>>> c7e816e5a1f84ac44d26997e29d50675a1dd4f4c
 
 
 
