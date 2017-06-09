@@ -1,10 +1,44 @@
 $(document).ready(function(){
 
+    var headerArray = [
+        "I want to go to a jazz festival.",
+        "I want to go to a hiphop festival.",
+        "I want to go to a folk music festival.",
+        "I want to go to a rock festival.",
+        "I want to go to a music festival."
+    ]
+    // TEXT GENERATOR FOR THE CAT PAGES //
+    setInterval(blinker, 1000); //Runs every second
+    function blinker() {
+        $('#upright-typing-cursor').fadeOut(500).fadeIn(500);
+        console.log("it works");
+    }
+    setInterval(typeItOut, 15000); //Runs every 15 seconds
+    function typeItOut(){
+    $('#typing-header').html('');
+
+    var headerSentence = ('I want to a... ');
+    // Could change the sentence here with a random like so
+    headerSentence = headerArray;
+
+    setTimeout(
+      function(){
+        for(var i = 0; i < headerSentence.length; i++){
+          (function(index) {
+            setTimeout(function() {
+              document.getElementById('typing-header').innerHTML+=headerSentence[index];
+            }, 50 * i);
+          })(i);
+        }
+      }, 1000);
+    }
+
 
     //ANIMATIONS FOR THE RESULT CARDS//
 
+
     $(function(){
-        
+ 
         $('#family').click(function(e){
             $(".cards").toggle("bounce", "slow");
             $(".cards2").toggle("bounce", "slow");
@@ -12,6 +46,8 @@ $(document).ready(function(){
             e.preventDefault();
         });
     });
+
+
 
     $(function(){
         
@@ -22,6 +58,10 @@ $(document).ready(function(){
         });
     
     });
+
+
+
+
 
        	//MODALS FOR LOGIN/CREATE ACCOUNT
     $(function(){
