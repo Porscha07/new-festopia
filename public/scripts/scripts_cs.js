@@ -1,18 +1,25 @@
 $(document).ready(function(){
 
-
+    var headerArray = [
+        "I want to go to a jazz festival.",
+        "I want to go to a hiphop festival.",
+        "I want to go to a folk music festival.",
+        "I want to go to a rock festival.",
+        "I want to go to a music festival."
+    ]
     // TEXT GENERATOR FOR THE CAT PAGES //
     setInterval(blinker, 1000); //Runs every second
     function blinker() {
         $('#upright-typing-cursor').fadeOut(500).fadeIn(500);
+        console.log("it works");
     }
     setInterval(typeItOut, 15000); //Runs every 15 seconds
     function typeItOut(){
     $('#typing-header').html('');
 
-    var headerSentence = ('Learn to code. Launch a career. ');
+    var headerSentence = ('I want to a... ');
     // Could change the sentence here with a random like so
-    headerSentence = headerArray[headerCounter];
+    headerSentence = headerArray;
 
     setTimeout(
       function(){
@@ -29,16 +36,9 @@ $(document).ready(function(){
 
     //ANIMATIONS FOR THE RESULT CARDS//
 
-<<<<<<< Updated upstream
-    $(function(){
-=======
-
-     // $(function(){
 
     $(function(){
-
->>>>>>> Stashed changes
-        
+ 
         $('#family').click(function(e){
             $(".cards").toggle("bounce", "slow");
             $(".cards2").toggle("bounce", "slow");
@@ -47,20 +47,8 @@ $(document).ready(function(){
         });
     });
 
-<<<<<<< Updated upstream
-=======
 
-     //      //----- OPEN
-     //    $('[data-modal-open]').on('click', function(e)  {
-     //        var targeted_modal_class = jQuery(this).attr('data-modal-open');
-     //        $('[data-modal="' + targeted_modal_class + '"]').fadeIn(350);
-     //        $('.modal-inner').show(); 
-     //            console.log("it works")
-     
-     //        e.preventDefault();
-     //    });
 
->>>>>>> Stashed changes
     $(function(){
         
         $('#free').click(function(e){
@@ -71,17 +59,10 @@ $(document).ready(function(){
     
     });
 
-<<<<<<< Updated upstream
-=======
 
 
 
 
-
-
-    // $('.modal-inner').hide(); 
-
->>>>>>> Stashed changes
        	//MODALS FOR LOGIN/CREATE ACCOUNT
     $(function(){
         
