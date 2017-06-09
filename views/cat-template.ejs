@@ -2,9 +2,12 @@
 <html>
 <head>
 	
-   	<!-- <link rel="stylesheet" type="text/css" href="./stylesheets/cat-art.css"> -->
-   	<!-- <link rel="stylesheet" type ="text/css" href="./stylesheets/cat-film.css"/> -->
+
    	<link rel="stylesheet" type ="text/css" href="./stylesheets/cat-temp.css"/>
+   
+
+   <!-- 	<link rel="stylesheet" type ="text/css" href="./stylesheets/cat-film.css"/> -->
+
    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	
@@ -21,31 +24,43 @@
 	<div class = "container-fluid">
 
 	<!-- 	START HEADER -->
-		<div class = "row">
-			<div class= "col-lg-12 title">
-				<div id = "sub-head">
-					<nav id = "header">
-						<h1>FESTOPIA <br> MUSIC</h1>
-					</nav>
-				</div>
-				<div id = "typing-header-wrapper">
-					<h3 id = "typing-header" clas = "text-white space-bottom-medium"></h3>
-					<span id = "upright-typing-cursor"></span>
-				</div>
-			</div>	
+		<div class = "container-fluid header">
+			<div class = "row">
+				<div class= "col-lg-12 title">	
+					<div class="col-sm-3"> 
+						<div id = "sub-head">
+							<nav id = "header">
+								<h1>FESTOPIA <br> MUSIC</h1>
+							</nav>
+						</div>
+					</div>
 
-			<div class="col-md-3 icons"> 
-				<div id="social-media">
-		            <a href="#" class="fa fa-facebook"></a>
-		            <a href="#" class="fa fa-twitter"></a>
-		            <a href="#" class="fa fa-instagram"></a>
-		            <a href="#" class="fa fa-snapchat-ghost"></a>
-		            <a href="#" class="fa fa-tumblr"></a>
-				</div>
+				<!-- 	TEXT GENERATOR -->
+
+					<div class="col-sm-6">
+						<div id = "typing-header-wrapper">
+							<h3 id = "typing-header" clas = "text-white space-bottom-medium"></h3>
+							<span id = "upright-typing-cursor"></span>
+						</div>
+					</div>
+
+					<!-- SOCIAL MEDIA ICONS -->
+					<div class="col-sm-3 icons"> 
+						<div id="social-media">
+				            <a href="#" class="fa fa-facebook"></a>
+				            <a href="#" class="fa fa-twitter"></a>
+				            <a href="#" class="fa fa-instagram"></a>
+				            <a href="#" class="fa fa-snapchat-ghost"></a>
+				            <a href="#" class="fa fa-tumblr"></a>
+						</div>
+					</div>
+			
+				</div>		
 			</div>
-
 		</div>
 
+
+		
 		<div class="row">
 			<div class="col-sm-2">
 				<div id="home">
@@ -57,45 +72,46 @@
 		</div>
 
 	
-		
-		<div class="row">
-           	<!--  START SIDE BAR MENU -->
-			<div class="col-md-4 category">
-				<ol class = "sidebar-cat">
-					<li>
-						<form action="cat-template_submit" method="get" accept-charset="utf-8">
-							  <input type="text" placeholder="search festival name"/>
-						</form>
-					</li>
+		<div class="container sidebar">
+			<div class="row">
+	           	<!--  START SIDE BAR MENU -->
+				<div class="col-md-4 category">
+					<ol class = "sidebar-cat">
+						<li>
+							<form action="cat-template_submit" method="get" accept-charset="utf-8">
+								  <input type="text" placeholder="search festival name"/>
+							</form>
+						</li>
 
-					<li>
-						<div class="input-date">
-							<input type="date" class="form-control" name="newTaskDate" value= ""/>
-						</div>
-					</li>
-
-
-					<li>
-						<div id = "button1">
-							<button type="button" id="family" class="btn btn-primary">Family-Friendly</button>
-						</div>	
-					</li>
+						<li>
+							<div class="input-date">
+								<input type="date" class="form-control" name="newTaskDate" value= ""/>
+							</div>
+						</li>
 
 
-					<li>
-						<div id="button2">
-							<button type="button" id = "free" class="btn btn-primary">Free</button>
-						</div>
-					</li>
-				</ol> 
+						<li>
+							<div id = "button1">
+								<button type="button" id="family" class="btn btn-primary">Family-Friendly</button>
+							</div>	
+						</li>
+
+
+						<li>
+							<div id="button2">
+								<button type="button" id = "free" class="btn btn-primary">Free</button>
+							</div>
+						</li>
+					</ol> 
+				</div>
 			</div>
 		</div>
-					<!-- START RESULT CARDS -->
+						<!-- START RESULT CARDS -->
 				
-			<div class= "row">
-				<div class="container-fluid right">
-					<div class= "col-md-3 result cards" style="display: none;" >
-					    <h3 class="header">Shakey Beats Festival</h3>
+			<div class= "container right1">
+				<div class="row">
+					<div class= "col-md-3 result cards">
+					    <header>Shakey Beats Festival<header>
 					    <div class="card horizontal">
 						      <div class="card-image">
 						        <img src="http://ticketcrusader.com/wp-content/uploads/2016/03/shakey.jpg">
@@ -111,9 +127,13 @@
 					      </div>
 					   	</div>
 					</div>
-					
-					<div class= "col-md-3 result cards2" style="display: none;">
-					    <h3 class="header">Shakey Beats Festival</h3>
+				</div>
+			</div>
+
+			<div class="container right1">
+				<div class="row">
+					<div class= "col-md-3 result cards2" >
+					    <header>Shakey Beats Festival<header>
 					    <div class="card horizontal">
 						      <div class="card-image2">
 						        <img src="http://ticketcrusader.com/wp-content/uploads/2016/03/shakey.jpg">
@@ -129,13 +149,17 @@
 					      </div>
 					   	</div>
 					</div>
-
 				</div>
 			</div>
-		
-		</div>
 
 	</div>
+
+
+
+
+
+
+
 	
 </body>
 </html>
