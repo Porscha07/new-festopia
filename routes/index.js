@@ -36,14 +36,11 @@ var bcrypt = require('bcrypt-nodejs');
 
 router.get('/', function(req, res, next) {
    res.render('index', { title: 'Express' });
-<<<<<<< HEAD
-=======
 });
 
 
 router.get('/sign', function(req, res) {
     res.render('sign', {});
->>>>>>> d68ab931b35c70b6642f84cc8b85ed43cec34563
 });
 
 
