@@ -1,34 +1,20 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-// var config = require('../config/config');
+var config = require('../config/config');
 var bcrypt = require('bcrypt-nodejs');
 
 
-// var mysql = require('mysql');
+var mysql = require('mysql');
 
+var connection = mysql.createConnection({
+    host: config.sql.host,
+    user: config.sql.user,
+    password: config.sql.password,
+    database: config.sql.database
+});
 
-
-// // var mysqpl = require('mysql');
-// =======
-// var mysql = require('mysql');
-
-
-// var mysql = require('mysql');
-
-// var connection = mysql.createConnection({
-//     host: config.sql.host,
-//     user: config.sql.user,
-//     password: config.sql.password,
-//     database: config.sql.database
-// });
-
-// connection.connect();
-
-
-
-
-// //GET home page. 
+connection.connect();
 
 
 
@@ -44,33 +30,11 @@ router.get('/sign', function(req, res) {
 });
 
 
-// router.get('sign', function(req, res) {
-//     res.render('sign', {});
-// });
-
-// router.get('/sign', function(req, res) {
-//     res.render('sign', {});
-// });
-
-router.get('/sign', function(req, res) {
-    res.render('sign', {});
-});
-
-
-
-router.get('/register', function(req, res) {
-    res.render('register', {});
-});
-
-
 router.get('/cat-template', function(req, res) {
     res.render('cat-template', {});
 });
 
 
-// router.get('/', function(req, res,next) {
-//     res.render('cat-template', {});
-// });
 
 
 router.get('/cat-template', function(req, res) {
