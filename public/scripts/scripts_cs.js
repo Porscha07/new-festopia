@@ -1,37 +1,56 @@
 $(document).ready(function(){
 
-    var headerArray = [
-        "I want to go to a jazz festival.",
-        "I want to go to a hiphop festival.",
-        "I want to go to a folk music festival.",
-        "I want to go to a rock festival.",
-        "I want to go to a music festival."
-    ]
-    // TEXT GENERATOR FOR THE CAT PAGES //
-    setInterval(blinker, 1000); //Runs every second
-    function blinker() {
-        $('#upright-typing-cursor').fadeOut(500).fadeIn(500);
-        console.log("it works");
-    }
-    setInterval(typeItOut, 15000); //Runs every 15 seconds
-    function typeItOut(){
-    $('#typing-header').html('');
+    
+    // // TEXT GENERATOR FOR THE CAT PAGES //
+    // setInterval(blinker, 10000); //Runs every second
+    // function blinker() {
+    //     $('#upright-typing-cursor').fadeOut(500).fadeIn(500);
+    //     console.log("it works");
+        
+    // }
+    // setInterval(typeItOut, 10000); //Runs every 15 seconds
+    // function typeItOut(){
+    // $('#typing-header').html('');
 
-    var headerSentence = ('I want to a... ');
-    // Could change the sentence here with a random like so
-    headerSentence = headerArray;
 
-    setTimeout(
-      function(){
-        for(var i = 0; i < headerSentence.length; i++){
-          (function(index) {
-            setTimeout(function() {
-              document.getElementById('typing-header').innerHTML+=headerSentence[index];
-            }, 50 * i);
-          })(i);
-        }
-      }, 1000);
-    }
+    // var headerSentence = ('Take me to a music festival.');
+    // // Could change the sentence here with a random like so
+    // // var headerArray = [
+    // //     "I want to go to a jazz festival... ",
+    // //     "a hiphop festival... ",
+    // //     "a folk music festival... ",
+    // //     "a rock festival... ",
+    // //     "a music festival... "
+    // // ]
+    // // var headerSentence = headerArray;
+
+    // setTimeout(
+    //   function(){
+    //     for(var i = 0; i < headerSentence.length; i++){
+    //       (function(index) {
+    //         setTimeout(function() {
+    //           document.getElementById('typing-header').innerHTML+=headerSentence[index];
+    //         }, 50 * i);
+    //       })(i);
+    //     }
+    //   }, 1000);
+    // }
+
+    // //  setTimeout(
+    // //   function(){
+    // //     for(var i = 0; i < headerSentence.length; i++){
+    // //         for(var j = 0; j < headerSentence[i]; j++){
+    // //           (function(index) {
+    // //             setTimeout(function() {
+    // //               document.getElementById('typing-header').innerHTML+=headerSentence[index];
+    // //             }, 50 * i);
+    // //           })(i);
+    // //         }
+    // //     }
+    // //   }, 1000);
+        
+    // // }
+
 
 
     //ANIMATIONS FOR THE RESULT CARDS//
