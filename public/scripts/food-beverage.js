@@ -1,96 +1,39 @@
 $(document).ready(function(){
 
-    
-    // // TEXT GENERATOR FOR THE CAT PAGES //
-    // setInterval(blinker, 10000); //Runs every second
-    // function blinker() {
-    //     $('#upright-typing-cursor').fadeOut(500).fadeIn(500);
-    //     console.log("it works");
-        
-    // }
-    // setInterval(typeItOut, 10000); //Runs every 15 seconds
-    // function typeItOut(){
-    // $('#typing-header').html('');
-
-
-    // var headerSentence = ('Take me to a music festival.');
-    // // Could change the sentence here with a random like so
-    // // var headerArray = [
-    // //     "I want to go to a jazz festival... ",
-    // //     "a hiphop festival... ",
-    // //     "a folk music festival... ",
-    // //     "a rock festival... ",
-    // //     "a music festival... "
-    // // ]
-    // // var headerSentence = headerArray;
-
-    // setTimeout(
-    //   function(){
-    //     for(var i = 0; i < headerSentence.length; i++){
-    //       (function(index) {
-    //         setTimeout(function() {
-    //           document.getElementById('typing-header').innerHTML+=headerSentence[index];
-    //         }, 50 * i);
-    //       })(i);
-    //     }
-    //   }, 1000);
-    // }
-
-    // //  setTimeout(
-    // //   function(){
-    // //     for(var i = 0; i < headerSentence.length; i++){
-    // //         for(var j = 0; j < headerSentence[i]; j++){
-    // //           (function(index) {
-    // //             setTimeout(function() {
-    // //               document.getElementById('typing-header').innerHTML+=headerSentence[index];
-    // //             }, 50 * i);
-    // //           })(i);
-    // //         }
-    // //     }
-    // //   }, 1000);
-        
-    // // }
-
-
 
     //ANIMATIONS FOR THE RESULT CARDS//
 
-
-    $(function(){
- 
-        $('#family').click(function(e){
-            $(".cards").toggle("bounce", "slow");
-            $(".cards2").toggle("bounce", "slow");
-                // console.log("it works") 
-            e.preventDefault();
-        });
-    });
-
-
-
-    $(function(){
+     $(function(){
         
-        $('#free').click(function(e){
-            $(".cards").toggle("bounce", "slow");
-            $(".cards2").toggle("bounce", "slow");
+
+          //----- OPEN
+        $('[data-modal-open]').on('click', function(e)  {
+            var targeted_modal_class = jQuery(this).attr('data-modal-open');
+            $('[data-modal="' + targeted_modal_class + '"]').fadeIn(350);
+            $('.modal-inner').show(); 
+                console.log("it works")
+     
             e.preventDefault();
         });
-    
-    });
 
 
 
 
+        
+
+    // $('.modal-inner').hide(); 
 
        	//MODALS FOR LOGIN/CREATE ACCOUNT
     $(function(){
-        
+
+
        	  //----- OPEN
         $('[data-modal-open]').on('click', function(e)  {
             var targeted_modal_class = jQuery(this).attr('data-modal-open');
             $('[data-modal="' + targeted_modal_class + '"]').fadeIn(350);
             $('.modal-inner').show(); 
             	console.log("it works")
+     
             e.preventDefault();
         });
      
@@ -98,6 +41,7 @@ $(document).ready(function(){
         $('[data-modal-close]').on('click', function(e)  {
             var targeted_modal_class = jQuery(this).attr('data-modal-close');
             $('[data-modal="' + targeted_modal_class + '"]').fadeOut(350);
+     
             e.preventDefault();
         });
     });
@@ -114,6 +58,7 @@ $(document).ready(function(){
             $('[data-modal1="' + targeted_modal_class1 + '"]').fadeIn(350);
             $('.modal-inner1').show(); 
             	console.log("it works")
+     
             e.preventDefault();
         });
      
@@ -122,6 +67,8 @@ $(document).ready(function(){
             var targeted_modal_class1 = jQuery(this).attr('data-modal-close1');
             $('[data-modal1="' + targeted_modal_class1 + '"]').fadeOut(350);
             	console.log("it works")
+
+     
             e.preventDefault();
         });
     });
@@ -137,6 +84,7 @@ $(document).ready(function(){
             $('[data-modal2="' + targeted_modal_class2 + '"]').fadeIn(350);
             $('.modal-inner2').show(); 
             	console.log("it works")
+     
             e.preventDefault();
         });
      
@@ -145,6 +93,8 @@ $(document).ready(function(){
             var targeted_modal_class2 = jQuery(this).attr('data-modal-close2');
             $('[data-modal2="' + targeted_modal_class2 + '"]').fadeOut(350);
             	console.log("it works")
+
+     
             e.preventDefault();
         });
     });

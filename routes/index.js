@@ -12,18 +12,9 @@ var connection = mysql.createConnection({
     database: config.database
 });
 
+
 connection.connect();
-
-
-
-
-
-// //GET home page. 
-
-
-
 /* GET home page. */
-
 router.get('/', function(req, res, next) {
    res.render('index', { title: 'Express' });
 
@@ -150,11 +141,6 @@ router.post('/search', function(req, res){
 		}
 	});
 });
-
-
-
-
-
 
 
 
