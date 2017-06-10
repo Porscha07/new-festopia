@@ -6,7 +6,7 @@
    	<link rel="stylesheet" type ="text/css" href="./stylesheets/cat-temp.css"/>
    
 
-   <!-- 	<link rel="stylesheet" type ="text/css" href="./stylesheets/cat-film.css"/> -->
+   	<link rel="stylesheet" type ="text/css" href="./stylesheets/cat-<%=category%>.css"/>
 
    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -76,32 +76,42 @@
 			<div class="row">
 	           	<!--  START SIDE BAR MENU -->
 				<div class="col-md-4 category">
+					<div class=" message-test">
+						<%=message%>
+					</div>
 					<ol class = "sidebar-cat">
 						<li>
-							<form action="cat-template_submit" method="get" accept-charset="utf-8">
-								  <input type="text" placeholder="search festival name"/>
+							<form id="search-form" action="/search" method="post" accept-charset="utf-8">
+								  <input type="text" placeholder="search festival name" name="name" />
+								  <input type="date" class="form-control" name="date" value= ""/>
+								  <!-- <select name="family"> -->
+								  	<!-- <option value="1">Yes</option> -->
+								  	<!-- <option value="0">No</option> -->
+								  <!-- </select> -->
+								  Show only family friendly events?<input type="radio" name="family" value="1"> 
+								  <button type="submit" id="nameSearch" class="btn btn-primary">Submit</button>
 							</form>
 						</li>
 
-						<li>
-							<div class="input-date">
-								<input type="date" class="form-control" name="newTaskDate" value= ""/>
-							</div>
-						</li>
+						<!-- <li> -->
+							<!-- <div class="input-date"> -->
+								<!-- <input type="date" class="form-control" name="date" value= ""/> -->
+							<!-- </div> -->
+						<!-- </li> -->
 
 
-						<li>
+						<!-- <li>
 							<div id = "button1">
-								<button type="button" id="family" class="btn btn-primary">Family-Friendly</button>
+								<button type="button" name="family" id="family" class="btn btn-primary">Family-Friendly</button>
 							</div>	
-						</li>
+						</li> -->
 
 
-						<li>
+						<!-- <li>
 							<div id="button2">
-								<button type="button" id = "free" class="btn btn-primary">Free</button>
+								<button type="button" name="free" id = "free" class="btn btn-primary">Free</button>
 							</div>
-						</li>
+						</li> -->
 					</ol> 
 				</div>
 			</div>
@@ -110,45 +120,25 @@
 				
 			<div class= "container right1">
 				<div class="row">
+				<%for(let i = 0; i < searchArray.length; i++){ %>
 					<div class= "col-md-3 result cards">
-					    <header>Shakey Beats Festival<header>
+					    <header><%=searchArray[i].Name%><header>
 					    <div class="card horizontal">
 						      <div class="card-image">
-						        <img src="http://ticketcrusader.com/wp-content/uploads/2016/03/shakey.jpg">
+						        <img src=<%=searchArray[i].imgUrl%>>
 						      </div>
 					      <div class="card-stacked">
 						        <div class="card-content">
-						          <span><p id="location">Location: Centennial Olympic Park </p></span>
-						          <span><p id="date"> Date: May 5-7 </p></span>
+						          <span><p id="location"><%=searchArray[i].Location%></p></span>
+						          <span><p id="date"><%=searchArray[i].Date%></p></span>
 						        </div>
 						        <div class="card-action">
-						          <a href="https://www.shakybeatsfestival.com/">Go to Website</a>
+						          <a href=<%=searchArray[i].linkUrl%>>Go to Website</a>
 						        </div>
 					      </div>
 					   	</div>
 					</div>
-				</div>
-			</div>
-
-			<div class="container right1">
-				<div class="row">
-					<div class= "col-md-3 result cards2" >
-					    <header>Shakey Beats Festival<header>
-					    <div class="card horizontal">
-						      <div class="card-image2">
-						        <img src="http://ticketcrusader.com/wp-content/uploads/2016/03/shakey.jpg">
-						      </div>
-					      <div class="card-stacked">
-						        <div class="card-content">
-						          <span><p id="location">Location: Centennial Olympic Park </p></span>
-						          <span><p id="date"> Date: May 5-7 </p></span>
-						        </div>
-						        <div class="card-action">
-						          <a href="https://www.shakybeatsfestival.com/">Go to Website</a>
-						        </div>
-					      </div>
-					   	</div>
-					</div>
+					<%}%>
 				</div>
 			</div>
 
