@@ -62,6 +62,27 @@ router.get('/film', function(req, res){
     });
 
 });
+router.get('/music', function(req, res){
+    var message = req.query.msg;
+        //if results not found in database, create message to show on template page, else display no message
+        if(message == "sorryfestivalnotfound"){
+            message="Sorry, festival not found!"    
+        }else if (message == null){
+            message = " "
+        }
+        //selecting everything from FILM in table Categories 
+        var selectQuery = "SELECT * FROM Categories WHERE Category = 'Music'";
+        connection.query(selectQuery,(error,results)=>{
+            console.log(results)
+        //showing message and results for FILM category template page
+        res.render('cat-template', {
+            message:message,
+            searchArray:results,
+            category: "music"
+        });
+    });
+
+});
 
 //getting film results and displaying them in template
 router.get('/art', function(req, res){
@@ -113,8 +134,10 @@ router.post('/search', function(req, res){
 	var name = req.body.name;
 	var date = req.body.date;
 	var family = req.body.family;
+    var free = req.body.free;
 	//selecting specific data from table Categories in our database 
-	var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
+	// var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
+    var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ? OR Free = ?";
 	connection.query(selectQuery,[name,date,family],(error,results)=>{
 		//if results are not found in the database, redirect to page w/ message > not found
 		if(results.length == 0){
@@ -127,6 +150,8 @@ router.post('/search', function(req, res){
 		}
 	});
 });
+
+
 
 
 
