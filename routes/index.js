@@ -6,10 +6,10 @@ var bcrypt = require('bcrypt-nodejs');
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-    host: config.host,
-    user: config.user,
-    password: config.password,
-    database: config.database
+    host: config.sql.host,
+    user: config.sql.user,
+    password: config.sql.password,
+    database: config.sql.database
 });
 
 
