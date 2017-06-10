@@ -30,7 +30,7 @@
 					<div class="col-sm-3"> 
 						<div id = "sub-head">
 							<nav id = "header">
-								<h1>FESTOPIA <br> MUSIC</h1>
+								<h1>FESTOPIA <br><%=title%></h1>
 							</nav>
 						</div>
 					</div>
@@ -77,7 +77,9 @@
 	           	<!--  START SIDE BAR MENU -->
 				<div class="col-md-4 category">
 					<div class=" message-test">
-						<%=message%>
+
+				<!-- message removed -->
+
 					</div>
 					<ol class = "sidebar-cat">
 						<li>
@@ -89,8 +91,8 @@
 								  	<!-- <option value="0">No</option> -->
 								  <!-- </select> -->
 								  Show only family friendly events?<input type="radio" name="family" value="1"> 
+								  Show only free events?<input type="radio" name="free" value="1"> 
 								  <button type="submit" id="nameSearch" class="btn btn-primary">Submit</button>
-								  <button type="submit" name="free" id = "free" class="btn btn-primary" value="1">Free</button>
 							</form>
 						</li>
 
