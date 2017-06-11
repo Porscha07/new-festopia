@@ -3,39 +3,36 @@
 }
 
 html, body, .container-fluid{
-    height: 100%;
+    height: 102%;
     min-width: 100%
 }
 
 html{
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-html, .container-fluid{
-    background: url('http://oldfourhwardparkartsfestival.homestead.com/CPAF_Images/Generic_festival_crowd_photo_2_edited.jpg') no-repeat center center fixed;
+.container-fluid{
+    background: url('https://www.dragonboatatlanta.com/assets/uploads/2016/02/cultural-events.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-left: 0px !important; 
 }
 
 
 /*START HEADER BANNER*/
 
-#header{
-    width: 100%;
-    height: 100%;
-}
 
-#header h1{
+.header {
     background-color: purple;
-    background: -webkit-linear-gradient(left top, #00cc00, green); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #00cc00, green); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #00cc00, green); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #00cc00, green); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left top, coral, pink); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, coral, pink); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, coral, pink); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, coral, pink); /* Standard syntax (must be last) */
     color: white;
-    width: 102%;
-    height: 14vh;
+    width: 100%;
+    height: 18vh;
     position: absolute;
     top: -1em;
     margin-top: 1em;
@@ -49,15 +46,13 @@ html, .container-fluid{
 
  /* START SOCIAL MEDIA ICONS*/
  .fa {
-    position: relative;
-    top: 3.3em;
-    left: 77em;
+    float: right;
     padding: 15px;
     width: 41px;
     height: 41px;
     text-align: center;
     text-decoration: none;
-    margin: 12px 2px;
+    margin: 66px 1px;
     border-radius: 51%;
 }
 
@@ -79,8 +74,8 @@ html, .container-fluid{
 
 #home a{
     position: absolute;
-    left: 4em;
-    top: 2.5em;
+    left: 5em;
+    top: 6.5em;
     color: white;
     font-size: 20px;
 }
@@ -92,9 +87,9 @@ html, .container-fluid{
 } 
 
 @keyframes gohome {
-   from{right: 10px; 
+   from{right: 15px; 
    }
-   to{left: -1px;
+   to{left: 12px;
    }
 }
 
@@ -102,19 +97,22 @@ html, .container-fluid{
  /**************START RESULT CARDS**********/
 
  .cards{
-    position: absolute !important;
-    left: 45em;
-    top: 14em;
-    height: 45vh;
+    float: right !important;
+    margin-top: 14em; 
+    margin-right: -4em; 
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    height: 50%;
+    width: 30% !important;
     color: white;
     border-radius: 5px; 
     text-transform: uppercase;
     text-align: center;
-    background: purple;
-    background: -webkit-linear-gradient(left top, #00cc00, green); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #00cc00, green); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #00cc00, green); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #00cc00, green); /* Standard syntax (must be last) */
+    background: coral;
+    background: -webkit-linear-gradient(left top, coral, pink); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, coral, pink); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, coral, pink); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, coral, pink); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -122,23 +120,21 @@ html, .container-fluid{
 
  .cards a{
     color: white;
-    text-decoration: none; 
- }
-
+    text-decoration: none; coral
  .cards:hover{
         box-shadow:
-                1px 1px lime,
-                2px 2px lime,
-                3px 3px lime;
+                1px 1px coral,
+                2px 2px coral,
+                3px 3px coral;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
 
 .cards2:hover{
      box-shadow:
-                1px 1px lime,
-                2px 2px lime,
-                3px 3px lime;
+                1px 1px coral,
+                2px 2px coral,
+                3px 3px coral;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
@@ -150,12 +146,12 @@ html, .container-fluid{
 
  .card  a:hover{
     text-decoration: underline;
-    color: skyblue !important;
+    color: pink !important;
  }
 
  .cards2 a:hover{
     text-decoration: underline;
-    color: skyblue !important;
+    color: pink !important;
  }
 
  .card-image  img{
@@ -175,19 +171,22 @@ html, .container-fluid{
  }
 
  .cards2{
-    position: absolute !important;
-    left: 72em;
-    top: 14em;
-    height: 45vh;
+    float: right !important;
+    margin-top: -21.3em;
+    margin-right: 23em;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+    height: 50%;
+    width: 30% !important;
     color: white;
     border-radius: 5px; 
     text-transform: uppercase;
     text-align: center;
     background: purple;
-    background: -webkit-linear-gradient(left top, #00cc00, green); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #00cc00, green); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #00cc00, green); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #00cc00, green); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left top, coral, pink); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, coral, pink); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, coral, pink); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, coral, pink); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -199,53 +198,61 @@ html, .container-fluid{
  .category{
     position: fixed !important;
     padding-top: 2em;
-    top: 17em;
+    top: 16em;
     left: 5em;
-    height: 34.5vh;
+    height: 35%;
     border-radius: 5px;
-    background: purple;
-    background: -webkit-linear-gradient(left top, #00cc00, green); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #00cc00, green); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #00cc00, green); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #00cc00, green); /* Standard syntax (must be last) */
+    background: coral;
+    background: -webkit-linear-gradient(left top, coral, pink); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, coral, pink); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, coral, pink); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, coral, pink); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
  }
 
- .category ol{
-    list-style: none; 
- }
-
- .category li {
-    padding-bottom: 1em; 
- }
-
- .category input, button{
-    border-radius: 15px;
-    opacity: 0.8;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;  
- }
 
  .category input{
-      width: 19em;
-      position: relative;
-      left: -1em;
+    width: 19em;
+    position: relative;
+    left: -1em;
+
  }
 
-.category button{
+#button1 button{
     position: relative;
-    left: 3em;
     color: white;
-    background: #00cc00 !important;
+    background: pink !important;
     border-style: none;
     font-size: 15px; 
     font-weight: bold;
-    width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 13em;
+    left: -1em;
+    top: 1em;
+
 }
+
+
+#button2 button{
+    position: relative;
+    color: white;
+    background: pink !important;
+    border-style: none;
+    font-size: 15px; 
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    display:block; 
+    width: 13em; 
+    left: -1em;
+    top: 1em;
+}
+
+
 
 .category button:hover{
      box-shadow:

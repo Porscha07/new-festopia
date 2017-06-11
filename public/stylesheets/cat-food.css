@@ -3,7 +3,7 @@
 }
 
 html, body, .container-fluid{
-    height: 100%;
+    height: 102%;
     min-width: 100%
 }
 
@@ -13,12 +13,13 @@ html{
     overflow-y: hidden;
 }
 
-html, .container-fluid{
-    background: url('https://s-media-cache-ak0.pinimg.com/originals/19/d7/86/19d7867c2bc2584dfaae78a9e6b1171f.jpg') no-repeat center center fixed;
+.container-fluid{
+    background: url('https://788ce3d784825f1182a10218-22cvmlndrncvbl3r.netdna-ssl.com/wp-content/uploads/2016/06/091414_taste_atlanta2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-left: 0px !important; 
 
 
 }
@@ -27,17 +28,14 @@ html, .container-fluid{
 
 /*START HEADER BANNER*/
 
-#header{
-    width: 100%;
-    height: 100%;
-}
 
-#header h1{
+
+.header{
     background-color: purple;
-   /* background: -webkit-linear-gradient(left top, orange, red);*/ /* For Safari 5.1 to 6.0 */
-   /* background: -o-linear-gradient(bottom right, orange, red);*/ /* For Opera 11.1 to 12.0 */
-    /*background: -moz-linear-gradient(bottom right, orange, red);*/ /* For Firefox 3.6 to 15 */
-    background: linear-gradient(358deg, #630049, #992b7c, #ce68b3); /* Standard syntax (must be last) */
+   /* background: -webkit-linear-gradient(left top,purplepurple);*/ /* For Safari 5.1 to 6.0 */
+   /* background: -o-linear-gradient(bottom right, purplepurple);*/ /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(bottom right, purplepurple);*/ /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, purple, lavender); /* Standard syntax (must be last) */
     color: white;
     width: 102%;
     height: 14vh;
@@ -146,12 +144,12 @@ html, .container-fluid{
     color: white;
     border-radius: 5px; 
     text-transform: uppercase;
-    text-align: center;
-    background: purple;
-    background: -webkit-linear-gradient(left top, orange, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, orange, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, orange, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, orange, red); /* Standard syntax (must be last) */
+    text-align: cpurple
+    background: purple; 
+    background: -webkit-linear-gradient(left top, purple, lavender); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, purple, lavender); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, purple, lavender); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, purple, lavender); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -226,10 +224,10 @@ html, .container-fluid{
     text-transform: uppercase;
     text-align: center;
     background: purple;
-    background: -webkit-linear-gradient(left top, orange, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, orange, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, orange, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, orange, red); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left top, purple, lavender); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, purple, lavender); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, purple, lavender); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, purple, lavender); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -247,10 +245,10 @@ html, .container-fluid{
     height: 34.5vh;
     border-radius: 5px;
     background: purple;
-    background: -webkit-linear-gradient(left top, orange, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, orange, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, orange, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, orange, red); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left top, purple, lavender); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, purple, lavender); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, purple, lavender); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, purple, lavender); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -294,9 +292,9 @@ html, .container-fluid{
 
 .category button:hover{
      box-shadow:
-                1px 1px yellow,
-                2px 2px yellow,
-                3px 3px yellow;
+                1px 1px blue,
+                2px 2px blue,
+                3px 3px blue;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
    
@@ -304,9 +302,9 @@ html, .container-fluid{
 
 .category:hover{
       box-shadow:
-                1px 1px yellow,
-                2px 2px yellow,
-                3px 3px yellow;
+                1px 1px blue,
+                2px 2px blue,
+                3px 3px blue;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
