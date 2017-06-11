@@ -106,6 +106,8 @@ router.post('/search', function(req, res){
 	var name = req.body.name;
 	var date = req.body.date;
 	var family = req.body.family;
+
+    
 	//selecting specific data from table Categories in our database 
 	var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
 	connection.query(selectQuery,[name,date,family],(error,results)=>{
