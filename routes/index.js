@@ -117,7 +117,7 @@ router.post('/search', function(req, res){
     var date = req.body.date;
     var family = req.body.family;
     var free = req.body.free;
-    if ( free != 1){
+    if (free != 1){
         free = 0;
     }
     //selecting specific data from table Categories in our database 
