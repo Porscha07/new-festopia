@@ -21,32 +21,28 @@ body {
 
 .one{
     /* background-color: #54b0f3; */
-    background-color: #444;
+    background-color: #f4bc33;
     /* background-image: url('http://i.imgur.com/kGsm0uk.gif'); */
     width: 100%;
-    height: 40px;
+    height: 50px;
     position: fixed;
     top: 0px; 
     z-index: 1;
-    /* box-shadow:0px 2px 6px rgb(191,181,182); */
+    box-shadow:0px 2px 6px rgb(191,181,182); 
 }
 
 .icons {
-    position: relative;
-    top: 0.3em;
-    /* left: 1em; */
-    padding-left: 6px;
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
+    float: left;
+    padding: 15px;
+    width: 41px;
+    height: 41px;
     text-align: center;
-    vertical-align: center;
-    line-height: 30px;
+    margin: 3px 6px;
     text-decoration: none;
-    border-radius: 100%;
-    background-color: #444;
-    /* margin-left: 1em; */
+    border-radius: 51%;
+    background-color: #54b0f3;
     color: white;
+
 }
 
 /* Add a hover effect if you want */
@@ -58,30 +54,16 @@ body {
 }
 
 #user-modal img{
-    /* display: block; */
-    width: 19px; 
-    height: 19px;
-    /* position: absolute; */
-    /* left: 72em;  */
-    /* top:0em; */
+    width: 20px;   
 }
 
 #search-modal img{
-    /* display: block; */
-    width: 18px; 
-    height: 18px;
-    /* position: absolute; */
-    /* left: 76em;  */
-    /* top: 0em */
+    width: 33px; 
 }
+  
 
 #question-modal img{
-    /* display: block;  */
-    width: 18px; 
-    height: 18px;
-    /* position: absolute; */
-    /* left: 80em; */
-    /* top: 0em; */
+    width: 33px; 
 }
 
 /********  MODALS *********/
@@ -341,7 +323,7 @@ body {
 
 .page-name{  
     /* background: white;  */
-    background-color: #222;
+    background-image: url('Images/festopia.png');
     /* overflow: hidden; */
     /* font-family: 'Berkshire Swash', cursive; */
     font-family: Helvetica, sans-serif;
@@ -349,19 +331,33 @@ body {
     /* position: absolute; */
     /* left: 0em;  */
     text-align: center;
-    font-size: 60px;
-    color: #ff8000;
+    font-size: 95px;
+    color: #f4bc33;
     /* height: 45vh;  */
     width: 100%;
     margin-top: 40px;
+    height: 70vh;
     /* line-height: 1em; */
 }
 
 .page-name h1{
-    /* position: relative; */
+    position: relative; 
     font-weight: lighter;
-    /* top: 0em; */
+    top: 2em; 
+    font-family: 'Fascinate', cursive;
+    font-size: 95px; 
 }
+
+.page-name h3{
+    position: relative;
+    top: 8em;
+    font-family: 'Holtwood One SC', serif;
+    font-weight: lighter;
+    font-size: 22px; 
+    color: white !important;
+}
+
+
 /*
 .page-name img{
     width:100%;
@@ -373,45 +369,40 @@ body {
 /********  START NAV***********/
 
 .three{
-    background-color: white;
-    /*grid-row: span 1/7;*/
-    /* grid-area: nav; */
+    background-color: #f4bc33;
     width: 100%;
-    /* height: 2em; */
-    /* position: relative; */
-    /* top: 3em; */
-    /* left: 4em; */
-    color:#54b0f3;
-    border-top: 5px solid #54b0f3;
-    border-bottom: 5px solid #54b0f3;
+    color:white;
     font-size: 20px;
     font-weight: bold;
     /* padding-top: 1em; */
-    text-transform: uppercase;   
+    text-transform: uppercase;
+    font-family:'Heebo', sans-serif;   
 }
 
 #text a{
-    /* position: relative; */
-    /* padding-right: 2em; */
-    /* padding-left: 3em;  */
-    /* left: 1em; */
-    /* border-right: 2px dotted gray; */
     text-decoration: none; 
-    color: #54b0f3;
+    color: white;
+    position: relative;
+    left: -6em;
+
 }
 
 .nav-item2 a{
-    /* float: right; */
-    /* position: relative; */
     text-transform: uppercase;
-    color: #54b0f3; 
-    /* border-right: 2px dotted gray; */
+    background-color:#f4bc33; 
+    font-family:'Heebo', sans-serif; 
+    color: white; 
     font-size: 20px;
     font-weight: bold; 
-    /* padding-right: 1.5em;  */
     text-decoration: none;
-    /* top: -24.5em; */
+ 
 }
+
+.text-center{
+    background-color: #f4bc33;
+}
+
+
 
 #add-fest a{
     left: -33em;
@@ -448,11 +439,11 @@ body {
     padding-right: 30px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+
 }
 
 .dropdown-content a{
-
- color: #ff8000;
+ color: white;
 
 }
 
@@ -467,14 +458,10 @@ body {
     left: 2em;
 } */
 
-/* #monthDrop{
+ #monthDrop{
     position: relative;
-    padding-left: 3em;
-    padding-right: 1em;
-    top: 0em;
-    left: 1em;
-    border-right: 2px dotted gray;
-} */
+    left: 6em;
+} 
 
 .month-items, .cat-items{   
     width: 100%;

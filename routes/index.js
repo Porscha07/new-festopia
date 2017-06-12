@@ -100,6 +100,7 @@ router.get('/music', function(req, res){
     });
 
 });
+
 //searching for all festivals
 router.post('/search', function(req, res){
     //getting input data and turning them into variables to simplify search and pass into query  
@@ -202,12 +203,8 @@ router.post('/search', function(req, res){
 	var name = req.body.name;
 	var date = req.body.date;
 	var family = req.body.family;
-<<<<<<< HEAD
-
-    
-=======
     var free = req.body.free;
->>>>>>> origin/master
+
 	//selecting specific data from table Categories in our database 
 	// var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
     var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ? OR Free = ?";
