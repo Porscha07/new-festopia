@@ -30,11 +30,9 @@
 					<div class="col-sm-3"> 
 						<div id = "sub-head">
 							<nav id = "header">
-<<<<<<< HEAD
+
 								<h1>FESTOPIA <br><span name="category" id="category"><%=title%></span></h1>
-=======
-								<h1>FESTOPIA <br><span name="category"><%=title%></span></h1>
->>>>>>> fbf5706dc326a05b92678cb5d029d67c6fb6e198
+
 							</nav>
 						</div>
 					</div>
@@ -90,15 +88,26 @@
 							<form id="search-form" action="/search" method="post" accept-charset="utf-8">
 								  <input type="text" placeholder="search festival name" name="name" />
 								  <input type="date" class="form-control" name="date" value= ""/>
-								  <input type="text" class="form-control" name="category" value= ""/>
+								  <input type="text" class="form-control" name="category" value= "<%=title%>" style="display: none;"/>
 								  <!-- <select name="family"> -->
 								  	<!-- <option value="1">Yes</option> -->
 								  	<!-- <option value="0">No</option> -->
 								  <!-- </select> -->
-								  Show only family friendly events?<input type="radio" name="family" value="1"> 
-								  Show only free events?<input type="radio" name="free" value="1"> 
+								  Show only family friendly events?<input type="checkbox" name="family" value="1"> 
+								  Show only free events?<input type="checkbox" name="free" value="1"> 
 								  <button type="submit" id="nameSearch" class="btn btn-primary">Submit</button>
 							</form>
+								<div class="col-sm-6">
+						            <!--   USER MODAL -->
+						          <div class="col-sm-1 col-sm-offset-7" id="message-modal">
+						              <div class = "modal-open" data-modal3 = "modal-message">
+						                  <div class="modal-inner"  style="display: none;">	
+						                  	<%=message%>	
+						                      <a class="modal-close" data-modal-close3="modal-message" href="#">x</a>	
+						               		</div>
+						           		</div>
+				          			</div>
+				          		</div>	
 						</li>
 
 						<!-- <li> -->
@@ -124,6 +133,8 @@
 				</div>
 			</div>
 		</div>
+
+ 
 						<!-- START RESULT CARDS -->
 				
 			<div class= "container right1">

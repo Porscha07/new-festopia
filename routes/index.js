@@ -110,33 +110,58 @@ router.get('/music', function(req, res){
 
 //searching for all festivals
 router.post('/search', function(req, res){
-    console.log(req.body);
+    // console.log(req.body);
     //getting input data and turning them into variables to simplify search and pass into query  
     var name = req.body.name;
     var category = req.body.category;
     var date = req.body.date;
     var family = req.body.family;
     var free = req.body.free;
+<<<<<<< HEAD
     if (free != 1){
         free = 0;
+=======
+    // if ( free != 1){
+    //     free = 0;
+    // }
+    var queryString = [];
+
+    if (name != ''){
+        queryString.push(" AND Name = '"+name+"'");
     }
+    if (date != ''){
+        queryString.push(" AND Date = "+date);
+    }
+    if (family != undefined){
+        queryString.push(" AND Family = "+family);
+    }
+    if (free != undefined){
+        queryString.push(" AND Free = "+free);
+>>>>>>> origin/master
+    }
+
+    var queryArray = queryString.toString().replace(',','');
+    console.log(queryString);
+    console.log(queryArray);
     //selecting specific data from table Categories in our database 
     // var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
-    var selectQuery = "SELECT * FROM Categories WHERE Category = ? OR Date = ? OR Family = ? OR Free = ?";
-    console.log(free);
-    console.log(category)
-    connection.query(selectQuery,[name,date,family,free,category],(error,results)=>{
+    var selectQuery ="SELECT * FROM Categories WHERE Category = ?" + queryArray;
+    // var selectQuery = "SELECT * FROM Categories WHERE Category = ? AND Name = ? OR Date = ? OR Family = ? OR Free = ?";
+    // console.log(free);
+    // console.log(category)
+    console.log(selectQuery);
+    connection.query(selectQuery,[category,name,date,family,free],(error,results)=>{
         //if results are not found in the database, redirect to page w/ message > not found
         if(results.length == 0){
-            res.redirect('/cat-template?msg=sorryfestivalnotfound')
+            res.redirect('/'+category+'?msg=sorryfestivalnotfound')
         }else{
-            console.log(category)
+            // console.log(category)
             res.render('cat-template', {
                 //creating keys to display in category template page 
                 message: null,
                 searchArray: results,
                 category: category,
-                title:category
+                title: category
             })
         }
     });
@@ -151,16 +176,16 @@ router.get('/art', function(req, res){
     	}else if (message == null){
     		message = " "
     	}
-    	//selecting everything from FILM in table Categories 
-		var selectQuery = "SELECT * FROM Categories WHERE Category = 'art'";
+    	//selecting everything from ART in table Categories 
+		var selectQuery = "SELECT * FROM Categories WHERE Category = 'Art'";
 		connection.query(selectQuery,(error,results)=>{
-			console.log(results)
-		//showing message and results for FILM category template page
+			// console.log(results)
+		//showing message and results for ART category template page
     	res.render('cat-template', {
     		message:message,
     		searchArray:results,
     		category: "art",
-            title:"ART"
+            title:"Art"
     	});
     });
 
