@@ -1,163 +1,131 @@
-*{
-	box-sizing: border-box;
-}
-
-html, body, .container-fluid{
-	height: 102%;
-	min-width: 100%
-}
+/* *{
+    box-sizing: border-box;
+} */
 
 
+/* html{
+    overflow-y: hidden;
+} */
 
-html{
-	overflow-x: hidden;
-}
-
-
-
-.container-fluid{
-	background: url('file:///Users/Porscha/Desktop/DigitalCrafts/4-17immersive/Festopia/Festopia-App/public/Images/allfestsilver') no-repeat center center fixed;
-	-webkit-background-size: cover;
+html, .container-fluid{
+    background: url('../Images/allfest.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-left: 0px !important;  
 }
-
 
 
 /*START HEADER BANNER*/
 
-.header{
-    background-color: orange;
-    background: -webkit-linear-gradient(left top, silver, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, silver, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, silver, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, silver, red); /* Standard syntax (must be last) */
+/* .title {
+    width: 100%;
+    height: 100%;
+} */
+
+.title {
+    background-color: purple;
+    background: -webkit-linear-gradient(left top,  chocolate, maroon); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right,  chocolate, maroon); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, chocolate, maroon); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right chocolate, maroon); /* Standard syntax (must be last) */
     color: white;
     width: 100%;
-    height: 18vh;
-    position: absolute;
-    top: -1em;
-    margin-top: 1em;
-    padding: 0em 0em 2.97em 1em;
-    margin-left: -1em;
+    height: 100px;
+    position: fixed;
+    top:marroon
+    z-index: 2;
+    /* margin-top: 1em; */
+    /* padding: 0em 0em 2.97em 1em; */
+    /* margin-left: -1em; */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */  
 }
 
+.sidebar {
+    z-index: 3;
+}
 
-
-
-
+span.title-waxon {
+    color: white;
+    font-size: 54px;
+}
 
 
  /* START SOCIAL MEDIA ICONS*/
  .fa {
-    float: right;
-   /* top: 1.3em;
-    left: 77em;*/
+    position: relative;
+    top: 0;
+    left: 0;
     padding: 15px;
     width: 41px;
     height: 41px;
     text-align: center;
     text-decoration: none;
-    margin: 66px 1px;
+    margin: 12px 2px;
     border-radius: 51%;
+    background: #444;
+    color: white;
 }
-
 
 .fa:hover {
     opacity: 0.7; 
     color: black;
-    background-color: yellow; 
-    text-decoration: none; 
-  
-}
-
-
-
-/* Facebook */
-.fa-facebook {
-    background: #444;
-    color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-    background: #444;
-    color: white;
-}
-
-/* Instagram*/
-.fa-instagram {
-  background: #444;
-  color: white;
-}
-
-/* Snapshat*/
-.fa-snapchat-ghost {
-  background: #444;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-/* Tumblr*/
-.fa-tumblr {
-  background: #444;
-  color: white;
+    background-cochocolate; 
+    text-decoration: none;   
 }
 
 /* END OF HEADER BANNER*/
 
-
-#home a{
-    position: absolute;
-    left: 5em;
-    top: 6.5em;
+div#home.col-sm-2.home > a {
+    /* position: absolute;
+    left: 4em;
+    top: 2.5em; */
+    margin-top: 60px;
     color: white;
     font-size: 20px;
-    
 }
-
-#home a:hover{
-    animation-timing-function: ease;
-    animation-name: gohome;
-    animation-duration: 3s;
-
-} 
 
 @keyframes gohome {
-   from{right: 15px; 
+   from{right: 10px; 
    }
-   to{left: 12px;
+   to{left: -1px;
    }
 }
 
+div#home.col-sm-2.home > a:hover{
+    animation-timing-function: ease !important;
+    animation-name: gohome !important;
+    animation-duration: 3s !important;
+} 
 
+div.main-content {
+    margin-top: 160px;
+}
 
  /**************START RESULT CARDS**********/
+
  .cards{
- 	float: right !important;
-    margin-top: 14em; 
-    margin-right: -4em; 
-    padding-top: 20px;
-    padding-bottom: 20px;  
- 	height: 50%;
-    width: 30% !important;
- 	color: white;
+    /* position: absolute !important;
+    left: 45em;
+    top: 14em;
+    height: 45vh; */
+    color: white;
     border-radius: 5px; 
     text-transform: uppercase;
     text-align: center;
- 	background: purple;
- 	background: -webkit-linear-gradient(left top, silver, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, silver, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right,silver, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, silver, red); /* Standard syntax (must be last) */
- 	-webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  	-moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  	box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    background: purple;
+    min-width: 250px;
+    min-height: 250px;
+    margin-bottom: 50px;
+    background: -webkit-linear-gradient(left top, chocolate, maroon); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, chocolate, maroon); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, chocolate, maroon); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, chocolate, maroon); /* Standard syntax (must be last) */
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
  }
 
  .cards a{
@@ -165,41 +133,23 @@ html{
     text-decoration: none; 
  }
 
- .cards:red
+ .cards:hover{
         box-shadow:
-                1px 1px red,
-                2px 2px red,
-                3px 3px red;
+                1px 1px maroon,
+                2px 2px maroon,
+                3px 3px maroon;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
-
-.cards2:hover{
-     box-shadow:
-                1px 1px red,
-                2px 2px red,
-                3px 3px red;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-
-}
-
- .cards2 a{
-    color: white;
-    text-decoration: none; 
-
- }
 
  .card  a:hover{
     text-decoration: underline;
-    color: skyblue !important;
+    colorchocolate !important;
  }
 
- .cards2 a:hover{
-    text-decoration: underline;
-    color: skyblue !important;
-
- }
+.card-image {
+    min-height: 110px;
+}
 
  .card-image  img{
     display: block; 
@@ -207,160 +157,84 @@ html{
     height: 50%;
     margin-right: auto;
     margin-left: auto;
-
- }
-
- .card-image2 img{
-    display: block; 
-    width: 50%;
-    height: 50%;
-    margin-right: auto;
-    margin-left: auto;
-
- }
-
- .cards2{
-    float: right !important;
-    margin-top: -21.3em;
-    margin-right: 23em;
-    padding-top: 20px;
-    padding-bottom: 20px;   
-    height: 50%;
-    width: 30% !important;
-    color: white;
-    border-radius: 5px; 
-    text-transform: uppercase;
-    text-align: center;
-    background: purple;
-    background: -webkit-linear-gradient(left top, silver, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, silver, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, silver, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, silver, red); /* Standard syntax (must be last) */
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-    box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
  }
 
  
 /******SEARCH CARD STYLES********/
 
-
  .category{
- 	position: fixed !impored
- 	padding-top: 2em;
- 	top: 16em;
- 	left: 5em;
- 	height: 35%;
+    position: fixed !important;
+    padding-top: 20px;
+    top: 200px;
+    left: 5%;
+    height: 250px;
+    width: 250px;
     border-radius: 5px;
- 	background: purple;
- 	background: -webkit-linear-gradient(left top, red, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, red, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, red, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, red, red); /* Standard syntax (must be last) */
+    background: purple;
+    background: -webkit-linear-gradient(left top, chocolate, maroon); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, chocolate, maroon); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, chocolate, maroon); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, chocolate, maroon; /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  	-moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  	box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
  }
 
  .category ol{
- 	list-style: none; 
+    list-style: none; 
+    padding-left: 0;
  }
 
- .category li {
- 	padding-bottom: 1em; 
- }
-
- .category input{
+ .category input, button{
     border-radius: 15px;
     opacity: 0.8;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     display: block;  
+    margin-bottom: 5px;
  }
 
- .category input{
+ .category input {
+    width: 194px;
+    height: 30px;
+    padding: 6px 12px;
+ }
+
+ /* .category input{
       width: 19em;
       position: relative;
       left: -1em;
+ } */
 
- }
-
-#button1 button{
-    position: relative;
+.category button {
+ /*    position: relative;
+    left: 3em; */
     color: white;
-    background: orange !important;
+    background: maroon!important;
     border-style: none;
     font-size: 15px; 
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 13em;
-    left: -1em;
-    top: 1em;
-
+    width: 80%;
+    margin: 0 10%;
+    display: inline-block;
 }
-
-
-#button2 button{
-    position: relative;
-    color: white;
-    background: orange !important;
-    border-style: none;
-    font-size: 15px; 
-    font-weight: bold;
-    margin-right: auto;
-    margin-left: auto;
-    display:block; 
-    width: 13em; 
-    left: -1em;
-    top: 1em;
-}
-
-
-
 
 .category button:hover{
      box-shadow:
-                1px 1px red,
-                2px 2px red,
-                3px 3px red;
+                1px 1px chocolate,
+                2px 2px chocolate,
+                3px 3px chocolate;
         -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-   
+        transform: translateX(-3px);  
 }
 
 .category:hover{
       box-shadow:
-                1px 1px red,
-                2px 2px red,
-                3px 3px red;
+                1px 1px chocolate,
+                2px 2px chocolate,
+                3px 3px chocolate;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
 
-
-/*  MEDIA QUERIES */
-
-
-
-@media(max-width: 740px) {
-    .category {
-        height: 15%;
-        top: 30em;
-        left: 2em;
-    }
-
-    .cards{
-        margin-top: 58em; 
-    }
-}
-
-@media(min-width: 1000px){
-    html{ 
-        height: 100%; 
-    } 
-    
-}

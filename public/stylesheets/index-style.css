@@ -336,7 +336,7 @@ body {
     /* height: 45vh;  */
     width: 100%;
     margin-top: 40px;
-    height: 70vh;
+    height: 400px;
     /* line-height: 1em; */
 }
 
@@ -344,8 +344,9 @@ body {
     position: relative; 
     font-weight: lighter;
     top: 2em; 
-    font-family: 'Bahiana', cursive;
+    font-family: 'Eagle Lake', cursive;
     font-size: 95px; 
+    text-transform: uppercase;
 }
 
 .page-name h3{
