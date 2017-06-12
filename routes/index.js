@@ -108,9 +108,12 @@ router.post('/search', function(req, res){
     var date = req.body.date;
     var family = req.body.family;
     var free = req.body.free;
+    if ( free != 1){
+        free = 0;
+    }
     //selecting specific data from table Categories in our database 
-    var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
-    // var selectQuery = "SELECT * FROM Categories WHERE Category = Music OR Date = ? OR Family = ? OR Free = ?";
+    // var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
+    var selectQuery = "SELECT * FROM Categories WHERE Category = ? OR Date = ? OR Family = ? OR Free = ?";
     console.log(free);
     connection.query(selectQuery,[name,date,family,free],(error,results)=>{
         //if results are not found in the database, redirect to page w/ message > not found
@@ -121,7 +124,8 @@ router.post('/search', function(req, res){
                 //creating keys to display in category template page 
                 message: null,
                 searchArray: results,
-                category: "music"
+                category: "music",
+                title: "SEARCH"
             })
         }
     });
