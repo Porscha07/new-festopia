@@ -20,6 +20,13 @@ router.get('/', function(req, res, next) {
 
 });
 
+// Getting the Coming-Soon Page
+router.get('/construction', function(req,res){
+    res.render('construction',{
+
+    })
+});
+
 //getting the sign-in page
 router.get('/sign', function(req, res) {
     res.render('sign', {
@@ -208,7 +215,8 @@ router.get('/cat-template', function(req, res){
 //front page search ONLY
 router.post('/search', function(req, res){
 	//getting input data and turning them into variables to simplify search and pass into query  
-	var name = req.body.name;
+	var category = req.body.category;
+    var name = req.body.name;
 	var date = req.body.date;
 	var family = req.body.family;
     var free = req.body.free;
@@ -225,7 +233,7 @@ router.post('/search', function(req, res){
 				//creating keys to display in category template page 
 				message: null,
 				searchArray: results,
-                category: "music"
+                category: category
             })
 		}
 	});
