@@ -323,7 +323,7 @@ body {
 
 .page-name{  
     /* background: white;  */
-    background-image: url('Images/festopia.png');
+    background-image: url('../Images/festopia-title.png');
     /* overflow: hidden; */
     /* font-family: 'Berkshire Swash', cursive; */
     font-family: Helvetica, sans-serif;
