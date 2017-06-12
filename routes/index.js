@@ -40,6 +40,27 @@ router.get('/register', function(req, res) {
 });
 
 
+router.post('/register', (req,res)=>{
+    var name = req.body.name;
+    var email = req.body.email;
+    var password = req.body.password;
+    var user = req.body.user;
+    var age = req.body.age;
+    var zipcode = req.body.zipcode;
+    var phonenumber = req.body.phonenumber;
+
+    var insertQuery = "INSERT INTO Register (name, email, password, user, age, zipcode, phonenumber) VALUES (?,?,?,?,?,?,?)";
+
+    res.send(insertQuery);
+    connection.query(insertQuery, [name, email, password, user, age, zipcode, phonenumber], (error, results)=>{
+        if(error) throw error;
+        res.redirect('http://localhost:3000/?item=added');
+    });
+
+});
+
+
+
 //**********************BEGINNNING OF CATEGORY PAGES****************************
 
 
@@ -153,7 +174,7 @@ router.get('/art', function(req, res){
             message:message,
             searchArray:results,
             category: "art",
-            title:"Art"
+            title:"ART"
         });
     });
 
@@ -240,21 +261,25 @@ router.post('/search', function(req, res){
 
 // ************ALL FESTIVAL PAGE*************************
 router.get('/allfestivals', function(req, res) {
-    res.render('allfestivals', {});
-            var selectQuery = "SELECT * FROM Categories";
+        var message = req.query.msg;
+        //if results not found in database, create message to show on template page, else display no message
+        if(message == "sorryfestivalnotfound"){
+            message="Sorry, festival not found!"    
+        }else if (message == null){
+            message = " "
+        }
+        var selectQuery = "SELECT * FROM Categories";
         connection.query(selectQuery,(error,results)=>{
             console.log(results)
         //showing message and results for ALL category template page's
         res.render('cat-template', {
             message:message,
             searchArray:results,
-            category: category,
-            title:"All Festivals"
+            category: "allfest",
+            title:"ALL FESTIVALS"
         });
     });
-
 });
-
 
 //front page search ONLY
 router.post('/search', function(req, res){

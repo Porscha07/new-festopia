@@ -16,7 +16,7 @@ html{
 
 
 .container-fluid{
-	background: url('allfest.jpeg') no-repeat center center fixed;
+	background: url('file:///Users/Porscha/Desktop/DigitalCrafts/4-17immersive/Festopia/Festopia-App/public/Images/allfestsilver') no-repeat center center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,10 +30,10 @@ html{
 
 .header{
     background-color: orange;
-    background: -webkit-linear-gradient(left top, orange, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, orange, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, orange, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, orange, red); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left top, silver, red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, silver, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, silver, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, silver, red); /* Standard syntax (must be last) */
     color: white;
     width: 100%;
     height: 18vh;
@@ -151,10 +151,10 @@ html{
     text-transform: uppercase;
     text-align: center;
  	background: purple;
- 	background: -webkit-linear-gradient(left top, orange, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, orange, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, orange, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, orange, red); /* Standard syntax (must be last) */
+ 	background: -webkit-linear-gradient(left top, silver, red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, silver, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right,silver, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, silver, red); /* Standard syntax (must be last) */
  	-webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   	-moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
   	box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -165,20 +165,20 @@ html{
     text-decoration: none; 
  }
 
- .cards:hover{
+ .cards:red
         box-shadow:
-                1px 1px yellow,
-                2px 2px yellow,
-                3px 3px yellow;
+                1px 1px red,
+                2px 2px red,
+                3px 3px red;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
 
 .cards2:hover{
      box-shadow:
-                1px 1px yellow,
-                2px 2px yellow,
-                3px 3px yellow;
+                1px 1px red,
+                2px 2px red,
+                3px 3px red;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 
@@ -232,10 +232,10 @@ html{
     text-transform: uppercase;
     text-align: center;
     background: purple;
-    background: -webkit-linear-gradient(left top, orange, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, orange, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, orange, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, orange, red); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left top, silver, red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, silver, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, silver, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, silver, red); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -246,17 +246,17 @@ html{
 
 
  .category{
- 	position: fixed !important;
+ 	position: fixed !impored
  	padding-top: 2em;
  	top: 16em;
  	left: 5em;
  	height: 35%;
     border-radius: 5px;
  	background: purple;
- 	background: -webkit-linear-gradient(left top, orange, red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, orange, red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, orange, red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, orange, red); /* Standard syntax (must be last) */
+ 	background: -webkit-linear-gradient(left top, red, red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, red, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, red, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, red, red); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   	-moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
   	box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -324,9 +324,9 @@ html{
 
 .category button:hover{
      box-shadow:
-                1px 1px yellow,
-                2px 2px yellow,
-                3px 3px yellow;
+                1px 1px red,
+                2px 2px red,
+                3px 3px red;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
    
@@ -334,9 +334,9 @@ html{
 
 .category:hover{
       box-shadow:
-                1px 1px yellow,
-                2px 2px yellow,
-                3px 3px yellow;
+                1px 1px red,
+                2px 2px red,
+                3px 3px red;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
