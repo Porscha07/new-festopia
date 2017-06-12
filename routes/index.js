@@ -117,10 +117,7 @@ router.post('/search', function(req, res){
     var date = req.body.date;
     var family = req.body.family;
     var free = req.body.free;
-<<<<<<< HEAD
-    if (free != 1){
-        free = 0;
-=======
+
     // if ( free != 1){
     //     free = 0;
     // }
@@ -137,7 +134,6 @@ router.post('/search', function(req, res){
     }
     if (free != undefined){
         queryString.push(" AND Free = "+free);
->>>>>>> origin/master
     }
 
     var queryArray = queryString.toString().replace(',','');
