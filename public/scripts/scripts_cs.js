@@ -100,25 +100,25 @@ $(document).ready(function(){
 
 //MODALS FOR MESSAGE
 
-    $(function(){   
+    // $(function(){   
 
-              //----- OPEN
-            $('[data-modal-open3]').on('submit', function(e)  {
-                var targeted_modal_class3 = jQuery(this).attr('data-modal-open3');
-                $('[data-modal3="' + targeted_modal_class3 + '"]').fadeIn(350);
-                $('.modal-inner').show(); 
-                    console.log("it works")
-                e.preventDefault();
-            });
+    //           //----- OPEN
+    //         $('#nameSearch').on('click', function(e)  {
+    //             var targeted_modal_class3 = jQuery(this).attr('id');
+    //             $('[data-modal3="]' + targeted_modal_class3 + '"]').fadeIn(350);
+    //             $('.modal-inner').show(); 
+    //                 console.log("it works")
+    //             e.preventDefault();
+    //         });
          
-            //----- CLOSE
-            $('[data-modal-close3]').on('click', function(e)  {
-                var targeted_modal_class3 = jQuery(this).attr('data-modal-close3');
-                $('[data-modal3="' + targeted_modal_class3 + '"]').fadeOut(350);
-                    console.log("it works")
-                e.preventDefault();
-            });
-        });
+    //         //----- CLOSE
+    //         $('[data-modal-close3]').on('click', function(e)  {
+    //             var targeted_modal_class3 = jQuery(this).attr('data-modal-close3');
+    //             $('[data-modal3="' + targeted_modal_class3 + '"]').fadeOut(350);
+    //                 console.log("it works")
+    //             e.preventDefault();
+    //         });
+    //     });
 }); 
 
 

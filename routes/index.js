@@ -117,10 +117,9 @@ router.post('/search', function(req, res){
     var date = req.body.date;
     var family = req.body.family;
     var free = req.body.free;
-<<<<<<< HEAD
-    if (free != 1){
-        free = 0;
-=======
+
+
+
     // if ( free != 1){
     //     free = 0;
     // }
@@ -137,7 +136,7 @@ router.post('/search', function(req, res){
     }
     if (free != undefined){
         queryString.push(" AND Free = "+free);
->>>>>>> origin/master
+
     }
 
     var queryArray = queryString.toString().replace(',','');
@@ -172,7 +171,8 @@ router.get('/art', function(req, res){
 	var message = req.query.msg;
     	//if results not found in database, create message to show on template page, else display no message
     	if(message == "sorryfestivalnotfound"){
-    		message="Sorry, festival not found!"	
+    		message="Sorry, festival not found!"
+            	
     	}else if (message == null){
     		message = " "
     	}
