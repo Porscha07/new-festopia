@@ -20,6 +20,13 @@ router.get('/', function(req, res, next) {
 
 });
 
+// Getting the Coming-Soon Page
+router.get('/construction', function(req,res){
+    res.render('construction',{
+
+    })
+});
+
 //getting the sign-in page
 router.get('/sign', function(req, res) {
     res.render('sign', {
