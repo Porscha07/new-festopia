@@ -14,6 +14,7 @@ var connection = mysql.createConnection({
 
 
 connection.connect();
+//*********************HOME PAGE*******************************
 /* GET home page. */
 router.get('/', function(req, res, next) {
    res.render('index', { title: 'Express' });
@@ -36,6 +37,31 @@ router.get('/sign', function(req, res) {
 //getting the register page
 router.get('/register', function(req, res) {
     res.render('register', {});
+});
+
+
+//**********************BEGINNNING OF CATEGORY PAGES****************************
+
+
+// getting the template for the five categories 
+router.get('/cat-template', function(req, res){
+        var message = req.query.msg;
+        //if results not found in database, create message to show on template page, else display no message
+        if(message == "sorryfestivalnotfound"){
+            message="Sorry, festival not found!"    
+        }else if (message == null){
+            message = " "
+        }
+        //selecting everything from table Categories 
+        var selectQuery = "SELECT * FROM Categories";
+        connection.query(selectQuery,(error,results)=>{
+            //showing message and results on category template page
+        res.render('cat-template', {
+            message:message,
+            searchArray:results,
+            category: "music"
+        });
+    });
 });
 
 //getting film results and displaying them in template
@@ -108,6 +134,55 @@ router.get('/music', function(req, res){
 
 });
 
+
+//getting art results and displaying them in template
+router.get('/art', function(req, res){
+    var message = req.query.msg;
+        //if results not found in database, create message to show on template page, else display no message
+        if(message == "sorryfestivalnotfound"){
+            message="Sorry, festival not found!"    
+        }else if (message == null){
+            message = " "
+        }
+        //selecting everything from ART in table Categories 
+        var selectQuery = "SELECT * FROM Categories WHERE Category = 'Art'";
+        connection.query(selectQuery,(error,results)=>{
+            // console.log(results)
+        //showing message and results for ART category template page
+        res.render('cat-template', {
+            message:message,
+            searchArray:results,
+            category: "art",
+            title:"Art"
+        });
+    });
+
+});
+//getting food results and displaying them in template
+router.get('/food', function(req, res){
+    var message = req.query.msg;
+        //if results not found in database, create message to show on template page, else display no message
+        if(message == "sorryfestivalnotfound"){
+            message="Sorry, festival not found!"    
+        }else if (message == null){
+            message = " "
+        }
+        //selecting everything from Food in table Categories 
+        var selectQuery = "SELECT * FROM Categories WHERE Category = 'food'";
+        connection.query(selectQuery,(error,results)=>{
+            console.log(results)
+        //showing message and results for FILM category template page
+        res.render('cat-template', {
+            message:message,
+            searchArray:results,
+            category: "food",
+            title:"FOOD"
+        });
+    });
+
+});
+//*****************SEARCH PAGE FOR ALL CATEGORIES**************************
+
 //searching for all festivals
 router.post('/search', function(req, res){
     // console.log(req.body);
@@ -118,8 +193,11 @@ router.post('/search', function(req, res){
     var family = req.body.family;
     var free = req.body.free;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
     // if ( free != 1){
     //     free = 0;
     // }
@@ -136,7 +214,10 @@ router.post('/search', function(req, res){
     }
     if (free != undefined){
         queryString.push(" AND Free = "+free);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     }
 
     var queryArray = queryString.toString().replace(',','');
@@ -166,6 +247,7 @@ router.post('/search', function(req, res){
     });
 });
 
+<<<<<<< HEAD
 //getting art results and displaying them in template
 router.get('/art', function(req, res){
 	var message = req.query.msg;
@@ -201,41 +283,25 @@ router.get('/food', function(req, res){
         }
         //selecting everything from Food in table Categories 
         var selectQuery = "SELECT * FROM Categories WHERE Category = 'food'";
+=======
+// ************ALL FESTIVAL PAGE*************************
+router.get('/allfestivals', function(req, res) {
+    res.render('allfestivals', {});
+            var selectQuery = "SELECT * FROM Categories";
+>>>>>>> origin/master
         connection.query(selectQuery,(error,results)=>{
             console.log(results)
-        //showing message and results for FILM category template page
+        //showing message and results for ALL category template page's
         res.render('cat-template', {
             message:message,
             searchArray:results,
-            category: "food",
-            title:"FOOD"
+            category: category,
+            title:"All Festivals"
         });
     });
 
 });
 
-
-
-// getting the template for the five categories 
-router.get('/cat-template', function(req, res){
-    	var message = req.query.msg;
-    	//if results not found in database, create message to show on template page, else display no message
-    	if(message == "sorryfestivalnotfound"){
-    		message="Sorry, festival not found!"	
-    	}else if (message == null){
-    		message = " "
-    	}
-    	//selecting everything from table Categories 
-		var selectQuery = "SELECT * FROM Categories";
-		connection.query(selectQuery,(error,results)=>{
-			//showing message and results on category template page
-    	res.render('cat-template', {
-    		message:message,
-    		searchArray:results,
-            category: "music"
-    	});
-    });
-});
 
 //front page search ONLY
 router.post('/search', function(req, res){

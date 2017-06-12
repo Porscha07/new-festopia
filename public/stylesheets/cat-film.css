@@ -1,63 +1,63 @@
-*{
-	box-sizing: border-box;
-}
-
-html, body, .container-fluid{
-	height: 100%;
-	min-width: 100%
-}
+/* *{
+    box-sizing: border-box;
+} */
 
 
-
-html{
-	overflow-y: hidden;
-}
+/* html{
+    overflow-y: hidden;
+} */
 
 html, .container-fluid{
-	background: url('https://hollywoodglee.files.wordpress.com/2017/01/screen-shot-2017-01-02-at-8-14-30-pm.png?w=736') no-repeat center center fixed;
-	-webkit-background-size: cover;
+    background: url('https://hollywoodglee.files.wordpress.com/2017/01/screen-shot-2017-01-02-at-8-14-30-pm.png?w=736') no-repeat center center fixed;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-
 }
-
 
 
 /*START HEADER BANNER*/
 
-#header{
-	width: 100%;
-	height: 100%;
+/* .title {
+    width: 100%;
+    height: 100%;
+} */
+
+.title {
+    background-color: purple;
+    background: -webkit-linear-gradient(left top, deepskyblue, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, deepskyblue, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, deepskyblue, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, deepskyblue, blue); /* Standard syntax (must be last) */
+    color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    /* margin-top: 1em; */
+    /* padding: 0em 0em 2.97em 1em; */
+    /* margin-left: -1em; */
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */  
 }
 
-#header h1{
-	background-color: purple;
-	background: -webkit-linear-gradient(left top, gold, blue); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, gold, blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, gold, blue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, gold, blue); /* Standard syntax (must be last) */
+.sidebar {
+    z-index: 3;
+}
+
+span.title-waxon {
     color: white;
-    width: 102%;
-    height: 14vh;
-    position: absolute;
-    top: -1em;
-    margin-top: 1em;
-    padding: 0em 0em 2.97em 1em;
-    margin-left: -1em;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  	-moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  	box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-    
+    font-size: 80px;
 }
 
 
  /* START SOCIAL MEDIA ICONS*/
  .fa {
     position: relative;
-    top: 3.3em;
-    left: 77em;
+    top: 0;
+    left: 0;
     padding: 15px;
     width: 41px;
     height: 41px;
@@ -65,69 +65,27 @@ html, .container-fluid{
     text-decoration: none;
     margin: 12px 2px;
     border-radius: 51%;
+    background: #444;
+    color: white;
 }
-
 
 .fa:hover {
     opacity: 0.7; 
     color: black;
-    background-color: black; 
-    text-decoration: none; 
-  
-}
-
-
-
-/* Facebook */
-.fa-facebook {
-    background: #444;
-    color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-    background: #444;
-    color: white;
-}
-
-/* Instagram*/
-.fa-instagram {
-  background: #444;
-  color: white;
-}
-
-/* Snapshat*/
-.fa-snapchat-ghost {
-  background: #444;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  border-color: black;
-}
-
-/* Tumblr*/
-.fa-tumblr {
-  background: #444;
-  color: white;
+    background-color: cyan; 
+    text-decoration: none;   
 }
 
 /* END OF HEADER BANNER*/
 
-
-#home a{
-    position: absolute;
+div#home.col-sm-2.home > a {
+    /* position: absolute;
     left: 4em;
-    top: 2.5em;
+    top: 2.5em; */
+    margin-top: 60px;
     color: white;
     font-size: 20px;
-    
 }
-
-#home a:hover{
-    animation-timing-function: ease;
-    animation-name: gohome;
-    animation-duration: 3s;
-
-} 
 
 @keyframes gohome {
    from{right: 10px; 
@@ -136,26 +94,38 @@ html, .container-fluid{
    }
 }
 
+div#home.col-sm-2.home > a:hover{
+    animation-timing-function: ease !important;
+    animation-name: gohome !important;
+    animation-duration: 3s !important;
+} 
 
+div.main-content {
+    margin-top: 160px;
+}
 
  /**************START RESULT CARDS**********/
+
  .cards{
- 	position: absolute !important;
- 	left: 45em;
- 	top: 14em;
- 	height: 45vh;
- 	color: white;
+    /* position: absolute !important;
+    left: 45em;
+    top: 14em;
+    height: 45vh; */
+    color: white;
     border-radius: 5px; 
     text-transform: uppercase;
     text-align: center;
- 	background: purple;
- 	background: -webkit-linear-gradient(left top, blue, gold); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, blue, gold); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, blue, gold); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, blue, gold); /* Standard syntax (must be last) */
- 	-webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  	-moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  	box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    background: purple;
+    min-width: 250px;
+    min-height: 250px;
+    margin-bottom: 50px;
+    background: -webkit-linear-gradient(left top, deepskyblue, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, deepskyblue, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, deepskyblue, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, deepskyblue, blue); /* Standard syntax (must be last) */
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
  }
 
  .cards a{
@@ -165,39 +135,21 @@ html, .container-fluid{
 
  .cards:hover{
         box-shadow:
-                1px 1px black,
-                2px 2px black,
-                3px 3px black;
+                1px 1px cyan,
+                2px 2px cyan,
+                3px 3px cyan;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
-
-.cards2:hover{
-     box-shadow:
-                1px 1px black,
-                2px 2px black,
-                3px 3px black;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-
-}
-
- .cards2 a{
-    color: white;
-    text-decoration: none; 
-
- }
 
  .card  a:hover{
     text-decoration: underline;
     color: skyblue !important;
  }
 
- .cards2 a:hover{
-    text-decoration: underline;
-    color: skyblue !important;
-
- }
+.card-image {
+    min-height: 110px;
+}
 
  .card-image  img{
     display: block; 
@@ -205,65 +157,32 @@ html, .container-fluid{
     height: 50%;
     margin-right: auto;
     margin-left: auto;
-
- }
-
- .card-image2 img{
-    display: block; 
-    width: 50%;
-    height: 50%;
-    margin-right: auto;
-    margin-left: auto;
-
- }
-
- .cards2{
-    position: absolute !important;
-    left: 72em;
-    top: 14em;
-    height: 45vh;
-    color: white;
-    border-radius: 5px; 
-    text-transform: uppercase;
-    text-align: center;
-    background: purple;
-    background: -webkit-linear-gradient(left top, gold, blue); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, gold, blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, gold, blue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, gold, blue); /* Standard syntax (must be last) */
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-    box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
  }
 
  
 /******SEARCH CARD STYLES********/
 
-
  .category{
- 	position: fixed !important;
- 	padding-top: 2em;
- 	top: 17em;
- 	left: 5em;
- 	height: 34.5vh;
+    position: fixed !important;
+    padding-top: 20px;
+    top: 200px;
+    left: 5%;
+    height: 250px;
+    width: 250px;
     border-radius: 5px;
- 	background: purple;
- 	background: -webkit-linear-gradient(left top, gold,blue); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, gold,blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, gold, blue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, gold, blue); /* Standard syntax (must be last) */
+    background: purple;
+    background: -webkit-linear-gradient(left top, deepskyblue, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, deepskyblue, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, deepskyblue, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, deepskyblue, blue); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  	-moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  	box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
  }
 
  .category ol{
- 	list-style: none; 
- }
-
- .category li {
- 	padding-bottom: 1em; 
+    list-style: none; 
+    padding-left: 0;
  }
 
  .category input, button{
@@ -273,41 +192,49 @@ html, .container-fluid{
     margin-right: auto;
     margin-left: auto;
     display: block;  
+    margin-bottom: 5px;
  }
 
- .category input{
+ .category input {
+    width: 194px;
+    height: 30px;
+    padding: 6px 12px;
+ }
+
+ /* .category input{
       width: 19em;
       position: relative;
       left: -1em;
+ } */
 
- }
-
-.category button{
-    position: relative;
-    left: 3em;
+.category button {
+ /*    position: relative;
+    left: 3em; */
     color: white;
-    background: grey !important;
+    background: deepskyblue !important;
     border-style: none;
     font-size: 15px; 
     font-weight: bold;
-    width: 18em;
+    width: 80%;
+    margin: 0 10%;
+    display: inline-block;
 }
 
 .category button:hover{
      box-shadow:
-                1px 1px black,
-                2px 2px black,
-                3px 3px black;
+                1px 1px cyan,
+                2px 2px cyan,
+                3px 3px cyan;
         -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-   
+        transform: translateX(-3px);  
 }
 
 .category:hover{
       box-shadow:
-                1px 1px black,
-                2px 2px black,
-                3px 3px black;
+                1px 1px cyan,
+                2px 2px cyan,
+                3px 3px cyan;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
+
