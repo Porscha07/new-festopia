@@ -1,45 +1,39 @@
 $(document).ready(function(){
 
 
-
     //ANIMATIONS FOR THE RESULT CARDS//
 
-
-    $(function(){
- 
-        $('#family').click(function(e){
-            $(".cards").toggle("bounce", "slow");
-            $(".cards2").toggle("bounce", "slow");
-                // console.log("it works") 
-            e.preventDefault();
-        });
-    });
-
-
-
-    $(function(){
+     $(function(){
         
-        $('#free').click(function(e){
-            $(".cards").toggle("bounce", "slow");
-            $(".cards2").toggle("bounce", "slow");
+
+          //----- OPEN
+        $('[data-modal-open]').on('click', function(e)  {
+            var targeted_modal_class = jQuery(this).attr('data-modal-open');
+            $('[data-modal="' + targeted_modal_class + '"]').fadeIn(350);
+            $('.modal-inner').show(); 
+                console.log("it works")
+     
             e.preventDefault();
         });
-    
-    });
 
 
 
 
+        
+
+    // $('.modal-inner').hide(); 
 
        	//MODALS FOR LOGIN/CREATE ACCOUNT
     $(function(){
-        
+
+
        	  //----- OPEN
         $('[data-modal-open]').on('click', function(e)  {
             var targeted_modal_class = jQuery(this).attr('data-modal-open');
             $('[data-modal="' + targeted_modal_class + '"]').fadeIn(350);
             $('.modal-inner').show(); 
             	console.log("it works")
+     
             e.preventDefault();
         });
      
@@ -47,6 +41,7 @@ $(document).ready(function(){
         $('[data-modal-close]').on('click', function(e)  {
             var targeted_modal_class = jQuery(this).attr('data-modal-close');
             $('[data-modal="' + targeted_modal_class + '"]').fadeOut(350);
+     
             e.preventDefault();
         });
     });
@@ -63,6 +58,7 @@ $(document).ready(function(){
             $('[data-modal1="' + targeted_modal_class1 + '"]').fadeIn(350);
             $('.modal-inner1').show(); 
             	console.log("it works")
+     
             e.preventDefault();
         });
      
@@ -71,6 +67,8 @@ $(document).ready(function(){
             var targeted_modal_class1 = jQuery(this).attr('data-modal-close1');
             $('[data-modal1="' + targeted_modal_class1 + '"]').fadeOut(350);
             	console.log("it works")
+
+     
             e.preventDefault();
         });
     });
@@ -86,6 +84,7 @@ $(document).ready(function(){
             $('[data-modal2="' + targeted_modal_class2 + '"]').fadeIn(350);
             $('.modal-inner2').show(); 
             	console.log("it works")
+     
             e.preventDefault();
         });
      
@@ -94,32 +93,14 @@ $(document).ready(function(){
             var targeted_modal_class2 = jQuery(this).attr('data-modal-close2');
             $('[data-modal2="' + targeted_modal_class2 + '"]').fadeOut(350);
             	console.log("it works")
+
+     
             e.preventDefault();
         });
-    }); 
-
-//MODALS FOR MESSAGE
-
-    $(function(){   
-
-              //----- OPEN
-            $('[data-modal-open3]').on('submit', function(e)  {
-                var targeted_modal_class3 = jQuery(this).attr('data-modal-open3');
-                $('[data-modal3="' + targeted_modal_class3 + '"]').fadeIn(350);
-                $('.modal-inner').show(); 
-                    console.log("it works")
-                e.preventDefault();
-            });
-         
-            //----- CLOSE
-            $('[data-modal-close3]').on('click', function(e)  {
-                var targeted_modal_class3 = jQuery(this).attr('data-modal-close3');
-                $('[data-modal3="' + targeted_modal_class3 + '"]').fadeOut(350);
-                    console.log("it works")
-                e.preventDefault();
-            });
-        });
+    });
 }); 
+
+
 
 
 

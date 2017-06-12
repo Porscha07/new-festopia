@@ -1,0 +1,11 @@
+body {
+  background-image: url("/images/coming-soon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
