@@ -41,7 +41,7 @@ router.get('/film', function(req, res){
     		message = " "
     	}
     	//selecting everything from FILM in table Categories 
-		var selectQuery = "SELECT * FROM Categories WHERE Category = 'Film'";
+		var selectQuery = "SELECT * FROM Categories WHERE Category = 'film'";
 		connection.query(selectQuery,(error,results)=>{
 			console.log(results)
 		//showing message and results for FILM category template page
@@ -64,7 +64,7 @@ router.get('/culture', function(req, res){
             message = " "
         }
         //selecting everything from culture in table Categories 
-        var selectQuery = "SELECT * FROM Categories WHERE Category = 'Culture'";
+        var selectQuery = "SELECT * FROM Categories WHERE Category = 'culture'";
         connection.query(selectQuery,(error,results)=>{
             console.log(results)
         //showing message and results for Culture category template page
@@ -87,7 +87,7 @@ router.get('/music', function(req, res){
             message = " "
         }
         //selecting everything from FILM in table Categories 
-        var selectQuery = "SELECT * FROM Categories WHERE Category = 'Music'";
+        var selectQuery = "SELECT * FROM Categories WHERE Category = 'music'";
         connection.query(selectQuery,(error,results)=>{
             console.log(results)
         //showing message and results for FILM category template page
@@ -103,8 +103,10 @@ router.get('/music', function(req, res){
 
 //searching for all festivals
 router.post('/search', function(req, res){
+    console.log(req.body);
     //getting input data and turning them into variables to simplify search and pass into query  
     var name = req.body.name;
+    var category = req.body.category;
     var date = req.body.date;
     var family = req.body.family;
     var free = req.body.free;
@@ -115,17 +117,19 @@ router.post('/search', function(req, res){
     // var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
     var selectQuery = "SELECT * FROM Categories WHERE Category = ? OR Date = ? OR Family = ? OR Free = ?";
     console.log(free);
-    connection.query(selectQuery,[name,date,family,free],(error,results)=>{
+    console.log(category)
+    connection.query(selectQuery,[name,date,family,free,category],(error,results)=>{
         //if results are not found in the database, redirect to page w/ message > not found
         if(results.length == 0){
             res.redirect('/cat-template?msg=sorryfestivalnotfound')
         }else{
+            console.log(category)
             res.render('cat-template', {
                 //creating keys to display in category template page 
                 message: null,
                 searchArray: results,
-                category: "music",
-                title: "SEARCH"
+                category: category,
+                title:category
             })
         }
     });
@@ -141,7 +145,7 @@ router.get('/art', function(req, res){
     		message = " "
     	}
     	//selecting everything from FILM in table Categories 
-		var selectQuery = "SELECT * FROM Categories WHERE Category = 'Art'";
+		var selectQuery = "SELECT * FROM Categories WHERE Category = 'art'";
 		connection.query(selectQuery,(error,results)=>{
 			console.log(results)
 		//showing message and results for FILM category template page
@@ -164,7 +168,7 @@ router.get('/food', function(req, res){
             message = " "
         }
         //selecting everything from Food in table Categories 
-        var selectQuery = "SELECT * FROM Categories WHERE Category = 'Food'";
+        var selectQuery = "SELECT * FROM Categories WHERE Category = 'food'";
         connection.query(selectQuery,(error,results)=>{
             console.log(results)
         //showing message and results for FILM category template page

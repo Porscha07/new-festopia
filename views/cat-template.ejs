@@ -30,7 +30,7 @@
 					<div class="col-sm-3"> 
 						<div id = "sub-head">
 							<nav id = "header">
-								<h1>FESTOPIA <br><%=title%></h1>
+								<h1>FESTOPIA <br><span name="category" id="category"><%=title%></span></h1>
 							</nav>
 						</div>
 					</div>
@@ -39,7 +39,7 @@
 
 					<div class="col-sm-6">
 						<div id = "typing-header-wrapper">
-							<h3 id = "typing-header" clas = "text-white space-bottom-medium"></h3>
+							<h3 id = "typing-header" class = "text-white space-bottom-medium"></h3>
 							<span id = "upright-typing-cursor"></span>
 						</div>
 					</div>
@@ -86,6 +86,7 @@
 							<form id="search-form" action="/search" method="post" accept-charset="utf-8">
 								  <input type="text" placeholder="search festival name" name="name" />
 								  <input type="date" class="form-control" name="date" value= ""/>
+								  <input type="text" class="form-control" name="category" value= ""/>
 								  <!-- <select name="family"> -->
 								  	<!-- <option value="1">Yes</option> -->
 								  	<!-- <option value="0">No</option> -->
