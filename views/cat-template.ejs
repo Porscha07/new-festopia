@@ -73,6 +73,11 @@
 			</div>
 		</div>
 
+		<div class="row">
+			<div class="col-sm-2">
+				<p><%=message%></p>
+			</div>
+		</div>
 	
 		<div class="container sidebar">
 			<div class="row">
@@ -97,17 +102,7 @@
 								  Show only free events?<input type="checkbox" name="free" value="1"> 
 								  <button type="submit" id="nameSearch" class="btn btn-primary">Submit</button>
 							</form>
-								<div class="col-sm-6">
-						            <!--   USER MODAL -->
-						          <div class="col-sm-1 col-sm-offset-7" id="message-modal">
-						              <div class = "modal-open" data-modal3 = "modal-message">
-						                  <div class="modal-inner"  style="display: none;">	
-						                  	<%=message%>	
-						                      <a class="modal-close" data-modal-close3="modal-message" href="#">x</a>	
-						               		</div>
-						           		</div>
-				          			</div>
-				          		</div>	
+									
 						</li>
 
 						<!-- <li> -->
@@ -134,9 +129,22 @@
 			</div>
 		</div>
 
+		<!-- <div class="col-sm-6"> -->
+            <!--   MESSAGE MODAL -->
+         <!--  <div class="col-sm-1 col-sm-offset-7" id="message-modal">
+              <div class = "modal-open" data-modal3 = "modal-message">
+                  <div class="modal-inner" style = "display: none;">	
+                  	<p></p>	
+                      <a class="modal-close" data-modal-close3="modal-message" href="#">x</a>	
+               		</div>
+           		</div>
+  			</div>
+  		</div>
+ -->
  
 						<!-- START RESULT CARDS -->
 				
+		
 			<div class= "container right1">
 				<div class="row">
 				<%for(let i = 0; i < searchArray.length; i++){ %>
@@ -160,7 +168,11 @@
 				<%}%>
 				</div>
 			</div>
+			
 
+			
+	
+    		
 	</div>
 
 
