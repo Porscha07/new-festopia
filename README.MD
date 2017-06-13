@@ -62,11 +62,11 @@ Our first challenge was mastering Github and Source Tree as a group. Despite eac
 
 Challenge 2:
 Our second challenge was transmitting the data from the browser to a database. First, it was difficult to narrow our search to a particular request. 
-![problem](/images/problem.jpg)
+![alt text](/Images/problem.JPG)
 
 
 To solve this issue, we added a category input tag so the information would be kept on corresponding page to be returned.
-	![solution](/images/solution.jpg)
+	![alt text](/Images/solution.JPG)
 
 [Porscha Johnson]:<https://github.com/Porscha07>
 [Carla Severe]: <https://github.com/csevere>
