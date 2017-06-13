@@ -41,6 +41,7 @@ router.get('/register', function(req, res) {
 
 
 router.post('/register', (req,res)=>{
+    
     var name = req.body.name;
     var email = req.body.email;
     var password = req.body.password;
@@ -51,7 +52,7 @@ router.post('/register', (req,res)=>{
 
     var insertQuery = "INSERT INTO Register (name, email, password, user, age, zipcode, phonenumber) VALUES (?,?,?,?,?,?,?)";
 
-    res.send(insertQuery);
+    // res.send(insertQuery);
     connection.query(insertQuery, [name, email, password, user, age, zipcode, phonenumber], (error, results)=>{
         if(error) throw error;
         res.redirect('http://localhost:3000/?item=added');
