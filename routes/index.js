@@ -198,7 +198,7 @@ router.get('/food', function(req, res){
             message:message,
             searchArray:results,
             category: "food",
-            title:"FOOD"
+            title:"FOOD & BEVERAGE"
         });
     });
 
@@ -259,49 +259,11 @@ router.post('/search', function(req, res){
             })
         }
     });
-});
-
-
-//getting art results and displaying them in template
-router.get('/art', function(req, res){
-	var message = req.query.msg;
-    	//if results not found in database, create message to show on template page, else display no message
-    	if(message == "sorryfestivalnotfound"){
-    		message="Sorry, festival not found!"
-            	
-    	}else if (message == null){
-    		message = " "
-    	}
-    	//selecting everything from ART in table Categories 
-		var selectQuery = "SELECT * FROM Categories WHERE Category = 'Art'";
-		connection.query(selectQuery,(error,results)=>{
-			// console.log(results)
-		//showing message and results for ART category template page
-    	res.render('cat-template', {
-    		message:message,
-    		searchArray:results,
-    		category: "art",
-            title:"Art"
-    	});
-    });
-
-});
-//getting food results and displaying them in template
-router.get('/food', function(req, res){
-    var message = req.query.msg;
-        //if results not found in database, create message to show on template page, else display no message
-        if(message == "sorryfestivalnotfound"){
-            message="Sorry, festival not found!"    
-        }else if (message == null){
-            message = " "
-        }
-        //selecting everything from Food in table Categories 
-        var selectQuery = "SELECT * FROM Categories WHERE Category = 'food'";
- });       
+});     
 
 // ************ALL FESTIVAL PAGE*************************
 router.get('/allfestivals', function(req, res) {
-    res.render('allfestivals', {});
+    // res.render('allfestivals', {});
             var selectQuery = "SELECT * FROM Categories";
 
         var message = req.query.msg;
@@ -323,34 +285,6 @@ router.get('/allfestivals', function(req, res) {
         });
     });
 });
-
-//front page search ONLY
-router.post('/search', function(req, res){
-	//getting input data and turning them into variables to simplify search and pass into query  
-	var category = req.body.category;
-    var name = req.body.name;
-	var date = req.body.date;
-	var family = req.body.family;
-    var free = req.body.free;
-
-	//selecting specific data from table Categories in our database 
-	// var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
-    var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ? OR Free = ?";
-	connection.query(selectQuery,[name,date,family,free],(error,results)=>{
-		//if results are not found in the database, redirect to page w/ message > not found
-		if(results.length == 0){
-			res.redirect('/cat-template?msg=sorryfestivalnotfound')
-		}else{
-			res.render('cat-template', {
-				//creating keys to display in category template page 
-				message: null,
-				searchArray: results,
-                category: category
-            })
-		}
-	});
-});
-
 
 
 

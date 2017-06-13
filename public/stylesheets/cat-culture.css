@@ -1,11 +1,3 @@
-/* *{
-    box-sizing: border-box;
-} */
-
-
-/* html{
-    overflow-y: hidden;
-} */
 
 html, .container-fluid{
     background: url('https://www.dragonboatatlanta.com/assets/uploads/2016/02/cultural-events.jpg') no-repeat center center fixed;
@@ -19,14 +11,6 @@ body{
     font-family: 'Heebo', sans-serif;
 }
 
-
-/*START HEADER BANNER*/
-
-/* .title {
-    width: 100%;
-    height: 100%;
-} */
-
 .title {
     background-color: purple;
     background: -webkit-linear-gradient(left top, pink, coral); /* For Safari 5.1 to 6.0 */
@@ -39,9 +23,6 @@ body{
     position: fixed;
     top: 0;
     z-index: 2;
-    /* margin-top: 1em; */
-    /* padding: 0em 0em 2.97em 1em; */
-    /* margin-left: -1em; */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */  
@@ -60,7 +41,6 @@ span.title-waxon {
     color: white;
     font-size: 80px;
 }
-
 
  /* START SOCIAL MEDIA ICONS*/
  .fa {
@@ -88,18 +68,18 @@ span.title-waxon {
 /* END OF HEADER BANNER*/
 
 div#home.col-sm-2.home > a {
-    /* position: absolute;
-    left: 4em;
-    top: 2.5em; */
+    position: fixed;
+    left: 40px;
+    top: 0;
     margin-top: 60px;
     color: white;
     font-size: 20px;
 }
 
 @keyframes gohome {
-   from{right: 10px; 
+   from{left: 40px; 
    }
-   to{left: -1px;
+   to{left: 10px;
    }
 }
 
@@ -116,17 +96,14 @@ div.main-content {
  /**************START RESULT CARDS**********/
 
  .cards{
-    /* position: absolute !important;
-    left: 45em;
-    top: 14em;
-    height: 45vh; */
     color: white;
     border-radius: 5px; 
+    padding-top: 10px;
     text-transform: uppercase;
     text-align: center;
     background: purple;
     min-width: 250px;
-    min-height: 250px;
+    height: 250px;
     margin-bottom: 50px;
     background: -webkit-linear-gradient(left top, pink, coral); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, pink, coral); /* For Opera 11.1 to 12.0 */
@@ -158,6 +135,8 @@ div.main-content {
 
 .card-image {
     min-height: 110px;
+    max-height: 110px;
+    overflow: hidden;
 }
 
  .card-image  img{
@@ -167,7 +146,6 @@ div.main-content {
     margin-right: auto;
     margin-left: auto;
  }
-
  
 /******SEARCH CARD STYLES********/
 
@@ -211,15 +189,7 @@ div.main-content {
     padding: 6px 12px;
  }
 
- /* .category input{
-      width: 19em;
-      position: relative;
-      left: -1em;
- } */
-
 .category button {
- /*    position: relative;
-    left: 3em; */
     color: white;
     background: pink !important;
     border-style: none;
