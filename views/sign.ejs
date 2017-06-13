@@ -21,40 +21,29 @@
 
 <!-- - HTML FOR SIGN IN FORM STARTS HERE - -->
 <div class="container">
-  <div class="progress-bar">
-  
-  </div>
-  
+
  <header>  
-  <h1 class="title">Sign In</h1>
+    <h1 class="title text-center">Sign In</h1>
 </header>
 
-<div class="form-container">  
-      <span class="alerta"> Field is Required</span>
-  <form class="formed">
+    <div class="row">
+      <div class="col-sm-12 text-center">
       
-    <ul>
-      <li data-stage="1" class="form-section selected">
-        <label>What's your User Name?</label>
-        <input placeholder="i.e FestivalFiend73107"></input>
-      </li>
-      <li data-stage="2" class="form-section">
-  <label>What's your Password?</label>
-        <input placeholder="Enter Password Here"></input></li>
-    </ul>
-  </form>
-</div>
+        <form class="form-inline" action="/sign" method="post">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="User Name" name="user" />
+            </div> <br/>
+            <div class="input-group">
+              <input type="password" class="form-control" placeholder="*****" name="password" />
+            </div> <br/>
+            <div>
+             <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
 
-  <span class="counter"><span>1</span>/2</span>
-  <nav>     
-    <ul>
-      <li data-stage="1" class="selected"></li>
-      <li data-stage="2"></li>
-    </ul>
-  </nav>
-  <button id="nextStage" class="continue-btn"> 
-    Continue
-  </button>
+      </div>
+    </div>
   
 </div>
 

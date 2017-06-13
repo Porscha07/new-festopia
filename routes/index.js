@@ -34,6 +34,25 @@ router.get('/sign', function(req, res) {
     });
 });
 
+
+router.post('/sign', function(req, res) {
+    var user = req.body.user;
+    var password = req.body.password;
+    var selectQuery = "SELECT * FROM Register WHERE user = ?";
+    connection.query(selectQuery, [user], function(error, results) {
+        if (results.length == 1) {
+            var match = bcrypt.compareSync(password, results[0].password);
+            if (match == true) {
+                res.redirect('/');
+            }else {
+                res.redirect('/sign?msg=badlogin');
+            }
+        }else {
+            res.redirect('/sign?msg=badlogin');
+        }
+    })
+})
+
 //getting the register page
 router.get('/register', function(req, res) {
     res.render('register', {});
@@ -49,11 +68,13 @@ router.post('/register', (req,res)=>{
     var age = req.body.age;
     var zipcode = req.body.zipcode;
     var phonenumber = req.body.phonenumber;
+    var hash = bcrypt.hashSync(password);
+
 
     var insertQuery = "INSERT INTO Register (name, email, password, user, age, zipcode, phonenumber) VALUES (?,?,?,?,?,?,?)";
 
     // res.send(insertQuery);
-    connection.query(insertQuery, [name, email, password, user, age, zipcode, phonenumber], (error, results)=>{
+    connection.query(insertQuery, [name, email, hash, user, age, zipcode, phonenumber], (error, results)=>{
         if(error) throw error;
         res.redirect('http://localhost:3000/?item=added');
     });
