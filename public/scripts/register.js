@@ -4,7 +4,7 @@ var state = {
   stage: 1
 };
 
-var totalStages = 7;
+var totalStages = 8;
 
 
 function reducer(action,state) {
