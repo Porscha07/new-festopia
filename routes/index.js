@@ -30,9 +30,35 @@ router.get('/construction', function(req,res){
 
 //getting the sign-in page
 router.get('/sign', function(req, res) {
+     var message = req.query.msg;
+         if(message == "badlogin"){
+            message="Incorrect Login"    
+        }else if (message == null){
+            message = " "
+        }
     res.render('sign', {
+        message:message
     });
 });
+
+
+router.post('/sign', function(req, res) {
+    var user = req.body.user;
+    var password = req.body.password;
+    var selectQuery = "SELECT * FROM Register WHERE user = ?";
+    connection.query(selectQuery, [user], function(error, results) {
+        if (results.length == 1) {
+            var match = bcrypt.compareSync(password, results[0].password);
+            if (match == true) {
+                res.redirect('/');
+            }else {
+                res.redirect('/sign?msg=badlogin');
+            }
+        }else {
+            res.redirect('/sign?msg=badlogin');
+        }
+    })
+})
 
 //getting the register page
 router.get('/register', function(req, res) {
@@ -49,11 +75,13 @@ router.post('/register', (req,res)=>{
     var age = req.body.age;
     var zipcode = req.body.zipcode;
     var phonenumber = req.body.phonenumber;
+    var hash = bcrypt.hashSync(password);
+
 
     var insertQuery = "INSERT INTO Register (name, email, password, user, age, zipcode, phonenumber) VALUES (?,?,?,?,?,?,?)";
 
     // res.send(insertQuery);
-    connection.query(insertQuery, [name, email, password, user, age, zipcode, phonenumber], (error, results)=>{
+    connection.query(insertQuery, [name, email, hash, user, age, zipcode, phonenumber], (error, results)=>{
         if(error) throw error;
         res.redirect('http://localhost:3000/?item=added');
     });
@@ -235,15 +263,7 @@ router.post('/search', function(req, res){
     }
 
     var queryArray = queryString.toString().replace(',','');
-    console.log(queryString);
-    console.log(queryArray);
-    //selecting specific data from table Categories in our database 
-    // var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
     var selectQuery ="SELECT * FROM Categories WHERE Category = ?" + queryArray;
-    // var selectQuery = "SELECT * FROM Categories WHERE Category = ? AND Name = ? OR Date = ? OR Family = ? OR Free = ?";
-    // console.log(free);
-    // console.log(category)
-    console.log(selectQuery);
     connection.query(selectQuery,[category,name,date,family,free],(error,results)=>{
         //if results are not found in the database, redirect to page w/ message > not found
         if(results.length == 0){
