@@ -1,7 +1,7 @@
 # Festopia
 
 ## About
-Festopia connects users to festivals in the metro-Atlanta area. Users can search for festivals using a variety of filters to narrow their festival list to the perfect festival that works for them. Check it ou [here].
+Festopia connects users to festivals in the metro-Atlanta area. Users can search for festivals using a variety of filters to narrow their festival list to the perfect festival that works for them. Check it out [here].
 
 
 ## Team Members
