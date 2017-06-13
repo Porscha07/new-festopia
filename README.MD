@@ -42,23 +42,17 @@ Home Page
 Our home page features links to all listed festivals. It also allows the user to quickly narrow their search by picking a category. The home page has several other features, such as social media buttons, that can be used to share the page in addition to a google map of Metro Atlanta. 
 
 
-[ INSERT PICTURE ]
-
-
 
 Category Page
 Each festival category has its own page. Users can refine their search via festival name, date, selecting only family-friendly events, or selecting only free events. 
 
 
 
-[INSERT PICTURE(1 per category) ]
-
 
 All Festivals Pages
 
 We also provided a page containing all of the festivals in our database.
 
-[ INSERT PICTURE ]
 
 Challenges
 
@@ -68,11 +62,11 @@ Our first challenge was mastering Github and Source Tree as a group. Despite eac
 
 Challenge 2:
 Our second challenge was transmitting the data from the browser to a database. First, it was difficult to narrow our search to a particular request. 
-![problem](/images/problem.JPG "problem")
+![problem](/images/problem.jpg "problem")
 
 
 To solve this issue, we added a category input tag so the information would be kept on corresponding page to be returned.
-	![solution](/images/solution.JPG "solution")
+	![solution](/images/solution.jpg"solution")
 
 [Porscha Johnson]:<https://github.com/Porscha07>
 [Carla Severe]: <https://github.com/csevere>
