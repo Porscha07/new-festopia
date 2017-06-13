@@ -15,6 +15,10 @@ html, .container-fluid{
     background-size: cover;
 }
 
+body{
+    font-family: 'Heebo', sans-serif;
+}
+
 
 /*START HEADER BANNER*/
 
@@ -42,6 +46,11 @@ html, .container-fluid{
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */  
 }
+
+.title h1{
+    font-family: 'Eagle Lake', cursive !important; 
+}
+
 
 .sidebar {
     z-index: 3;
@@ -170,7 +179,7 @@ div.main-content {
     height: 250px;
     width: 250px;
     border-radius: 5px;
-    background: purple;
+    color: white; 
     background: -webkit-linear-gradient(left top, #00cc00, green); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, #00cc00, green); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, #00cc00, green); /* For Firefox 3.6 to 15 */

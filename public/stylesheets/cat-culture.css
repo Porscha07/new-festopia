@@ -15,6 +15,10 @@ html, .container-fluid{
     background-size: cover;
 }
 
+body{
+    font-family: 'Heebo', sans-serif;
+}
+
 
 /*START HEADER BANNER*/
 
@@ -42,6 +46,11 @@ html, .container-fluid{
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */  
 }
+
+.title h1{
+    font-family: 'Eagle Lake', cursive !important; 
+}
+
 
 .sidebar {
     z-index: 3;
@@ -135,9 +144,9 @@ div.main-content {
 
  .cards:hover{
         box-shadow:
-                1px 1px magenta,
-                2px 2px magenta,
-                3px 3px magenta;
+                1px 1px white,
+                2px 2px white,
+                3px 3px white;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
@@ -169,6 +178,7 @@ div.main-content {
     left: 5%;
     height: 250px;
     width: 250px;
+    color: white;
     border-radius: 5px;
     background: purple;
     background: -webkit-linear-gradient(left top, pink, coral); /* For Safari 5.1 to 6.0 */
@@ -222,18 +232,18 @@ div.main-content {
 
 .category button:hover{
      box-shadow:
-                1px 1px magenta,
-                2px 2px magenta,
-                3px 3px magenta;
+                1px 1px white,
+                2px 2px white,
+                3px 3px white;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);  
 }
 
 .category:hover{
       box-shadow:
-                1px 1px magenta,
-                2px 2px magenta,
-                3px 3px magenta;
+                1px 1px white,
+                2px 2px white,
+                3px 3px white;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }

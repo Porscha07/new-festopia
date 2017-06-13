@@ -85,13 +85,13 @@ body {
     padding:40px;
     position:fixed;
     top:100px;
-    left:100px;
+    left:350px;
     /* -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%); */
     box-shadow:0px 2px 6px rgba(0,0,0,1);
-    background:rgba(84,176,243,0.7);
-    border-radius: 3%; 
-    color: #ff8000;
+    background:rgba(84,176,243,0.8);
+    border-radius: 10px; 
+    color: white;
     z-index: 1;  
 }
  
@@ -142,13 +142,13 @@ body {
     padding:40px;
     position:fixed;
     top:100px;
-    left:100px;
+    left:350px;
     /* -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%); */
     box-shadow:0px 2px 6px rgba(0,0,0,1);
-    background:rgba(84,176,243,0.7);
-    border-radius: 3%; 
-    color: #ff8000; 
+    background:rgba(84,176,243,0.8);
+    border-radius: 10px; 
+    color: white; 
     z-index: 1; 
 }
  
@@ -199,13 +199,13 @@ body {
     padding:40px;
     position:fixed;
     top:100px;
-    left:100px;
+    left:350px;
     /* -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%); */
     box-shadow:0px 2px 6px rgba(0,0,0,1);
-    background:rgba(84,176,243,0.7);
-    border-radius: 3%; 
-    color: #ff8000;  
+    background:rgba(84,176,243,0.8);
+    border-radius: 10px; 
+    color: white;  
     z-index: 1;
 }
  
@@ -238,7 +238,7 @@ body {
 }
 
 #login{
-    border: 3px solid #ff8000;
+    border: 3px solid white;
     height: 10em;
     width: 10em;
     position: relative;
@@ -248,24 +248,23 @@ body {
 
 #login img{
     position: relative;
-    left: 3.5em;
-    top: -1em;
-    width: 3em;
-    height: 3em;
+    left: 3em;
+    top: -1.5em;
+    width: 4em;
+    height: 4em;
 }
 
-#login h3{
-    position: relative;
-    left: 2.9em;
-    top: 5em;
-}
 
 #login a{
-    color: #ff8000;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 9em; 
+    font-family: 'Heebo', sans-serif;
 }
 
 #join{
-    border: 3px solid #ff8000;
+    border: 3px solid white;
     height: 10em;
     width: 10em;
     position: relative;
@@ -276,19 +275,19 @@ body {
 #join img{
     position: relative;
     left: 3.6em;
-    top: -0.9em;
-    width: 3em;
-    height: 3em;
+    top: -2.9em;
+    width: 4em;
+    height: 4em;
 }
 
-#join h3{
-    position: relative;
-    left: 1em;
-    top: 5.1em;
-}
 
 #join a{
-    color: #ff8000;
+    position: relative; 
+    top: 9em;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    text-decoration: none; 
 }
 
 .search-item input{
@@ -302,7 +301,7 @@ body {
     width: 1.5em;
     height: 1.5em;
     position: relative;
-    top: -1em;
+    top: -2em;
     left: 41em;
 }
 
@@ -434,7 +433,7 @@ body {
     position: absolute;
     text-align: center;
     background:rgba(84,176,243,0.7);
-    border-radius: 3%;
+    border-radius: 10px;
     width: 15em;
     padding-top: 10px;
     padding-right: 30px;
