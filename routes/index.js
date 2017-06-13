@@ -214,11 +214,6 @@ router.post('/search', function(req, res){
     var date = req.body.date;
     var family = req.body.family;
     var free = req.body.free;
-<<<<<<< HEAD
-    if (free != 1){
-        free = 0;
-=======
->>>>>>> 018cd54cdc6e750977fa539a8800b5c3b62b3914
 
     // if ( free != 1){
     //     free = 0;
@@ -236,10 +231,7 @@ router.post('/search', function(req, res){
     }
     if (free != undefined){
         queryString.push(" AND Free = "+free);
-<<<<<<< HEAD
-=======
 
->>>>>>> 018cd54cdc6e750977fa539a8800b5c3b62b3914
     }
 
     var queryArray = queryString.toString().replace(',','');
@@ -267,11 +259,7 @@ router.post('/search', function(req, res){
             })
         }
     });
-<<<<<<< HEAD
-
-=======
 });     
->>>>>>> 018cd54cdc6e750977fa539a8800b5c3b62b3914
 
 // ************ALL FESTIVAL PAGE*************************
 router.get('/allfestivals', function(req, res) {
