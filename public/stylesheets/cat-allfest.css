@@ -1,3 +1,4 @@
+chocolate to maroon
 /* *{
     box-sizing: border-box;
 } */
@@ -29,15 +30,15 @@ body{
 
 .title {
     background-color: purple;
-    background: -webkit-linear-gradient(left top,  chocolate, maroon); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right,  chocolate, maroon); /* For Opera 11.1 to 12.0 */
+    background: -webkit-linear-gradient(left top, chocolate, maroon); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, chocolate, maroon); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, chocolate, maroon); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right chocolate, maroon); /* Standard syntax (must be last) */
+    background: linear-gradient(to bottom right, chocolate, maroon); /* Standard syntax (must be last) */
     color: white;
     width: 100%;
     height: 100px;
     position: fixed;
-    top: -1em;
+    top: 0;
     z-index: 2;
     /* margin-top: 1em; */
     /* padding: 0em 0em 2.97em 1em; */
@@ -58,7 +59,9 @@ body{
 
 span.title-waxon {
     color: white;
-    font-size: 54px;
+    font-size: 55px;
+    font-weight: lighter;
+    line-height: 52px;
 }
 
 
@@ -81,25 +84,32 @@ span.title-waxon {
 .fa:hover {
     opacity: 0.7; 
     color: black;
-    background-cochocolate; 
+    background-color: gold; 
     text-decoration: none;   
 }
 
 /* END OF HEADER BANNER*/
 
 div#home.col-sm-2.home > a {
-    /* position: absolute;
-    left: 4em;
-    top: 2.5em; */
+    position: fixed;
+    left: 40px;
+    top: 0;
     margin-top: 60px;
     color: white;
     font-size: 20px;
 }
 
-@keyframes gohome {
+/* @keyframes gohome {
    from{right: 10px; 
    }
    to{left: -1px;
+   }
+} */
+
+@keyframes gohome {
+   from{left: 40px; 
+   }
+   to{left: 10px;
    }
 }
 
@@ -121,6 +131,7 @@ div.main-content {
     top: 14em;
     height: 45vh; */
     color: white;
+    padding-top: 10px;
     border-radius: 5px; 
     text-transform: uppercase;
     text-align: center;
@@ -144,16 +155,16 @@ div.main-content {
 
  .cards:hover{
         box-shadow:
-                1px 1px maroon,
-                2px 2px maroon,
-                3px 3px maroon;
+                1px 1px gold,
+                2px 2px gold,
+                3px 3px gold;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
 
  .card  a:hover{
     text-decoration: underline;
-    colorchocolate !important;
+    color: skyblue !important;
  }
 
 .card-image {
@@ -179,11 +190,11 @@ div.main-content {
     height: 250px;
     width: 250px;
     border-radius: 5px;
-    color: white;
+    color: white; 
     background: -webkit-linear-gradient(left top, chocolate, maroon); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, chocolate, maroon); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, chocolate, maroon); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, chocolate, maroon; /* Standard syntax (must be last) */
+    background: linear-gradient(to bottom right, chocolate, maroon); /* Standard syntax (must be last) */
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 3px 20px 0px #777272;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -220,7 +231,7 @@ div.main-content {
  /*    position: relative;
     left: 3em; */
     color: white;
-    background: maroon!important;
+    background: chocolate !important;
     border-style: none;
     font-size: 15px; 
     font-weight: bold;
@@ -231,18 +242,18 @@ div.main-content {
 
 .category button:hover{
      box-shadow:
-                1px 1px chocolate,
-                2px 2px chocolate,
-                3px 3px chocolate;
+                1px 1px gold,
+                2px 2px gold,
+                3px 3px gold;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);  
 }
 
 .category:hover{
       box-shadow:
-                1px 1px chocolate,
-                2px 2px chocolate,
-                3px 3px chocolate;
+                1px 1px gold,
+                2px 2px gold,
+                3px 3px gold;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
