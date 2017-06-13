@@ -193,11 +193,6 @@ router.post('/search', function(req, res){
     var family = req.body.family;
     var free = req.body.free;
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
     // if ( free != 1){
     //     free = 0;
     // }
@@ -214,10 +209,7 @@ router.post('/search', function(req, res){
     }
     if (free != undefined){
         queryString.push(" AND Free = "+free);
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
     }
 
     var queryArray = queryString.toString().replace(',','');
@@ -247,7 +239,7 @@ router.post('/search', function(req, res){
     });
 });
 
-<<<<<<< HEAD
+
 //getting art results and displaying them in template
 router.get('/art', function(req, res){
 	var message = req.query.msg;
@@ -283,12 +275,13 @@ router.get('/food', function(req, res){
         }
         //selecting everything from Food in table Categories 
         var selectQuery = "SELECT * FROM Categories WHERE Category = 'food'";
-=======
+ });       
+
 // ************ALL FESTIVAL PAGE*************************
 router.get('/allfestivals', function(req, res) {
     res.render('allfestivals', {});
             var selectQuery = "SELECT * FROM Categories";
->>>>>>> origin/master
+
         connection.query(selectQuery,(error,results)=>{
             console.log(results)
         //showing message and results for ALL category template page's
