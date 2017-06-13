@@ -295,6 +295,7 @@ body {
     height: 3em;
     position: relative;
     top: 0em; 
+    color: black;
 }
 
 .search-item img{
