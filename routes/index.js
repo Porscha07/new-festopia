@@ -300,11 +300,9 @@ router.get('/food', function(req, res){
 
 // ************ALL FESTIVAL PAGE*************************
 router.get('/allfestivals', function(req, res) {
-<<<<<<< HEAD
     res.render('allfestivals', {});
             var selectQuery = "SELECT * FROM Categories";
 
-=======
         var message = req.query.msg;
         //if results not found in database, create message to show on template page, else display no message
         if(message == "sorryfestivalnotfound"){
@@ -313,7 +311,6 @@ router.get('/allfestivals', function(req, res) {
             message = " "
         }
         var selectQuery = "SELECT * FROM Categories";
->>>>>>> origin/master
         connection.query(selectQuery,(error,results)=>{
             console.log(results)
         //showing message and results for ALL category template page's

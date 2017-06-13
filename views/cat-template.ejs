@@ -3,7 +3,7 @@
 <head>
 	
 
-   	<link rel="stylesheet" type ="text/css" href="./stylesheets/cat-temp.css"/>
+   	<!-- <link rel="stylesheet" type ="text/css" href="./stylesheets/cat-temp.css"/> -->
 
    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -62,25 +62,10 @@
 		<div class="row">
 			<div class="col-sm-2 home" id="home">
 					<a href="/">
-
-						<div>< Go Home</div>
-
-						
+						<< Go Home
 					</a>
 			</div>
 		</div>
-
-		<div class="row">
-			<div class="col-sm-2">
-				<p><%=message%></p>
-			</div>
-		</div>
-	
-		<div class="container sidebar">
-			<div class="row">
-	           	<!--  START SIDE BAR MENU -->
-				<div class="col-md-4 category">
-					<div class=" message-test">
 
 		<div class="row main-content">
 			<div class="col-sm-4 sidebar">
@@ -140,72 +125,13 @@
 							</li> -->
 						</ol> 
 					</div>
-
-					<ol class = "sidebar-cat">
-						<li>
-							<form id="search-form" action="/search" method="post" accept-charset="utf-8">
-								  <input type="text" placeholder="search festival name" name="name" />
-								  <input type="date" class="form-control" name="date" value= ""/>
-								  <input type="text" class="form-control" name="category" value= "<%=title%>" style="display: none;"/>
-								  <!-- <select name="family"> -->
-								  	<!-- <option value="1">Yes</option> -->
-								  	<!-- <option value="0">No</option> -->
-								  <!-- </select> -->
-								  Show only family friendly events?<input type="checkbox" name="family" value="1"> 
-								  Show only free events?<input type="checkbox" name="free" value="1"> 
-								  <button type="submit" id="nameSearch" class="btn btn-primary">Submit</button>
-							</form>
-									
-						</li>
-
-						<!-- <li> -->
-							<!-- <div class="input-date"> -->
-								<!-- <input type="date" class="form-control" name="date" value= ""/> -->
-							<!-- </div> -->
-						<!-- </li> -->
-
-
-						<!-- <li>
-							<div id = "button1">
-								<button type="button" name="family" id="family" class="btn btn-primary">Family-Friendly</button>
-							</div>	
-						</li> -->
-
-
-						<!-- <li>
-							<div id="button2">
-								<button type="button" name="free" id = "free" class="btn btn-primary">Free</button>
-							</div>
-						</li> -->
-					</ol> 
-
 				</div>
 			</div>
-
-
-		<!-- <div class="col-sm-6"> -->
-            <!--   MESSAGE MODAL -->
-         <!--  <div class="col-sm-1 col-sm-offset-7" id="message-modal">
-              <div class = "modal-open" data-modal3 = "modal-message">
-                  <div class="modal-inner" style = "display: none;">	
-                  	<p></p>	
-                      <a class="modal-close" data-modal-close3="modal-message" href="#">x</a>	
-               		</div>
-           		</div>
-  			</div>
-  		</div>
- -->
- 
-						<!-- START RESULT CARDS -->
-				
-		
-			<div class= "container right1">
 
 	 
 							<!-- START RESULT CARDS -->
 					
 			<div class= "col-sm-8 right1">
-
 				<div class="row">
 				<%for(let i = 0; i < searchArray.length; i++){ %>
 					<div class= "col-sm-3 col-sm-offset-1 result cards">
@@ -228,19 +154,7 @@
 				<%}%>
 				</div>
 			</div>
-
-			
-
-			
-	
-    		
-	</div>
-
-
-
-
 		</div>
-
 	
 	</div>
 </body>

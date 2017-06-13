@@ -352,7 +352,7 @@ body {
 .page-name h3{
     position: relative;
     top: 8em;
-    font-family: 'Holtwood One SC', serif;
+    font-family: 'Heebo', sans-serif;
     font-weight: lighter;
     font-size: 22px; 
     color: white !important;
@@ -472,7 +472,7 @@ ol{
     list-style: none;
 }
 
-/*  START CAROUSEL*/
+/*  MAIN PAGE*/
 
 .four{
     background-color: gray;
@@ -482,12 +482,12 @@ ol{
     /* margin-top: 6em;  */   
 }
 
-.six{
-    background-color: yellow;
+/*.six{
+    background-color: yellow*/;
     /* grid-row: span 1/2; */
-    width: 100%;
+ /*   width: 100%;
     
-}
+}*/
 
 .seven{
     /* grid-row: span 1; */
