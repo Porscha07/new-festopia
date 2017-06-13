@@ -30,7 +30,14 @@ router.get('/construction', function(req,res){
 
 //getting the sign-in page
 router.get('/sign', function(req, res) {
+     var message = req.query.msg;
+         if(message == "badlogin"){
+            message="Incorrect Login"    
+        }else if (message == null){
+            message = " "
+        }
     res.render('sign', {
+        message:message
     });
 });
 
@@ -256,15 +263,7 @@ router.post('/search', function(req, res){
     }
 
     var queryArray = queryString.toString().replace(',','');
-    console.log(queryString);
-    console.log(queryArray);
-    //selecting specific data from table Categories in our database 
-    // var selectQuery = "SELECT * FROM Categories WHERE Name = ? OR Date = ? OR Family = ?";
     var selectQuery ="SELECT * FROM Categories WHERE Category = ?" + queryArray;
-    // var selectQuery = "SELECT * FROM Categories WHERE Category = ? AND Name = ? OR Date = ? OR Family = ? OR Free = ?";
-    // console.log(free);
-    // console.log(category)
-    console.log(selectQuery);
     connection.query(selectQuery,[category,name,date,family,free],(error,results)=>{
         //if results are not found in the database, redirect to page w/ message > not found
         if(results.length == 0){
