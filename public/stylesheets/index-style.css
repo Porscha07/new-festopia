@@ -343,6 +343,7 @@ video {
     /* font-weight: lighter; */
     /* position: absolute; */
     /* left: 0em;  */
+    opacity: 0.8; 
     text-align: center;
     font-size: 95px;
     color: #f4bc33;
