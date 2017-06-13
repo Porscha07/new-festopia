@@ -197,7 +197,7 @@ router.get('/food', function(req, res){
             message:message,
             searchArray:results,
             category: "food",
-            title:"FOOD"
+            title:"FOOD & BEVERAGE"
         });
     });
 

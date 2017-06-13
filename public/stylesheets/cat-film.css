@@ -134,7 +134,7 @@ div.main-content {
     text-align: center;
     background: purple;
     min-width: 250px;
-    min-height: 250px;
+    height: 250px;
     margin-bottom: 50px;
     background: -webkit-linear-gradient(left top, deepskyblue, blue); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, deepskyblue, blue); /* For Opera 11.1 to 12.0 */
@@ -166,6 +166,8 @@ div.main-content {
 
 .card-image {
     min-height: 110px;
+    max-height: 110px;
+    overflow: hidden;
 }
 
  .card-image  img{
