@@ -25,50 +25,91 @@
   </div>
   
  <header>  
-  <h1 class="title">Create An Account</h1>
+    <h1 class="title">Create An Account</h1>
 </header>
 <div class="form-container">  
       <span class="alerta"> Field is required</span>
-  <form class="formed">
+  <form action="/register" class="formed" method="post">
       
-    <ul>
+   <!--  <ul>
         <li data-stage="1" class="form-section selected">
             <label>What's your name?</label>
-            <input placeholder="Rob Bunch"></input>
+            <input placeholder="Rob Bunch" name="name"></input>
         </li>
 
         <li data-stage="2" class="form-section">
             <label>What's your email adress?</label>
-            <input placeholder="something@something.something"></input>
+            <input placeholder="something@something.something" name="email"></input>
         </li>
 
         <li data-stage="3" class="form-section">
             <label>Create a user name</label>
-            <input placeholder="Username"></input>
+            <input placeholder="Username" name="user"></input>
         </li>
 
         <li data-stage="4" class="form-section">
             <label>Create a password</label>
-            <input placeholder="*****"></input>
+            <input placeholder="*****" name="password"></input>
         </li>
 
         <li data-stage="5" class="form-section">
             <label>Enter your age</label>
-            <input placeholder="18"></input>
+            <input placeholder="18" name="age" type="number"></input>
         </li>
 
         <li data-stage="6" class="form-section">
             <label>Enter your zipcode</label>
-            <input placeholder="90210"></input>
+            <input placeholder="90210" name="zipcode" type="number"></input>
         </li>
         <li data-stage="7" class="form-section">
             <label>Enter your phone number</label>
-            <input placeholder="555-555-5555"></input>
+            <input placeholder="555-555-5555" name="phonenumber" type="tel"></input>
+            <button type="submit">Submit</button>
+        </li>
+        <li data-stage="8" class="form-section" id="thankYou">
+          Thank you for your Submission
         </li>
     </ul>
-  </form>
+  </form> -->
+
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+      
+        <form class="form-inline" action="/register" method="post">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Name" name="name" />
+            </div>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="email@email.com" name="email" />
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Username" name="user" />
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="password" name="password" />
+            </div>
+            <div class="input-group">
+              <input type="number" class="form-control" placeholder="age" name="age" />
+            </div>
+            <div class="input-group">
+              <input type="number" class="form-control" placeholder="zipcode" name="zipcode" />
+            </div>
+            <div class="input-group">
+              <input type="number" class="form-control" placeholder="phonenumber" name="phonenumber" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+
+<!-- 
 </div>
-  <span class="counter"><span>1</span>/7</span>
+  <span class="counter"><span>1</span>/8</span>
   <nav>     
     <ul>
       <li data-stage="1" class="selected"></li>
@@ -82,7 +123,7 @@
   </nav>
   <button id="nextStage" class="continue-btn"> 
     Continue
-  </button>
+  </button> -->
   
 </div>
 

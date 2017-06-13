@@ -62,6 +62,13 @@ function setFormState(isValid,action) {
   }
 }
 
+ //prevent submissions
+//  $(".form-section").click(function(event){
+//     event.preventDefault();
+// });
+
+
+
   // attach event handlers to the document
   $('#nextStage').click(function(event) {
     setFormState(getInputState(),'NEXT_STAGE');
