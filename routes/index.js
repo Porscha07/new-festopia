@@ -226,7 +226,7 @@ router.get('/food', function(req, res){
             message:message,
             searchArray:results,
             category: "food",
-            title:"FOOD & BEVERAGE"
+            title:"FOOD"
         });
     });
 
@@ -282,9 +282,9 @@ router.post('/search', function(req, res){
 });     
 
 // ************ALL FESTIVAL PAGE*************************
-router.get('/allfestivals', function(req, res) {
+router.get('/festivals', function(req, res) {
     // res.render('allfestivals', {});
-            var selectQuery = "SELECT * FROM Categories";
+        var selectQuery = "SELECT * FROM Categories";
 
         var message = req.query.msg;
         //if results not found in database, create message to show on template page, else display no message
@@ -300,8 +300,8 @@ router.get('/allfestivals', function(req, res) {
         res.render('cat-template', {
             message:message,
             searchArray:results,
-            category: "allfest",
-            title:"ALL FESTIVALS"
+            category: "festivals",
+            title:"FESTIVALS"
         });
     });
 });
