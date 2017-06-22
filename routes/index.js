@@ -240,6 +240,7 @@ router.post('/search', function(req, res){
     var name = req.body.name;
     var category = req.body.category;
     var date = req.body.date;
+    new Date(Date.parse(date.replace('-','/','g')));
     var family = req.body.family;
     var free = req.body.free;
 
