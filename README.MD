@@ -11,7 +11,7 @@ Festopia is a web application that connects users to festivals throughout metro-
 - [Daniel Oliva]
 
 
-## Tools Used for This Project
+## Languages and Technologies
 
 
 ##### Front End
@@ -28,19 +28,23 @@ HTML |  CSS | JavaScript | jQuery
 
 ## Team Strategy
 
-Porscha initially thought of the idea and over the course of the following weeks our group formed. 
+A month before the project started, we got together in meetings to brainstorm our project's scope and functionality by creating mock-ups, discussing required technologies, and finalizing our team's strategy. We incorporated the agile project management methodology throughout our planning process by developing an agressive sprint schedule with focused objectives and stretch goals. No APIs were available for our project, so we individually researched festivals and created a database based on five categories (food, culture, music, art, film). We mob programmed the backend and individually programmed the frontend portion of the pages. 
 
-We incorporated the agile project management methodology throughout our planning process by developing an agressive sprint schedule with focused objectives and stretch goals. Microsoft OneNote and SourceTree were helpful tools with organization as well. 
-
-Our early team meetings consisted of brainstorming the design and layout of the website. We mob programmed the backend of the category pages along with the styles of the register and login pages. For data purposes, we could not find an API that lists festivals in Atlanta, if any exists. Instead, we found festivals through google searches and created a database of festivals based on five categories (food, culture, music, art, film) using Sequel Pro. We individually contributed to pages to accomplish new tasks that arose and to fill in gaps in our plans.
 
 
 ##Site Walkthrough
 
+<<<<<<< HEAD
+##Site Walkthrough
+
 ##Home Page
+=======
+###Home Page
+>>>>>>> 61fb51f2e7dd34527c8c9a5ec61416f7910f24dd
 
 Our home page features links to all listed festivals. It also allows the user to quickly narrow their search by picking a category. The home page has several other features, such as social media buttons, that can be used to share the page in addition to a google map of Metro Atlanta. 
 
+![Alt text](/Images/fest_home.png)
 
 
 ##Category Page
