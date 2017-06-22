@@ -35,32 +35,32 @@ We incorporated the agile project management methodology throughout our planning
 Our early team meetings consisted of brainstorming the design and layout of the website. We mob programmed the backend of the category pages along with the styles of the register and login pages. For data purposes, we could not find an API that lists festivals in Atlanta, if any exists. Instead, we found festivals through google searches and created a database of festivals based on five categories (food, culture, music, art, film) using Sequel Pro. We individually contributed to pages to accomplish new tasks that arose and to fill in gaps in our plans.
 
 
-Site Walkthrough
+##Site Walkthrough
 
-Home Page
+##Home Page
 
 Our home page features links to all listed festivals. It also allows the user to quickly narrow their search by picking a category. The home page has several other features, such as social media buttons, that can be used to share the page in addition to a google map of Metro Atlanta. 
 
 
 
-Category Page
+##Category Page
 Each festival category has its own page. Users can refine their search via festival name, date, selecting only family-friendly events, or selecting only free events. 
 
 
 
 
-All Festivals Pages
+##All Festivals Pages
 
 We also provided a page containing all of the festivals in our database.
 
 
-Challenges
+##Challenges
 
-Challenge 1:
+##Challenge 1:
 Our first challenge was mastering Github and Source Tree as a group. Despite each having Github profiles, we had zero experience working with other people on one repository. Knowing this, we dedicated much of the first day to learning the process through reading and testing. By the end of the project, we were comfortable using these tools and created a competition to get the most commits. 
 
 
-Challenge 2:
+##Challenge 2:
 Our second challenge was transmitting the data from the browser to a database. First, it was difficult to narrow our search to a particular request. 
 ![alt text](/Images/problem.JPG)
 

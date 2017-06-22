@@ -36,7 +36,7 @@ video {
     /* background-color: #54b0f3; */
     background-color: #f4bc33;
     /* background-image: url('http://i.imgur.com/kGsm0uk.gif'); */
-    width: 100%;
+    width: 102%;
     height: 50px;
     position: fixed;
     top: 0px; 
@@ -328,17 +328,18 @@ video {
 
 .two{
     /* grid-row: 2/3; */
-    width: 136%;
+ /*    width: 136%; */
     /* height: 50px; */
     /* margin-top: -1em;    */
 }
 
 
-.page-name{  
+
+.fest-title{  
     /* background: white;  */
     background-image: url('../Images/festopia-title.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
   /*   position: relative;
     left:  3.5em; */
     /* overflow: hidden; */
@@ -354,8 +355,11 @@ video {
     /* height: 45vh;  */
     width: 100%;
     margin-top: 40px;
-    height: 565px;
+    height: 509px;
     /* line-height: 1em; */
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+
 }
 
 .page-name h1{
