@@ -32,19 +32,17 @@ A month before the project started, we got together in meetings to brainstorm ou
 
 
 
-##Site Walkthrough
+## Site Walkthrough
 
-<<<<<<< HEAD
-##Site Walkthrough
 
-##Home Page
-=======
-###Home Page
->>>>>>> 61fb51f2e7dd34527c8c9a5ec61416f7910f24dd
+### Home Page
+
 
 Our home page features links to all listed festivals. It also allows the user to quickly narrow their search by picking a category. The home page has several other features, such as social media buttons, that can be used to share the page in addition to a google map of Metro Atlanta. 
 
-![Alt text](/Images/fest_home.png)
+<p align='center'>
+	<img src="public/Images/screenshots/fest_home.png">
+</p>
 
 
 ##Category Page
