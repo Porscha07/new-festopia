@@ -45,24 +45,37 @@ Our home page features links to all listed festivals. It also allows the user to
 </p>
 
 
-##Category Page
+## Category Page
 Each festival category has its own page. Users can refine their search via festival name, date, selecting only family-friendly events, or selecting only free events. 
 
+<p align='center'>
+	<img src="public/Images/screenshots/music.png">
+</p>
+
+
+<p align='center'>
+	<img src="public/Images/screenshots/film.png">
+</p>
 
 
 
-##All Festivals Pages
+
+ 
+## All Festivals Pages
 
 We also provided a page containing all of the festivals in our database.
 
+<p align='center'>
+	<img src="public/Images/screenshots/allfest.png">
+</p>
 
-##Challenges
+## Challenges
 
-##Challenge 1:
+### Challenge 1:
 Our first challenge was mastering Github and Source Tree as a group. Despite each having Github profiles, we had zero experience working with other people on one repository. Knowing this, we dedicated much of the first day to learning the process through reading and testing. By the end of the project, we were comfortable using these tools and created a competition to get the most commits. 
 
 
-##Challenge 2:
+### Challenge 2:
 Our second challenge was transmitting the data from the browser to a database. First, it was difficult to narrow our search to a particular request. 
 ![alt text](/Images/problem.JPG)
 
