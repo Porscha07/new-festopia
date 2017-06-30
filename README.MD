@@ -34,13 +34,9 @@ A month before the project started, we got together in meetings to brainstorm ou
 
 ## Site Walkthrough
 
-<<<<<<< HEAD
-###Home Page
-=======
 
 ### Home Page
 
->>>>>>> 68c2eac81f11a93446ae0bce75b546af8c6256e6
 
 Our home page features links to all listed festivals. It also allows the user to quickly narrow their search by picking a category. The home page has several other features, such as social media buttons, that can be used to share the page in addition to a google map of Metro Atlanta. 
 
@@ -88,7 +84,7 @@ Our second challenge was transmitting the data from the browser to a database. F
 
 To solve this issue, we added a category input tag so the information would be kept on corresponding page to be returned.
 	<p align='center'>
-	<img src="public/Images/Festopia-problem2.png">
+	<img src="public/Images/Festopia-solution1.png">
 </p>
 
 [Porscha Johnson]:<https://github.com/Porscha07>
