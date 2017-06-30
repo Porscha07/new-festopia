@@ -235,12 +235,14 @@ router.get('/food', function(req, res){
 
 //searching for all festivals
 router.post('/search', function(req, res){
+    console.log("TESTING")
     // console.log(req.body);
     //getting input data and turning them into variables to simplify search and pass into query  
     var name = req.body.name;
     var category = req.body.category;
     var date = req.body.date;
-    new Date(Date.parse(date.replace('-','/','g')));
+    // var newDate = new Date(Date.parse(date.replace('-','/','g')));
+    // console.log(newDate)
     var family = req.body.family;
     var free = req.body.free;
 
@@ -253,18 +255,23 @@ router.post('/search', function(req, res){
         queryString.push(" AND Name = '"+name+"'");
     }
     if (date != ''){
-        queryString.push(" AND Date = "+date);
+        queryString.push(" AND Date = '"+date + "'");
     }
     if (family != undefined){
         queryString.push(" AND Family = "+family);
     }
     if (free != undefined){
         queryString.push(" AND Free = "+free);
-
+    }
+    if (category != ''){
+        queryString.push(" AND Category ='"+category + "'");
     }
 
+
     var queryArray = queryString.toString().replace(',','');
-    var selectQuery ="SELECT * FROM Categories WHERE Category = ?" + queryArray;
+        // console.log(queryArray)
+    var selectQuery ="SELECT * FROM Categories WHERE 1" + queryArray;
+    console.log(selectQuery)
     connection.query(selectQuery,[category,name,date,family,free],(error,results)=>{
         //if results are not found in the database, redirect to page w/ message > not found
         if(results.length == 0){
@@ -296,7 +303,7 @@ router.get('/festivals', function(req, res) {
         }
         var selectQuery = "SELECT * FROM Categories";
         connection.query(selectQuery,(error,results)=>{
-            console.log(results)
+            // console.log(results)
         //showing message and results for ALL category template page's
         res.render('cat-template', {
             message:message,
