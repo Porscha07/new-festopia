@@ -32,39 +32,64 @@ A month before the project started, we got together in meetings to brainstorm ou
 
 
 
-##Site Walkthrough
+## Site Walkthrough
 
+<<<<<<< HEAD
 ###Home Page
+=======
+
+### Home Page
+
+>>>>>>> 68c2eac81f11a93446ae0bce75b546af8c6256e6
 
 Our home page features links to all listed festivals. It also allows the user to quickly narrow their search by picking a category. The home page has several other features, such as social media buttons, that can be used to share the page in addition to a google map of Metro Atlanta. 
 
-![Alt text](/Images/fest_home.png)
+<p align='center'>
+	<img src="public/Images/screenshots/fest_home.png">
+</p>
 
 
-##Category Page
+## Category Page
 Each festival category has its own page. Users can refine their search via festival name, date, selecting only family-friendly events, or selecting only free events. 
 
+<p align='center'>
+	<img src="public/Images/screenshots/music.png">
+</p>
+
+
+<p align='center'>
+	<img src="public/Images/screenshots/film.png">
+</p>
 
 
 
-##All Festivals Pages
+
+ 
+## All Festivals Pages
 
 We also provided a page containing all of the festivals in our database.
 
+<p align='center'>
+	<img src="public/Images/screenshots/allfest.png">
+</p>
 
-##Challenges
+## Challenges
 
-##Challenge 1:
+### Challenge 1:
 Our first challenge was mastering Github and Source Tree as a group. Despite each having Github profiles, we had zero experience working with other people on one repository. Knowing this, we dedicated much of the first day to learning the process through reading and testing. By the end of the project, we were comfortable using these tools and created a competition to get the most commits. 
 
 
-##Challenge 2:
+### Challenge 2:
 Our second challenge was transmitting the data from the browser to a database. First, it was difficult to narrow our search to a particular request. 
-![alt text](/Images/problem.JPG)
+<p align='center'>
+	<img src="public/Images/Festopia-problem1.png">
+</p>
 
 
 To solve this issue, we added a category input tag so the information would be kept on corresponding page to be returned.
-	![alt text](/Images/solution.JPG)
+	<p align='center'>
+	<img src="public/Images/Festopia-problem2.png">
+</p>
 
 [Porscha Johnson]:<https://github.com/Porscha07>
 [Carla Severe]: <https://github.com/csevere>
