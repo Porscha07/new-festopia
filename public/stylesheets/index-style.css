@@ -1,3 +1,4 @@
+
 html{
     overflow-x: hidden;
     height: 75%;
@@ -10,7 +11,6 @@ body {
     width: 100%;
     font-family: 'Assistant', sans-serif; 
 }
-
 video { 
     position: fixed;
     top: 50%;
@@ -23,30 +23,26 @@ video {
     transform: translateX(-50%) translateY(-50%);
 /*    transition: 1s opacity;*/
 }
-
 .container{
     /* display: grid; */
     height: 100vh; 
     width: 100%;  
 }
-
 /***** HEADER********/
-
 .one{
     /* background-color: #54b0f3; */
     background-color: #f4bc33;
     /* background-image: url('http://i.imgur.com/kGsm0uk.gif'); */
-    width: 102%;
+    width: 101%;
     height: 50px;
     position: fixed;
     top: 0px; 
     z-index: 1;
     box-shadow:0px 2px 6px rgb(191,181,182); 
 }
-
 .icons {
     float: left;
-    padding: 15px;
+    padding: 11px;
     width: 41px;
     height: 41px;
     text-align: center;
@@ -55,9 +51,7 @@ video {
     border-radius: 51%;
     background-color: #54b0f3;
     color: white;
-
 }
-
 /* Add a hover effect if you want */
 .icons:hover {
     /* opacity: 0.7; */
@@ -65,22 +59,27 @@ video {
     background-color: #ff8000;
     color: black;
 }
-
-#user-modal img{
-    width: 20px;   
+#user-items{
+    display: flex;
+    margin-right: -26em;
+    float: right;
+    padding-right: 34em;
 }
-
+#user-modal img{
+    width: 20px;  
+    /* margin-left: 2em;  */
+    
+}
 #search-modal img{
-    width: 33px; 
+    width: 33px;
+    
 }
   
-
 #question-modal img{
     width: 33px; 
+    /* margin-left: -3em; */
 }
-
 /********  MODALS *********/
-
 /* Outer */
 .modal-user {
     width:100%;
@@ -98,7 +97,7 @@ video {
     padding:40px;
     position:fixed;
     top:100px;
-    left:753px;
+    left:350px;
     /* -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%); */
     box-shadow:0px 2px 6px rgba(0,0,0,1);
@@ -135,9 +134,7 @@ video {
     background:rgba(0,0,0,1);
     text-decoration:none;
 }
-
 /*  MODALS FOR SEARCH*/
-
 /* Outer */
 .modal-user1 {
     width:100%;
@@ -192,9 +189,7 @@ video {
     background:rgba(0,0,0,1);
      text-decoration:none;
 }
-
 /*  MODALS FOR QUESTIONS*/
-
 /* Outer */
 .modal-user2 {
     width:100%;
@@ -249,7 +244,6 @@ video {
     background:rgba(0,0,0,1);
      text-decoration:none;
 }
-
 #login{
     border: 3px solid white;
     height: 10em;
@@ -258,7 +252,6 @@ video {
     left: 9em;
     top: 4.4em;
 }
-
 #login img{
     position: relative;
     left: 3em;
@@ -266,8 +259,6 @@ video {
     width: 4em;
     height: 4em;
 }
-
-
 #login a{
     color: white;
     text-align: center;
@@ -275,7 +266,6 @@ video {
     top: 9em; 
     font-family: 'Heebo', sans-serif;
 }
-
 #join{
     border: 3px solid white;
     height: 10em;
@@ -284,7 +274,6 @@ video {
     left: 25em;
     top: -6em; 
 }
-
 #join img{
     position: relative;
     left: 3.6em;
@@ -292,8 +281,6 @@ video {
     width: 4em;
     height: 4em;
 }
-
-
 #join a{
     position: relative; 
     top: 9em;
@@ -302,7 +289,6 @@ video {
     text-align: center;
     text-decoration: none; 
 }
-
 .search-item input{
     width: 100%;
     height: 3em;
@@ -310,7 +296,6 @@ video {
     top: 0em; 
     color: black;
 }
-
 .search-item img{
     width: 1.5em;
     height: 1.5em;
@@ -318,83 +303,65 @@ video {
     top: -2em;
     left: 41em;
 }
-
-
 /***** END OF HEADER********/
-
-
-
 /*  START TITLE */
-
 .two{
     /* grid-row: 2/3; */
- /*    width: 136%; */
+    /* width: 136%; */
     /* height: 50px; */
     /* margin-top: -1em;    */
 }
 
-
-
 .fest-title{  
     /* background: white;  */
-    background-image: url('../Images/festopia-title.png');
+    background-image: url('../Images/festopia-bg.png');
     background-repeat: no-repeat;
-    /* background-size: cover; */
-  /*   position: relative;
-    left:  3.5em; */
     /* overflow: hidden; */
     /* font-family: 'Berkshire Swash', cursive; */
     font-family: Helvetica, sans-serif;
     /* font-weight: lighter; */
     /* position: absolute; */
     /* left: 0em;  */
-    opacity: 0.8; 
+    opacity: 0.9; 
     text-align: center;
     font-size: 95px;
     color: #f4bc33;
-    /* height: 45vh;  */
-    width: 100%;
-    margin-top: 40px;
-    height: 509px;
+    height: 67vh; 
+    width: 100vw;
+    /* margin-top: 40px; */
+    background-size: cover;
+    margin-left: 0px;
+    
+  
     /* line-height: 1em; */
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-
 }
+
 
 .page-name h1{
     position: relative; 
     font-weight: lighter;
-    top: 2.5em; 
+    top: 4em; 
     font-family: 'Eagle Lake', cursive;
-    font-size: 95px; 
+    font-size: 1em; 
     text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; 
+    
 }
-
 .page-name h3{
     position: relative;
-    top: 10em;
+    top: 11em;
     font-family: 'Heebo', sans-serif;
     font-weight: lighter;
-    font-size: 25px; 
+    font-size: 35px; 
     color: white !important;
-    text-align: center; 
+    
 }
-
-
 /*
 .page-name img{
     width:100%;
     height: 125%;
     margin-top: -6em;
-
 }*/
-
 /********  START NAV***********/
-
 .three{
     background-color: #f4bc33;
     width: 100%;
@@ -405,17 +372,15 @@ video {
     text-transform: uppercase;
     font-family:'Heebo', sans-serif;   
 }
-
 #text a{
     text-decoration: none; 
     color: white;
     position: relative;
     left: -6em;
-
 }
-
 .nav-item2 a{
     text-transform: uppercase;
+    background-color:#f4bc33; 
     font-family:'Heebo', sans-serif; 
     color: white; 
     font-size: 20px;
@@ -423,37 +388,27 @@ video {
     text-decoration: none;
  
 }
-
 .text-center{
     background-color: #f4bc33;
 }
-
-
-
 #add-fest a{
     left: -33em;
 }
-
 #all-fest a{
     left: -16em;
 }
-
 #tickets a{
     left: -1em;
 }
-
 #map a{
     left: 9em;
     border-style: none;
 }
-
 /* DROPDOWN SECTION*/
-
 /* .dropdown {
     display: inline-block;
     float: left;
 } */
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -465,57 +420,130 @@ video {
     padding-right: 30px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-
 }
-
 .dropdown-content a{
  color: white;
-
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 /* #catDrop{
     position: relative;
     border-right: 2px dotted gray;
     padding-right: 1em;
     left: 2em;
 } */
-
  #monthDrop{
     position: relative;
     left: 6em;
 } 
-
 .month-items, .cat-items{   
     width: 100%;
 }
-
 ol{
     list-style: none;
 }
-
 /*  MAIN PAGE*/
-
 .four{
     /* grid-row: span 2/5; */
     width: 100%;
     height: 600px;
     /* margin-top: 6em;  */   
 }
-
 /*.six{
-    background-color: yellow*/;
+    background-color: yellow*/
     /* grid-row: span 1/2; */
  /*   width: 100%;
     
 }*/
-
 .seven{
     /* grid-row: span 1; */
 /*     position: fixed;
     bottom: 0; */
     width: 100%;      
 }
+/* MEDIA QUERIES */
+
+
+@media (min-width:770px){
+    .fest-title {
+        margin-left: -2em;
+        height: 61vh;
+
+    }
+    .one{
+        width: 102%;
+    }
+    .page-name h1{
+        font-size: 65px;
+    }
+    .page-name h3{
+        font-size: 23px;
+    }
+
+}
+@media (min-width:400px){
+    .fest-title {
+        margin-left: -2em;
+        height: 43vh;
+        width: 120vw;
+
+    }
+    .one{
+        width: 102%;
+    }
+    .page-name h1{
+        font-size: 65px;
+        top: 3em;
+    }
+    .page-name h3{
+        font-size: 23px;
+        top: 8em;
+    }
+    #user-items{
+        padding-right: -1px;
+    }
+    #search-modal{
+        margin-right: 2em;
+    }
+    #user{
+        margin-left: -2em;
+    }
+
+}
+
+/* Devices */
+@media only screen and (max-device-width: 1200px){
+    .page-name h1{
+        font-size: 71px;
+    }
+    .fest-title{
+        height: 29vh;
+        width: 102vw;
+        top: 14px;
+    }
+    .page-name h3{
+        top: 15vh;
+    }
+    #user-items{
+        position: relative;
+        margin-top: -45px;
+        margin-right: 188px;
+    }
+    .three.main-nav.text-center{
+        width: 61vw;
+    }
+    #second-row{
+        width: 50vh;
+    }
+}
+@media only screen and (max-device-width: 640px){
+    .page-name h1{
+        font-size: 44px;
+    }
+}
+
+
+
+
+
