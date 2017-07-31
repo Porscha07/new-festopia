@@ -169,11 +169,11 @@ router.get('/music', function(req, res){
         }else if (message == null){
             message = " "
         }
-        //selecting everything from FILM in table Categories 
+        //selecting everything from MUSIC in table Categories 
         var selectQuery = "SELECT * FROM Categories WHERE Category = 'music'";
         connection.query(selectQuery,(error,results)=>{
             console.log(results)
-        //showing message and results for FILM category template page
+        //showing message and results for MUSIC category template page
         res.render('cat-template', {
             message:message,
             searchArray:results,
