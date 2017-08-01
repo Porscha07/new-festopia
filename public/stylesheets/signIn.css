@@ -107,6 +107,8 @@ input:focus, button:focus {
 
 .title {
   color: white;
+  font-size: 4em;
+  font-weight:bold;
 }
 
 /*REGISTER CSS ENDS HERE*/
