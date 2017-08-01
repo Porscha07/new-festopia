@@ -365,10 +365,15 @@ video {
     height: 125%;
     margin-top: -6em;
 }*/
+.page-title{
+    position: relative;
+    top: -10em;
+}
+
 /********  START NAV***********/
 .three{
     background-color: #f4bc33;
-    width: 100%;
+    width: 93%;
     color:white;
     font-size: 26px;
     font-weight: bold;
@@ -376,7 +381,7 @@ video {
     text-transform: uppercase;
     font-family:'Heebo', sans-serif; 
     /* margin-top: -10em;
-    left: 0em;  */ 
+    left: 0em;   */
 }
 #second-row{
     margin-top: -14.5em;
@@ -515,8 +520,6 @@ ol{
         top: 8em;
     }
     #user-items{
-        font-size: 21px;
-        top: -9px;
         padding-right: -1px;
     }
     #search-modal{
@@ -576,8 +579,15 @@ ol{
     top: 10em;
     }
 
-
 }
+
+@media (min-width:1920px){
+    .seven-footer h2{
+        margin-top: 18em;
+        
+    }
+}
+
 /* Devices */
 /* @media(min-width:1200px){
 @media only screen and (max-device-width: 1200px){
