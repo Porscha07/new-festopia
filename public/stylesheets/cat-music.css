@@ -236,6 +236,24 @@ div.main-content {
     }
 }
 
+@media (min-width:767px){
+    span.title-waxon{
+        margin-left: 0em;
+        font-size: 38px;
+    }
+    .icons{
+        margin-top: -3em;
+        margin-right: 2em;
+        width: 42%;
+    }
+    .caategor-title{
+        margin-top: -1em;
+    }
+    .right1{
+        width: 29%;
+        margin-left: 24em;
+    }
+}
 
 @media (min-width:1280px){
     .icons{

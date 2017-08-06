@@ -33,7 +33,7 @@ video {
     /* background-color: #54b0f3; */
     background-color: #f4bc33;
     /* background-image: url('http://i.imgur.com/kGsm0uk.gif'); */
-    width: 102%;
+    width: 105%;
     height: 58px;
     padding:  7px; 
     position: fixed;
@@ -43,9 +43,9 @@ video {
 }
 .icons {
     float: left;
-    padding: 11px;
-    width: 41px;
-    height: 41px;
+    padding: 10px;
+    width: 30px;
+    height: 32px;
     text-align: center;
     margin: 3px 6px;
     text-decoration: none;
@@ -62,26 +62,28 @@ video {
 }
 #user-items{
     display: flex;
-    margin-right: -26em;
-    float: right;
-    padding-right: 34em;
+    margin-right: 22em;
+    /* float: right; */
+    padding-right: 23em;
+    margin-top: 5em;
 }
 #user-modal img{
     width: 20px;
-    margin-left: -1em;
-    margin-top: -9em;
+    margin-left: 0em;
+    margin-top: 0em;
     
 }
 #search-modal img{
     width: 33px;
-    margin-left: 109em;
-    margin-top: -9em;
+    margin-left: 0em;
+    margin-top: 0em;
 }
+
   
 #question-modal img{
     width: 33px;
-    margin-left: 87em;
-    margin-top: -9em; 
+    margin-left: 0em;
+    margin-top: 0em; 
     /* margin-left: -3em; */
 }
 /********  MODALS *********/
@@ -97,18 +99,15 @@ video {
  
 /* Inner */
 .modal-inner {
-    max-width:700px;
-    display: flex; 
-    width:90%;
-    padding:40px;
-    position:fixed;
-    top:100px;
-    left:136em;
-    /* -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%); */
-    box-shadow:0px 2px 6px rgba(0,0,0,1);
-    background:rgba(84,176,243,0.8);
-    border-radius: 10px; 
+    display: flex;
+    width: 44%;
+    padding: 62px;
+    position: fixed;
+    top: 100px;
+    left: 26em;
+    box-shadow: 0px 2px 6px rgba(0,0,0,1);
+    background: rgba(84,176,243,0.8);
+    border-radius: 10px;
     color: white;
     z-index: 1;  
 }
@@ -153,19 +152,17 @@ video {
  
 /* Inner */
 .modal-inner1 {
-    max-width:700px;
-    width:90%;
-    padding:40px;
-    position:fixed;
-    top:100px;
-    left:136em;
-    /* -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%); */
-    box-shadow:0px 2px 6px rgba(0,0,0,1);
-    background:rgba(84,176,243,0.8);
-    border-radius: 10px; 
-    color: white; 
-    z-index: 1; 
+    max-width: 700px;
+    width: 32%;
+    padding: 40px;
+    position: fixed;
+    top: 100px;
+    left: 52em;
+    box-shadow: 0px 2px 6px rgba(0,0,0,1);
+    background: rgba(84,176,243,0.8);
+    border-radius: 10px;
+    color: white;
+    z-index: 1 
 }
  
 /* Close Button */
@@ -213,7 +210,7 @@ video {
     padding:40px;
     position:fixed;
     top:100px;
-    left:145em;
+    left:25em;
     /* -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%); */
     box-shadow:0px 2px 6px rgba(0,0,0,1);
@@ -262,8 +259,8 @@ video {
 }
 #login img{
     position: relative;
-    left: 3em;
-    top: -1.5em;
+    left: -21em;
+    top: 5.5em;
     width: 4em;
     height: 4em;
 }
@@ -284,8 +281,8 @@ video {
 }
 #join img{
     position: relative;
-    left: 3.6em;
-    top: -2.9em;
+    left: -21.4em;
+    top: 4.1em;
     width: 4em;
     height: 4em;
 }
