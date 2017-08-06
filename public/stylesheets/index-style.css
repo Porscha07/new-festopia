@@ -67,20 +67,21 @@ video {
     padding-right: 34em;
 }
 #user-modal img{
-    width: 20px;  
-    /* margin-left: 2em;  */
+    width: 20px;
+    margin-left: -1em;
+    margin-top: -9em;
     
 }
 #search-modal img{
     width: 33px;
-    margin-left: 125em;
-    margin-top: 4em; 
+    margin-left: 109em;
+    margin-top: -9em;
 }
   
 #question-modal img{
     width: 33px;
-    margin-left: 125em;
-    margin-top: 4em; 
+    margin-left: 87em;
+    margin-top: -9em; 
     /* margin-left: -3em; */
 }
 /********  MODALS *********/
@@ -310,6 +311,19 @@ video {
     top: -2em;
     left: 41em;
 }
+.page-title h3{
+    height: 400px;
+    top: 37em;
+    left: 14em;
+    font-size: 21px;
+    position: relative;
+}
+.page-title h1{
+    top: 3em;
+    left: 24em;
+    font-size: 45px;
+    position: absolute;
+}
 /***** END OF HEADER********/
 /*  START TITLE */
 .two{
@@ -363,7 +377,7 @@ video {
 
 /********  START NAV***********/
 .nav-row{
-     margin-top: 19em;
+     margin-top: 0em;
      padding-bottom: 0em;
 }
 
@@ -385,7 +399,7 @@ video {
     text-decoration: none; 
     color: white;
     position: relative;
-    left: -6em;
+    left: 3em;
     font-size: 35px;
 }
 .nav-item a{
@@ -408,10 +422,13 @@ video {
 }
 
 #all-fest a{
-    left: -16em;
+    left: -6em;
     font-size: 35px;
 }
 
+#all-fest{
+    left: -6em;
+}
 #map a{
     left: 9em;
     border-style: none;
@@ -432,6 +449,7 @@ video {
     padding-top: 10px;
     padding-right: 30px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
     /* z-index: 1; */
 }
 .dropdown-content a{
@@ -444,7 +462,7 @@ video {
     position: relative;
     border-right: 2px dotted gray;
     padding-right: 1em;
-    left: 2em;
+    left: 0em;
 }
  #monthText{
     position: relative;
@@ -491,12 +509,15 @@ ol{
 
 
 /* MEDIA QUERIES */
-
+/* 
 @media (min-width:400px){
     .fest-title {
         height: 43vh;
         width: 120vw;
 
+    }
+    .img-responsive{
+        margin-top: 3em;
     }
     .one{
         width: 102%;
@@ -506,8 +527,8 @@ ol{
         top: -3em;
     }
     .page-name h3{
-        font-size: 23px;
-        top: 8em;
+       top: 2em;
+        left: 1em;
     }
     #user-items{
         padding-right: -1px;
@@ -520,9 +541,10 @@ ol{
     }
     .three{
         margin-top: -10.5em;
+        height: 4em;
     }
-    #nav-row{
-        margin-top: -39em;
+    .nav-row{
+        margin-top: 20em;
     }
     .footer-row{
         margin-top: 28em;
@@ -549,9 +571,17 @@ ol{
         font-size: 23px;
     }
 
+} */
+
+@media(min-width:1040px){
+    .three{
+        height: 6em;
+    }
+
+    .text-center a{
+
+    }
 }
-
-
 
 @media (min-width:1200px){
 

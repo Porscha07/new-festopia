@@ -92,8 +92,8 @@ div#home.col-sm-2.home > a:hover{
     animation-duration: 3s !important;
 } 
 
-div.main-content {
-    margin-top: 160px;
+.main-content {
+    margin-top: 0px;
 }
 
  /**************START RESULT CARDS**********/
@@ -149,6 +149,22 @@ div.main-content {
     margin-right: auto;
     margin-left: auto;
  }
+/* 
+ .message-test{
+    color: white;
+    position: relative;
+    top: 5em;
+    left: 16em;
+    border-radius: 15px;
+    /* height: 16vh; */
+   /*  width: 100%;
+    text-align: center;
+    line-height: 67px;
+    font-size: 30px;
+    font-weight: bolder;
+    display: visible;
+    text-shadow: 4px 1px 3px #000000; */
+/*  } */ 
  
 /******SEARCH CARD STYLES********/
 
@@ -231,6 +247,9 @@ div.main-content {
         width: 39%;
         margin-left: 60%;
         margin-top: -5%;
+    }
+    .message-test{
+        height: 0vh;
     }
 }
 

@@ -2,68 +2,40 @@
 <html>
 <head>
 	<title>Create An Account</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+<!-- Custom CSS -->
 <link rel="stylesheet" type="text/css" href="stylesheets/register.css">
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script type="text/javascript" src="scripts/register.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </head>
-
-
 <body>
 
-<div class="container">
-  <div class="progress-bar">
-  
-  </div>
-
-  @DgtlCrafts
-  
- <header>  
-    <h1 class="title">Create An Account</h1>
-</header>
-<div class="form-container"> 
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <form class="form-inline" action="/register" method="post">
-          <div class="form-group">
-            <div class="input-group col-sm-12 text-center">
-              <input type="text" class="form-control" placeholder="Name" name="name" />
-            </div>
-            <div class="input-group col-sm-12 text-center">
-              <input type="email" class="form-control" placeholder="email@email.com" name="email" />
-            </div>
-            <div class="input-group col-sm-12 text-center">
-              <input type="text" class="form-control" placeholder="Username" name="user" />
-            </div>
-            <div class="input-group col-sm-12 text-center">
-              <input type="password" class="form-control" placeholder="password" name="password" />
-            </div>
-            <div class="input-group col-sm-12 text-center">
-              <input type="number" class="form-control" placeholder="age" name="age" />
-            </div>
-            <div class="input-group col-sm-12 text-center">
-              <input type="number" class="form-control" placeholder="zipcode" name="zipcode" />
-            </div>
-            <div class="input-group col-sm-12 text-center">
-              <input type="number" class="form-control" placeholder="phonenumber" name="phonenumber" />
-            </div>
-            <div class="input-group col-sm-12 text-center">
-               <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </div>
-        </form>
-      </div>
+<div class="container-fluid">
+  <div class="home-wrapper">
+      <img src="./images/toDo-background.jpeg" class="img-responsive">
     </div>
-  
-</div>
+    <div class="form-container"> 
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <form class="form-inline" action="/register" method="post">
+              <div class="form-group">
+                <div class="input-group col-sm-12 text-center">
+                  <input type="text" class="form-control" placeholder="Name" name="name" />
+                  <input type="email" class="form-control" placeholder="email@email.com" name="email" />
+                  <input type="text" class="form-control" placeholder="Username" name="user" />
+                  <input type="password" class="form-control" placeholder="password" name="password" />
+                  <input type="number" class="form-control" placeholder="age" name="age" />
+                  <input type="number" class="form-control" placeholder="zipcode" name="zipcode" />
+                  <input type="number" class="form-control" placeholder="phonenumber" name="phonenumber" />
+                   <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+  </div>
+ </div>
 
 
 </body>
