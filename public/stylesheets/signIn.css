@@ -112,3 +112,11 @@ input:focus, button:focus {
 }
 
 /*REGISTER CSS ENDS HERE*/
+@media(min-width:400px){
+  .form-group{
+    margin-left: 8em;
+  }
+  .btn-primary{
+    margin-right: 6em;
+  }
+}
