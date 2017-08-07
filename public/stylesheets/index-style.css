@@ -131,7 +131,8 @@ video {
     -webkit-transform:translate(50%, -50%) rotate(180deg);
     transform:translate(50%, -50%) rotate(180deg);
     background:rgba(0,0,0,1);
-    text-decoration:non
+    text-decoration:none
+}
 #login{
     border: 3px solid white;
     height: 10em;
