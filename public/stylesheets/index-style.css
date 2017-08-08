@@ -11,12 +11,12 @@ body {
     width: 100%;
     font-family: 'Assistant', sans-serif; 
 }
-video { 
+#bgvid { 
     position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
+    /* min-width: 100%; */
+    /* min-height: 100%; */
     width: auto;
     height: auto;
     z-index: -100;
@@ -28,11 +28,13 @@ video {
     height: 100vh; 
     width: 100%;  
 }
+.img-responsive{
+    opacity: 0.5;
+    margin-top: 0em;
+}
 /***** HEADER********/
 .one{
-    /* background-color: #54b0f3; */
     background-color: #f4bc33;
-    /* background-image: url('http://i.imgur.com/kGsm0uk.gif'); */
     width: 105%;
     height: 58px;
     padding:  7px; 
@@ -191,11 +193,14 @@ video {
     top: -2em;
     left: 41em;
 }
+.page-title{
+    position: fixed;
+    top: -11em;
+    right: 22em;
+}
 .page-title h3{
-    height: 400px;
-    top: 37em;
-    left: 14em;
-    font-size: 21px;
+    left: 15em;
+    font-size: 25px;
     position: relative;
 }
 .page-title h1{
@@ -204,6 +209,7 @@ video {
     font-size: 45px;
     position: absolute;
 }
+
 /***** END OF HEADER********/
 /*  START TITLE */
 .two{
@@ -229,24 +235,25 @@ video {
 }
 
 
-.page-name h1{
+.page-title h1{
     font-weight: lighter;
     font-family: 'Eagle Lake', cursive;
     text-transform: uppercase;
     top: 3em;
-    font-size: 1em;
+    font-size: -12%;
     color: white;
     position: relative;
-    left: 0.5em;
+    left: 77%;
     
 }
-.page-name h3{
+#fest-finder{
     position: relative;
-    top: -13em;
+    top: 10em;
     font-family: 'Heebo', sans-serif;
     font-weight: lighter;
-    font-size: 35px; 
+    font-size: 35px;
     color: white !important;
+    right: 13em;
     
 }
 
@@ -298,7 +305,7 @@ video {
     width: 100%;
 }
 .homewrapper{
-    width: 110vw;
+    width: 100%
 }
 
 #all-fest a{
@@ -399,9 +406,6 @@ ol{
     .img-responsive{
         margin-top: 3em;
     }
-    .one{
-        width: 105%;
-    }
     .page-name h1{
         font-size: 58px;
         top: -3em;
@@ -434,7 +438,7 @@ ol{
     }
     .three{
         margin-top: -8em;
-        height: 4em;
+        /* height: 4em; */
     }
     .nav-row{
         margin-top: 20em;
