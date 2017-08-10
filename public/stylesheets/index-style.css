@@ -46,9 +46,9 @@ video {
 
 .icons {
     float: left;
-    padding: 15px;
-    width: 41px;
-    height: 41px;
+    padding: 10px;
+    width: 30px;
+    height: 32px;
     text-align: center;
     margin: 3px 6px;
     text-decoration: none;
@@ -506,4 +506,11 @@ ol{
 /*     position: fixed;
     bottom: 0; */
     width: 100%;      
+}
+
+/* MEDIA QUERIES */
+@media (min-width:400px){
+    #social-media{
+        width: ;
+    }
 }
