@@ -404,33 +404,25 @@ ol{
 
 /* MEDIA QUERIES */
 
-/* @media (min-width:400px){
-    .fest-title {
+@media (min-width:400px){
+/*     .fest-title {
         height: 43vh;
         width: 120vw;
 
-    }
+    } */
     .img-responsive{
         margin-top: 3em;
     }
-    .page-name h1{
+    .page-title h1{
         font-size: 58px;
         top: -3em;
-    }
-    .page-name h3{
-       top: 2em;
-        left: 1em;
     }
     #user-items{
         margin-left: 4em;
         margin-top: 0em;
     }
-    #search{
-        margin-left: -9em;
-        margin-top: -6em
-    }
     .modal-inner{
-        left: -2em;
+        left: 28em;
         width: 81%;
         padding: 63px;
     }
@@ -441,21 +433,26 @@ ol{
         margin-left: -2em;
     }
     #login img{
-        margin-right: 1em;
+        margin-left: 1em;
+    }
+    #login{
+        margin-right: 5em;
     }
     .three{
         margin-top: -8em;
-        /* height: 4em; */
-    
-  /*   .nav-row{
+        height: 4em;
+    }
+    #all-fest a{
+    font-size: 20px;
+    font-family: 'Eagle Lake', cursive;
+    }   
+    .nav-row{
         margin-top: 20em;
     }
     .footer-row{
         margin-top: 28em;
     }
-    .footer-row h2{
-        margin-left: -4em;
-    } */
+   
 
 
 
@@ -503,7 +500,7 @@ ol{
     top: 10em;
     }
 
-} */
+}
 
 @media (min-width:1920px){
     .page-title h1{
