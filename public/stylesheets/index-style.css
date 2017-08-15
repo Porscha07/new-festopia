@@ -407,15 +407,12 @@ ol{
     .modal-inner{
         left: 28em;
     }
-    #join{
-        margin-left: -13em;
-    }
     #login img{
         margin-left: 1em;
     }
-    #login{
+    /* #login{
         margin-right: 5em;
-    }
+    } */
     .three{
         margin-top: 0em;
         height: 2em;
