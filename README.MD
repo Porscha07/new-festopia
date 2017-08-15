@@ -41,7 +41,7 @@ A month before the project started, we got together in meetings to brainstorm ou
 Our home page features links to all listed festivals. It also allows the user to quickly narrow their search by picking a category. The home page has several other features, such as social media buttons, that can be used to share the page in addition to a google map of Metro Atlanta. 
 
 <p align='center'>
-	<img src="public/Images/screenshots/fest_home.png">
+	<img src="public/Images/fest_homepage.png">
 </p>
 
 
