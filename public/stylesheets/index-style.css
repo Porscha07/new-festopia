@@ -404,24 +404,18 @@ ol{
     .img-responsive{
         margin-top: 6em;
     }
- 
-   /*  .modal-inner{
+    .modal-inner{
         left: 28em;
-        width: 81%;
-        padding: 63px;
-    } */
-   /*  #join{
-        margin-left: -13em;
     }
-    #user{
-        margin-left: -2em;
+    #join{
+        margin-left: -13em;
     }
     #login img{
         margin-left: 1em;
     }
     #login{
         margin-right: 5em;
-    } */
+    }
     .three{
         margin-top: 0em;
         height: 2em;
