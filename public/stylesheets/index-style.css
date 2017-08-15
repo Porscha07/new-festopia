@@ -405,18 +405,23 @@ ol{
 /* MEDIA QUERIES */
 
 @media (min-width:400px){
-  /*   .page-title h1{
-        font-size: 58px;
-        top: -3em;
+   /*  .img-responsive{
+        margin-top: 3em;
+    } */
+    .page-title h1{
+        font-family:'Heebo', sans-serif;
     }
  
-    .modal-inner{
+   /*  .modal-inner{
         left: 28em;
         width: 81%;
         padding: 63px;
     } */
    /*  #join{
         margin-left: -13em;
+    }
+    #user{
+        margin-left: -2em;
     }
     #login img{
         margin-left: 1em;
