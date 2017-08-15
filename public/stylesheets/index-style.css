@@ -316,9 +316,8 @@ body {
 }
 
 #all-fest{
-    left: -6em;
     font-family: 'Eagle Lake', cursive;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 #map a{
     left: 9em;
@@ -436,103 +435,10 @@ ol{
     #catDrop{
         font-size: 28px;
     }
-    /* 
-    .nav-row{
-        margin-top: 20em;
-    } */
     .footer-row{
         margin-top: 32em;
     }
    
-
-
-
-/* 
-@media (min-width:770px){
-    .fest-title {
-        margin-left: -2em;
-        height: 61vh;
-    }
-    .one{
-        width: 102%;
-    }
-    .page-name h1{
-        font-size: 65px;
-    }
-    .page-name h3{
-        font-size: 23px;
-    }
-
-}
-
-@media(min-width:1040px){
-    .three{
-        height: 6em;
-    }
-
-    .text-center a{
-
-    }
-}
-
-@media (min-width:1200px){
-
-     .fest-title {
-        margin-left: -2em;
-        height: 60vh;
-        width: 120vw;
-    }
-    .page-name h1{
-        top: 3.5em;
-        font-size:1.5em;
-    }
-    .page-name h3{
-    font-size: 0.5em;
-    top: 10em;
-    }
-
-}
-
-@media (min-width:1920px){
-    .page-title h1{
-        top: 1.5em;
-        
-    }
-}
-
-/* Devices
-/* @media(min-width:1200px){
-@media only screen and (max-device-width: 1200px){
-    .page-name h1{
-        font-size: 71px;
-    }
-    .fest-title{
-        height: 29vh;
-        width: 102vw;
-        top: 14px;
-    }
-    .page-name h3{
-        top: 15vh;
-    }
-    #user-items{
-        position: relative;
-        margin-top: -45px;
-        margin-right: 188px;
-    }
-    .three.main-nav.text-center{
-        width: 61vw;
-    }
-    #second-row{
-        width: 50vh;
-    }
-}
-
-
-@media only screen and (max-device-width: 640px){
-    .page-name h1{
-        font-size: 44px;
-    }
-} */
 
 
 
