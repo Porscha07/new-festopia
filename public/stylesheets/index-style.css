@@ -406,16 +406,13 @@ ol{
    /*  .img-responsive{
         margin-top: 3em;
     } */
-    .page-title h1{
-        font-family:'Heebo', sans-serif;
-    }
  
    /*  .modal-inner{
         left: 28em;
         width: 81%;
         padding: 63px;
     } */
-   /*  #join{
+    #join{
         margin-left: -13em;
     }
     #user{
@@ -435,10 +432,16 @@ ol{
     font-size: 20px;
     font-family: 'Eagle Lake', cursive;
     font-family:'Heebo', sans-serif;
-    }   
+    } 
+    #text a{
+    left:-1em;
+    }  
+    #catDrop{
+        left: -1em;
+    }
     /* .nav-row{
         margin-top: 20em;
-    } */
+    }
     .footer-row{
         margin-top: 32em;
     }
