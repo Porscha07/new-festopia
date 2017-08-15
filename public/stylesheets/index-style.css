@@ -15,10 +15,10 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    /* min-width: 100%; */
-    /* min-height: 100%; */
-    width: auto;
-    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    /* width: auto;
+    height: auto; */
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
     transition: 1s opacity;
@@ -34,9 +34,9 @@ body {
 }
 /***** HEADER********/
 .one{
-    background-color: #f4bc33;
+    background-color: maroon;
     width: 105%;
-    height: 58px;
+    height: 97px;
     padding:  7px; 
     position: fixed;
     top: 0px; 
@@ -95,17 +95,17 @@ body {
  
 /* Inner */
 .modal-inner {
-    display: flex;
-    width: 44%;
-    padding: 62px;
+   display: flex;
+    width: 28%;
+    padding: 65px;
     position: fixed;
-    top: 100px;
-    left: 26em;
+    top: 105px;
+    left: 72em;
     box-shadow: 0px 2px 6px rgba(0,0,0,1);
     background: rgba(84,176,243,0.8);
     border-radius: 10px;
     color: white;
-    z-index: 1;  
+    z-index: 1;
 }
  
 /* Close Button */
@@ -239,11 +239,11 @@ body {
     font-weight: lighter;
     font-family: 'Eagle Lake', cursive;
     text-transform: uppercase;
-    top: 3em;
-    font-size: -12%;
+    top: 2em;
+    font-size: 6em;
     color: white;
     position: relative;
-    left: 77%;
+    left: 53%;
     
 }
 #fest-finder{
@@ -288,6 +288,8 @@ body {
     position: relative;
     left: 3em;
     font-size: 35px;
+    font-family: 'Eagle Lake', cursive;
+    text-transform: uppercase;
 }
 .nav-item a{
     text-transform: uppercase;
@@ -301,7 +303,7 @@ body {
 }
 
 .text-center{
-    background-color: #f4bc33;
+    background-color: maroon;
     width: 100%;
 }
 .homewrapper{
@@ -311,10 +313,14 @@ body {
 #all-fest a{
     left: -6em;
     font-size: 35px;
+    font-family: 'Eagle Lake', cursive;
+    text-transform: uppercase;
 }
 
 #all-fest{
     left: -6em;
+    font-family: 'Eagle Lake', cursive;
+    text-transform: uppercase;
 }
 #map a{
     left: 9em;
@@ -347,9 +353,11 @@ body {
 }
 #catDrop{
     position: relative;
-    border-right: 2px dotted gray;
+    /* border-right: 2px dotted gray; */
     padding-right: 1em;
     left: 0em;
+    font-family: 'Eagle Lake', cursive;
+    text-transform: uppercase;
 }
  #monthText{
     position: relative;
@@ -397,7 +405,7 @@ ol{
 
 /* MEDIA QUERIES */
 
-@media (min-width:400px){
+/* @media (min-width:400px){
     .fest-title {
         height: 43vh;
         width: 120vw;
@@ -439,8 +447,8 @@ ol{
     .three{
         margin-top: -8em;
         /* height: 4em; */
-    }
-    .nav-row{
+    
+  /*   .nav-row{
         margin-top: 20em;
     }
     .footer-row{
@@ -448,9 +456,9 @@ ol{
     }
     .footer-row h2{
         margin-left: -4em;
-    }
+    } */
 
-}
+
 
 /* 
 @media (min-width:770px){
@@ -496,14 +504,14 @@ ol{
     top: 10em;
     }
 
-}
+} */
 
 @media (min-width:1920px){
-    .seven-footer h2{
-        margin-top: 18em;
+    .page-title h1{
+        top: 1.5em;
         
     }
-} */
+}
 
 /* Devices */
 /* @media(min-width:1200px){
