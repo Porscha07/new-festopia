@@ -405,33 +405,19 @@ ol{
 /* MEDIA QUERIES */
 
 @media (min-width:400px){
-/*     .fest-title {
-        height: 43vh;
-        width: 120vw;
-
-    } */
-    /* .img-responsive{
-        margin-top: 3em;
-    }
-    .page-title h1{
+  /*   .page-title h1{
         font-size: 58px;
         top: -3em;
     }
-    #user-items{
-        margin-left: 4em;
-        margin-top: 0em;
-    } */
+ 
     .modal-inner{
         left: 28em;
         width: 81%;
         padding: 63px;
-    }
+    } */
    /*  #join{
         margin-left: -13em;
     }
-    #user{
-        margin-left: -2em;
-    } */
     #login img{
         margin-left: 1em;
     }
@@ -450,7 +436,7 @@ ol{
         margin-top: 20em;
     } */
     .footer-row{
-        margin-top: 30em;
+        margin-top: 32em;
     }
    
 
