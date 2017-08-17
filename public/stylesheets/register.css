@@ -1,0 +1,195 @@
+/*REGISTER CSS STARTS HERE*/
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  color: black;
+  overflow: hidden;
+}
+
+.form-container{
+  position: absolute;
+	width: 100%; 
+}
+
+#thankYou {
+  font-size: 24px;
+  color: white;
+}
+
+
+label{
+  font-size: 2rem;
+}
+
+h1{
+  font-size: 2rem;
+  color: black;
+}
+
+.title {
+  padding: 20px;
+}
+
+header{
+  background-color: azure;
+}
+
+
+span, button{
+  font-size: 1.2rem;
+}
+
+nav {
+  position: absolute;
+  right: 0; top: 50%;
+  margin-right: 20px;
+  left: auto;
+  transform: translateY(-100%);
+}
+
+ul {
+	list-style: none;
+}
+
+/* ---------------
+  Container styles
+*/
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #47555E;
+}
+
+
+nav ul li {
+  height: 15px;
+  width: 15px;
+  margin: 10px 0px;
+  background-color: white;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  list-style: none;
+}
+
+nav li.selected {
+    transform: perspective(1000px) rotate3d(0,1,0,180deg);
+    background-color: white;
+
+}
+
+/**/
+
+.counter {
+  position: absolute;
+  right: 0; top: 40px;
+  margin: 20px;
+  color: white;
+  
+}
+
+
+/* ---------------------
+  Continue button styles
+*/
+
+.continue-btn{
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 15px 25px;
+  margin: 20px auto;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  transition: all 0.3s ease-out;
+}
+
+.continue-btn:after {
+   position: absolute;
+   top: 90%;
+   left: 0;
+   width: 100%;
+   line-height: 3;
+   text-align: center;
+   background: transparent;
+   color: rgba(0,0,0,0.3);
+   content: 'or press ENTER';
+   font-size: 0.65em;
+   pointer-events: none;
+}
+
+.continue-btn:hover{
+  background-color: darken(#47555E,15%);
+  cursor: pointer; 
+  border-color: darken(#47555E,16%);
+  color: white;
+}
+
+.formed {
+  display: block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+
+.form-section {
+	width: 100%;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200%);
+  transition: opacity 0.3s;
+}
+
+.form-group input{
+  border-radius: 15px !important;
+}
+
+
+.form-section.selected {
+  opacity: 1;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(0%);
+}
+
+
+.done{
+	transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(-100%);
+  background-color: #262e32;
+}
+
+input,
+textarea{
+  margin-top: 20px;
+  width: 300px !important;
+  color: #fffed8;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid darken(#47555E, 15%);
+  font-weight: bold;
+  font-size: 2em;
+  padding: 10px 0;
+}
+
+
+input:focus, button:focus {
+  outline: none;
+}
+.btn-primary {
+  border-radius: 15px !important;
+  margin: 30px auto;
+}
+
+.input-group .form-control{
+  margin: 10px auto;
+  float: none !important;
+}
+
+/*REGISTER CSS ENDS HERE*/
