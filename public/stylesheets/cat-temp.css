@@ -407,7 +407,11 @@ html{
 
 
 
+<<<<<<< HEAD
 @media(max-width: 740px) {
+=======
+@media only screen and(max-device-width: 740px) {
+>>>>>>> 6835847530b3e33f078ca44efea5bfe508514abd
     .category {
         height: 15%;
         top: 30em;
@@ -419,7 +423,11 @@ html{
     }
 }
 
+<<<<<<< HEAD
 @media(min-width: 1000px){
+=======
+@media only screen and(min-device-width: 1000px){
+>>>>>>> 6835847530b3e33f078ca44efea5bfe508514abd
     html{ 
         height: 100%; 
     } 

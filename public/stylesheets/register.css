@@ -29,6 +29,11 @@ h1{
 
 .title {
   padding: 20px;
+<<<<<<< HEAD
+=======
+  font-weight: bold;
+  font-size: 4em;
+>>>>>>> 6835847530b3e33f078ca44efea5bfe508514abd
 }
 
 header{
@@ -62,6 +67,12 @@ ul {
   background-color: #47555E;
 }
 
+<<<<<<< HEAD
+=======
+.input-group{
+  margin-left: 20em;
+}
+>>>>>>> 6835847530b3e33f078ca44efea5bfe508514abd
 
 nav ul li {
   height: 15px;
