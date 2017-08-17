@@ -29,6 +29,8 @@ h1{
 
 .title {
   padding: 20px;
+  font-weight: bold;
+  font-size: 4em;
 }
 
 header{
@@ -62,6 +64,9 @@ ul {
   background-color: #47555E;
 }
 
+.input-group{
+  margin-left: 20em;
+}
 
 nav ul li {
   height: 15px;

@@ -3,67 +3,55 @@
 <html>
 <head>
   <title>FESTOPIA</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family='Eagle Lake'|Berkshire+Swash|Ek+Mukta|Merienda|Corben:700|Fascinate|Heebo:800|Holtwood+One+SC " rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" type ="text/css" href="stylesheets/index-style.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src = "scripts/scripts_cs.js"></script>
 
-
-
 </head>
-<body class="index">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="col-sm-12">
+          <!-- <div class="container-fluid"> -->
+            <div class="row"><!--  HEADER START -->
+              <div class="col-sm-12 one header">
+                  <div class="col-sm-3" id="social-media">
+                    <a href="https://www.facebook.com/">        
+                        <div class="col-sm-1 icons fa fa-facebook"></div>
+                    </a>
+                    
+                    <a href="https://www.twitter.com/">
+                      <div class="col-sm-1 col-sm-offset-1 icons fa fa-twitter"></div>
+                    </a>          
 
+                    <a href="https://www.instagram.com/">
+                      <div class="col-sm-1 col-sm-offset-1 icons fa fa-instagram"></div>
+                     </a>         
 
-<div class="container-fluid">
+                    <a href="https://www.snapchat.com/">
+                      <div class="col-sm-1 col-sm-offset-1 icons fa fa-snapchat-ghost"></div>
+                     </a>         
 
-       <!--  HEADER START -->
-  <div class="row">
-    <div class="col-sm-12 one header">
-        
-        <div class="col-sm-6" id="social-media">
-          <a href="https://www.facebook.com/">        
-              <div class="col-sm-1 icons fa fa-facebook"></div>
-          </a>
-          
-          <a href="https://www.twitter.com/">
-            <div class="col-sm-1 col-sm-offset-1 icons fa fa-twitter"></div>
-          </a>
-
-          <a href="https://www.instagram.com/">
-            <div class="col-sm-1 col-sm-offset-1 icons fa fa-instagram"></div>
-           </a>
-
-          <a href="https://www.snapchat.com/">
-            <div class="col-sm-1 col-sm-offset-1 icons fa fa-snapchat-ghost"></div>
-           </a>
-
-          <a href="https://www.tumblr.com/">
-            <div class="col-sm-1 col-sm-offset-1 icons fa fa-tumblr"></div>
-          </a>
-
-
-        </div>
-
-        
-        <div class="col-sm-6">
-            <!--   USER MODAL -->
-          <div class="col-sm-1 col-sm-offset-7" id="user-modal">
-              
+                    <a href="https://www.tumblr.com/">
+                      <div class="col-sm-1 col-sm-offset-1 icons fa fa-tumblr"></div>
+                    </a>
+                  </div>
+                    <div class="col-sm-6 page-title">
+                        <h1>Festopia</h1>
+                    </div>
+            <!-- <! USER MODAL -->
+          <div class="col-sm-1" id="user-modal">
               <a class="btn" data-modal-open="modal-user" href="#">
-
               <img id = "user" style="" src="http://www.clker.com/cliparts/5/6/3/a/1194984675331456830utente_singolo_architett_01.svg.hi.png" alt="">
-
               </a>
-
               <div class = "modal-open" data-modal = "modal-user">
                   <div class="modal-inner"  style="display: none;">
-
                       <div id = "login">
-                        <a href="/login"><h3>Log In</h3></a>
+                        <a href="/sign"><h3>Log In</h3></a>
                         <img src="https://openclipart.org/download/247316/abstract-user-flat-2.svg">
                       </div>
 
@@ -71,151 +59,62 @@
                         <a href="/register"><h3>Join Festopia!</h3></a>
                         <img src="https://cdn4.iconfinder.com/data/icons/mosaicon-09/512/add_group-256.png">
                       </div>
-
                       <a class="modal-close" data-modal-close="modal-user" href="#">x</a>
-                
-                  </div>
-              </div>
-          </div>
-
-           <!--  SEARCH MODAL -->
-          <div class="col-sm-1 col-sm-offset-1" id="search-modal">
-              <a class = "btn" data-modal-open1 = "modal-user1" href="#">
-                  <img id = "search" style = "" src="http://www.ptfe.it/images/map.png">
-              </a>
-
-              <div class = "modalopen1" data-modal1 = "modal-user1">
-                  <div class="modal-inner1" style="display: none;">
-
-                    <div class = "search-item">
-                        <form>
-                            <input type="text" placeholder="keyword search"/>
-                        </form>
-                            <img src="http://www.freeiconspng.com/uploads/search-icon-png-2.png">
-                    </div>
-                    <a class="modal-close1" data-modal-close1="modal-user1" href="#">x</a>
-                
-                  </div>
-              </div>
-          </div>
-
-           <!--  QUESTION MODAL -->
-          <div class="col-sm-1 col-sm-offset-1" id="question-modal">
-              <a class = "btn" data-modal-open2 = "modal-user2" href="#">
-
-                  <img id = "question" style="" src="http://www.freeiconspng.com/uploads/simple-blue-question-mark-icon-9.png" alt="">
-              </a>
-                        
-              <div class = "modalopen2" data-modal2 = "modal-user2">
-                  <div class="modal-inner2" style="display: none;">
-
-                    <div id = "question1" style="font-size: 20px; font-weight: bold;">
-                        <p>Have questions about about Festopia? Feel free to send us a message using the contact form below!</p>
-                    </div>
-
-                    <a class="modal-close2" data-modal-close2="modal-user2" href="#">x</a>
-                
                   </div>
               </div>
           </div>
         </div>
-    </div>
-  </div>
-
-    <!--  END OF HEADER -->
-
-
-   <!--  START PAGE TITLE -->
-
-  <div class="row">
-
-    <div class="col-sm-12 two page-name"> 
-
-        <h1>Festopia</h1>
-        <h3>Your personal festival finder</h3>
-      <!--   <img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/6439641/Shaky-Knees_54_990x660.jpg"> -->
-
-    </div>
-  </div>
-
+      </div>
+  </nav>
    <!--   START MAIN NAV -->
+          <div class="homewrapper">
+            <img class="img-responsive" src="../Images/festopia-bg.png"
+              <div class="nav-row">
+                  <div class="col-sm-12 three main-nav text-center">              
 
-  <div class="row">
-    <div class="col-sm-10 three main-nav text-center">
-
-        <div class="col-sm-2 col-sm-offset-3 nav-item" id="text">
-            <a href ="/">Home</a>
-        </div>
-
-
-        <div class="col-sm-2 dropdown nav-item" id="catDrop">
-            <section>Category<section>
-            <div class="dropdown-content">
-               <ol>
-                  <li class="cat-items"><a href="Music">Music</a></li>
-                  <li class="cat-items"><a href="Art">Art</a></li>
-                  <li class="cat-items"><a href="Film">Film</a></li>
-                  <li class="cat-items"><a href="Food">Food/Beverage</a></li>
-                  <li class="cat-items"><a href="Culture">Culture</a></li>
-              </ol>
+                      <div class="col-sm-4 < nav-item" id="text">
+                          <a href ="/">Home</a>
+                      </div>
+                            <div class="col-sm-4 dropdown nav-item" id="catDrop">
+                                <section>Category<section>
+                                <div class="dropdown-content">
+                                   <ol>
+                                      <li class="cat-items"><a href="Music">Music</a></li>
+                                      <li class="cat-items"><a href="Art">Art</a></li>
+                                      <li class="cat-items"><a href="Film">Film</a></li>
+                                      <li class="cat-items"><a href="Food">Food/Beverage</a></li>
+                                      <li class="cat-items"><a href="Culture">Culture</a></li>
+                                      <li class="cat-items"><a href="Festivals">All Festivals</a><li>
+                                  </ol>
+                                </div>
+                              </div>
+                           <div class="col-sm-4 nav-item" id="all-fest">
+                                <a href="/festivals"><section>All Festivals<section></a>
+                            </div>
+                          </div>
+                 </div>
             </div>
-        </div>
-    
-
-       
-        <div class="col-sm-2 dropdown nav-item" id="monthDrop">
-            <section>Month</section>
-            <div class="dropdown-content">
-              <ol>
-                  <li class = "month-items"><a href="construction">June 2017</a></li>
-                  <li class = "month-items"><a href="construction">July 2017</a></li>
-                  <li class = "month-items"><a href="construction">August 2017</a></li>
-                  <li class = "month-items"><a href="construction">September 2017</a></li>
-                  <li class = "month-items"><a href="construction">October 2017</a></li>
-                  <li class = "month-items"><a href="construction">November 2017</a></li>
-                  <li class = "month-items"><a href="construction">December 2017</a></li>
-
-              </ol>
-            </div>
-        </div>
-    </div>
-  </div>
+<!-- </div> -->
 <!--     <div class="col-sm-1">
     </div> -->
-  <div class="row">
-    <div class="col-sm-12 text-center" id = "second-row"> 
-      <div class="col-sm-3 nav-item2" id="add-fest">
-        <a href="construction">Add Festival</a>     
-      </div>
-
-
-      <div class="col-sm-3 nav-item2" id="all-fest">
-          <a href="/allfestivals">All Festivals</a>
-      </div>
-
-      <div class="col-sm-3 nav-item2" id="tickets">
-          <a href="construction">Tickets</a>
-      </div>
-
-      <div class="col-sm-3 nav-item2" id="map">
-          <a href="https://www.google.com/maps/place/Atlanta+Metropolitan+Area,+GA/@33.726215,-85.4491198,8z/data=!3m1!4b1!4m5!3m4!1s0x88f501167813287d:0x26d21ce27f74b79!8m2!3d33.8498184!4d-84.4382721">Map</a>
-      </div>
-    </div>
-  </div>
 
        <!--    START MAIN PAGE -->
-  <div class="row">
-    <div class="col-sm-12 four main-page">
-        <video poster="https://youtu.be/j4t54bPUvmg" id="bgvid" playsinline autoplay muted loop>
-        <source src="./videos/festopia.mp4" type="video/mp4">
-        </video>
-    </div>
-  </div>
+              <!-- <div class="container-fluid" id="video"> -->
+                     <div class="row">
+                        <div class="col-sm-12 four main-page">
+                          <video  id="bgvid" playsinline autoplay muted loop>
+                          <source src="http://porschajohnson.com:3001/video/Festopia.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                    </div>
+            <!-- </div>           -->
+
 
         <!--   START FOOTER -->
 
-  <div class="row">
-    <footer class="col-sm-12 text-center seven footer" style="color: white; font-family: 'Heebo', sans-serif;">©️2017 All Rights Reserved / Created @Digital Crafts</footer>
+  <div class="footer-row">
+        <footer class="col-sm-12 text-center" style="color: white; font-family: 'Heebo', sans-serif;"> <h2>©️2017 All Rights Reserved / Created @Digital Crafts</h2></footer>
   </div>
 </div>
-    
+ </body>
+ </html>   

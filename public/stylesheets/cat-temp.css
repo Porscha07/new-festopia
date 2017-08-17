@@ -407,7 +407,7 @@ html{
 
 
 
-@media(max-width: 740px) {
+@media only screen and(max-device-width: 740px) {
     .category {
         height: 15%;
         top: 30em;
@@ -419,7 +419,7 @@ html{
     }
 }
 
-@media(min-width: 1000px){
+@media only screen and(min-device-width: 1000px){
     html{ 
         height: 100%; 
     } 

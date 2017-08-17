@@ -45,11 +45,11 @@ span.title-waxon {
  /* START SOCIAL MEDIA ICONS*/
  .fa {
     position: relative;
-    top: 0;
+    top: -4px;
     left: 0;
     padding: 15px;
-    width: 41px;
-    height: 41px;
+    width: 43px;
+    height: 45px;
     text-align: center;
     text-decoration: none;
     margin: 12px 2px;
@@ -103,7 +103,7 @@ div.main-content {
     text-align: center;
     background: purple;
     min-width: 250px;
-    height: 250px;
+    height: 310px;
     margin-bottom: 50px;
     background: -webkit-linear-gradient(left top, pink, coral); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, pink, coral); /* For Opera 11.1 to 12.0 */
@@ -135,7 +135,7 @@ div.main-content {
 
 .card-image {
     min-height: 110px;
-    max-height: 110px;
+    max-height: 140px;
     overflow: hidden;
 }
 
@@ -154,7 +154,7 @@ div.main-content {
     padding-top: 20px;
     top: 200px;
     left: 5%;
-    height: 250px;
+    height: 276px;
     width: 250px;
     color: white;
     border-radius: 5px;
@@ -187,10 +187,11 @@ div.main-content {
     width: 194px;
     height: 30px;
     padding: 6px 12px;
+    color: black; 
  }
 
 .category button {
-    color: white;
+    color: black;
     background: pink !important;
     border-style: none;
     font-size: 15px; 
@@ -217,4 +218,25 @@ div.main-content {
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
+/* Media Queries */
 
+@media (min-width:400px){
+    span.title-waxon{
+        font-size: 46px;
+        margin-left: 25px;
+    }
+    .icons{
+        width: 39%;
+        margin-left: 60%;
+        margin-top: -5%;
+    }
+}
+
+
+@media (min-width:1280px){
+    .icons{
+    margin-top: -1%;
+    margin-right: 1%;
+
+    }
+}
