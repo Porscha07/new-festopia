@@ -386,6 +386,14 @@ ol{
 }
 
 
+/* MEDIA QUERIES */
+@media (min-width:400px){
+    #social-media{
+        width: ;
+    }
+}
+
+
 .seven-footer{
     color: white;
     font-family: 'Heebo', sans-serif;
@@ -431,6 +439,7 @@ ol{
         margin-top: 32em;
     }
    
+
 
 
 
