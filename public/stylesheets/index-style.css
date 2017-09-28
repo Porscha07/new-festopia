@@ -238,7 +238,7 @@ body {
    font-weight: lighter;
     font-family: 'Eagle Lake', cursive;
     /* text-transform: uppercase; */
-    top: 3em;
+    top: 2.5em;
     font-size: 4em;
     color: white;
     position: relative;
@@ -428,5 +428,5 @@ ol{
         font-size: 28px;
     }
     .footer-row{
-        margin-top: 32em;
+        margin-top: 25em;
     }
